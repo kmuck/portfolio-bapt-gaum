@@ -1,0 +1,141 @@
+{
+ "url": "https://baptistegmtc.wixsite.com/website/ecrits-recherches",
+ "title": "Ecrits | Baptiste Gaumont",
+ "texts": [
+  {
+   "tag": "p",
+   "text": "Baptiste Gaumont",
+   "comp": "comp-kr62iiua"
+  },
+  {
+   "tag": "h3",
+   "text": "ECRITS, RECHERCHES",
+   "comp": "comp-mgdrkyip8"
+  },
+  {
+   "tag": "p",
+   "text": "Cette section rassemble mes travaux de recherche en architecture et ingénierie, autour de réflexions théoriques, expérimentales et techniques.",
+   "comp": "comp-mhf3h6j6"
+  },
+  {
+   "tag": "p",
+   "text": "Mémoire d'ingénierie :",
+   "comp": "comp-mhizsm8c"
+  },
+  {
+   "tag": "p",
+   "text": "Réemploi, développement d'un outil d’analyse multicritère comme une aide à la décision dans les projets, chez REMIX",
+   "comp": "comp-mhizsm8c"
+  },
+  {
+   "tag": "p",
+   "text": "Mots clés : réemploi, outil, cycle de vie",
+   "comp": "comp-mhizsm8c"
+  },
+  {
+   "tag": "p",
+   "text": "2025",
+   "comp": "comp-mhizsm8c"
+  },
+  {
+   "tag": "p",
+   "text": "Mémoire d'architecture :",
+   "comp": "comp-mhf3gjfi"
+  },
+  {
+   "tag": "p",
+   "text": "L'activation du cœur d'îlot urbain : enjeux et leviers",
+   "comp": "comp-mhf3gjfi"
+  },
+  {
+   "tag": "p",
+   "text": "Mots clés : îlot urbain, morphologie, communs",
+   "comp": "comp-mhf3gjfi"
+  },
+  {
+   "tag": "p",
+   "text": "2024",
+   "comp": "comp-mhf3gjfi"
+  },
+  {
+   "tag": "p",
+   "text": "Projet de recherche technique :",
+   "comp": "comp-mhixrka6"
+  },
+  {
+   "tag": "p",
+   "text": "Pisé, influence de la quantité de granulats sur sa résistance et sa cohésion",
+   "comp": "comp-mhixrka6"
+  },
+  {
+   "tag": "p",
+   "text": "Avec : Jean Bohnert",
+   "comp": "comp-mhixrka6"
+  },
+  {
+   "tag": "p",
+   "text": "Mots clés : pisé, résistance, cohésion",
+   "comp": "comp-mhixrka6"
+  },
+  {
+   "tag": "p",
+   "text": "2024",
+   "comp": "comp-mhixrka6"
+  },
+  {
+   "tag": "p",
+   "text": "Mail : baptiste.gmtc@gmail.com",
+   "comp": "comp-kd4ak94x"
+  },
+  {
+   "tag": "p",
+   "text": "Linkedin : Baptiste Gaumont",
+   "comp": "comp-kd4aedc9"
+  }
+ ],
+ "images": [
+  {
+   "id": "11062b_2033650f6fc24de0b554dc70237518e8~mv2.jpg",
+   "alt": "fond noir",
+   "w": "980",
+   "h": "40"
+  },
+  {
+   "id": "51f7bd_5a067baebc0046879d877dd361a23731~mv2.jpg",
+   "alt": "logo remix réemploi et matériaux_edited_",
+   "w": "231",
+   "h": "228"
+  },
+  {
+   "id": "51f7bd_392e3f2402624805bf053d7983aaedc6~mv2.png",
+   "alt": "Logo image.png",
+   "w": "231",
+   "h": "228"
+  },
+  {
+   "id": "51f7bd_f29390e1692e4ea882b5ad078b7fcdec~mv2.jpeg",
+   "alt": "Logo prt pisé.JPEG",
+   "w": "231",
+   "h": "228"
+  },
+  {
+   "id": "51f7bd_67d1e2a5d59c4fdb9d1e553d1fbaf9df~mv2.jpg",
+   "alt": "icône mail",
+   "w": "38",
+   "h": "38"
+  },
+  {
+   "id": "11062b_7cf73902d06c4f3685c379a21c6c8285~mv2.png",
+   "alt": "Linkedin",
+   "w": "27",
+   "h": "27"
+  }
+ ],
+ "images_extra": [],
+ "links": [
+  "https://baptistegmtc.wixsite.com/website",
+  "https://baptistegmtc.wixsite.com/website/a-propos-de-moi",
+  "https://baptistegmtc.wixsite.com/website/ecrits-recherches",
+  "https://baptistegmtc.wixsite.com/website/projets"
+ ]
+}
