@@ -125,11 +125,21 @@ async function boites(browser) {
           return [Math.round(r.x), Math.round(r.y + window.scrollY), Math.round(r.width), Math.round(r.height)];
         };
         const root = document.getElementById('PAGES_CONTAINER');
-        const comps = {};
+        const comps = {}, textes = {};
         root.querySelectorAll('[id^="comp-"]').forEach(el => { comps[el.id] = box(el); });
-        return { page: box(root), comps };
+        // Partie réellement écrite des blocs de texte (sans les lignes vides du bas)
+        root.querySelectorAll('[data-testid="richTextElement"]').forEach(el => {
+          const rs = [...el.querySelectorAll('p, li, h1, h2, h3, h4, h5, h6')]
+            .filter(p => (p.innerText || '').replace(/[\s\u200b]/g, '')).map(p => p.getBoundingClientRect());
+          if (!rs.length) return;
+          const top = Math.min(...rs.map(r => r.top)), bottom = Math.max(...rs.map(r => r.bottom));
+          textes[el.id] = [Math.round(top + window.scrollY), Math.round(bottom - top)];
+        });
+        return { page: box(root), comps, textes };
       });
       fs.writeFileSync(`${OUT}/boites/${slug}.json`, JSON.stringify(data));
+      fs.mkdirSync(`${OUT}/projets`, { recursive: true });
+      await page.screenshot({ path: `${OUT}/projets/${slug}.jpg`, type: 'jpeg', quality: 45, fullPage: true });
       console.log('boites', slug, Object.keys(data.comps).length);
     } catch (e) {
       console.log('échec boites', slug, e.message.split('\n')[0]);
