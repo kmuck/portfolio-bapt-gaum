@@ -2,7 +2,7 @@
 title: "L'activation du cœur d'îlot urbain : enjeux et leviers"
 type: "Mémoire d'architecture"
 annee: 2024
-image: "https://static.wixstatic.com/media/51f7bd_392e3f2402624805bf053d7983aaedc6~mv2.png"
+image: "/assets/img/wix/51f7bd_392e3f2402624805bf053d7983aaedc6-mv2.webp"
 mots_cles: [îlot urbain, morphologie, communs]
 ---
-L'activation des cœurs d'îlot peut-elle être un levier de transition urbaine ? L'étude se déroule en deux temps : le cœur d'îlot comme continuité verte et de mobilités douces (« faire paysage en ville »), puis le partage du foncier et les dynamiques sociales collectives (« faire commun »).
+Mon mémoire d'architecture pose la problématique suivante : « en quoi l’activation des cœurs d’îlots urbain peut devenir un moteur de la transition urbaine ? ». Après une approche historique et morphologique, ma recherche s'articule en deux parties : d'une part, "faire paysage en ville" en explorant leur rôle comme continuité verte et douce ; d'autre part, "faire commun" en interrogeant les modalités de partage du foncier et la création de dynamiques sociales collectives.

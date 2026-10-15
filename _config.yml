@@ -21,4 +21,4 @@ defaults:
   - scope: { path: "" }
     values: { layout: page }
 
-exclude: [import, scripts, README.md]
+exclude: [import, scripts, README.md, Gemfile, Gemfile.lock, vendor, .bundle]

@@ -2,7 +2,7 @@
 title: À propos
 permalink: /a-propos/
 ---
-<img class="portrait" src="https://static.wixstatic.com/media/51f7bd_7fe9023594484ccaa84ccc81c653074a~mv2.jpg" alt="Baptiste Gaumont">
+<img class="portrait" src="/assets/img/wix/51f7bd_7fe9023594484ccaa84ccc81c653074a-mv2.webp" alt="Baptiste Gaumont">
 
 # À propos de moi
 
@@ -16,4 +16,4 @@ Pour les projets scolaires, les professeurs nous laissent autonomes dans la conc
 
 De plus, la transmission de connaissances se fait aussi par le biais des autres élèves de la classe pour lesquels chacun interprète différemment la consigne et mène donc à une grande diversité de projets.
 
-Contact : [{{ site.email }}](mailto:{{ site.email }})
+Si vous souhaitez entrer en contact avec moi, n'hésitez pas, vous pouvez me joindre par [mail](mailto:{{ site.email }}) ou [instagram]({{ site.instagram }}).

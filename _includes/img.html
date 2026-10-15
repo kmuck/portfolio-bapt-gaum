@@ -1,3 +1,5 @@
-{%- comment -%} Accepte une URL absolue (Wix) ou un chemin local /assets/... {%- endcomment -%}
+{%- comment -%} Accepte une URL absolue ou un chemin local /assets/... ; lien=true ouvre l'image en grand. {%- endcomment -%}
 {%- if include.src contains '://' -%}{%- assign src = include.src -%}{%- else -%}{%- assign src = include.src | relative_url -%}{%- endif -%}
+{%- if include.lien -%}<a href="{{ src }}" target="_blank" rel="noopener">{%- endif -%}
 <img src="{{ src }}" alt="{{ include.alt }}" loading="lazy">
+{%- if include.lien -%}</a>{%- endif -%}

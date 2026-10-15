@@ -22,8 +22,14 @@ h2 { font-weight: 400; margin-top: 2.5em; border-bottom: 1px solid var(--trait);
 .surtitre, .mots-cles { color: var(--doux); font-size: .9rem; margin: 0; }
 .page { max-width: 760px; }
 .portrait { max-width: 280px; margin-top: 32px; }
-.projet .texte { max-width: 760px; }
-.planches { display: grid; gap: 16px; margin: 32px 0; }
-.planches img { width: 100%; }
+.sous-titre { color: var(--doux); font-size: 1.1rem; margin-top: -.5em; }
+.contenu > p, .contenu > ul, .contenu > h2 { max-width: 760px; }
+.contenu > h2 { font-family: Georgia, serif; }
+.contenu p { text-align: justify; }
+.contenu p.legende { color: var(--doux); font-size: .9rem; font-style: italic; text-align: left; margin-top: -.4em; }
+.planche, .galerie { margin: 32px 0 16px; }
+.planche img { width: 100%; }
+.galerie { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; align-items: start; }
+.galerie img { width: 100%; }
 .site-footer { display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; padding: 32px 16px; border-top: 1px solid var(--trait); color: var(--doux); }
 @media (max-width: 640px) { .apropos-court, .ecrit { grid-template-columns: 1fr; } }
