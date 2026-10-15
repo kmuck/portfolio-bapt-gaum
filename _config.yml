@@ -1,0 +1,24 @@
+title: Baptiste Gaumont
+description: "Site internet de Baptiste Gaumont, architecte et ingénieur diplômé de l'INSA Strasbourg."
+lang: fr
+email: baptiste.gmtc@gmail.com
+linkedin: https://www.linkedin.com/in/baptiste-gaumont/
+instagram: https://www.instagram.com/baptiste.gaumont/
+# Pour un site de projet GitHub Pages (kmuck.github.io/portfolio-bapt-gaum).
+# Mettre "" si un domaine personnalisé est branché.
+baseurl: /portfolio-bapt-gaum
+
+collections:
+  projets:
+    output: true
+    permalink: /projets/:name/
+  ecrits:
+    output: false
+
+defaults:
+  - scope: { type: projets }
+    values: { layout: projet }
+  - scope: { path: "" }
+    values: { layout: page }
+
+exclude: [import, scripts, README.md, Gemfile, Gemfile.lock, vendor, .bundle]

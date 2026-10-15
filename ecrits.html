@@ -1,0 +1,17 @@
+---
+title: Écrits
+permalink: /ecrits/
+---
+<h1>Écrits, recherches.</h1>
+<p>Cette section rassemble mes travaux de recherche en architecture et ingénierie, autour de réflexions théoriques, expérimentales et techniques.</p>
+{% for ecrit in site.ecrits %}
+<article class="ecrit">
+  {% include img.html src=ecrit.image alt=ecrit.title %}
+  <div>
+    <p class="surtitre">{{ ecrit.type }} · {{ ecrit.annee }}{% if ecrit.avec %} · avec {{ ecrit.avec }}{% endif %}</p>
+    <h2>{{ ecrit.title }}</h2>
+    {{ ecrit.content | markdownify }}
+    <p class="mots-cles">{{ ecrit.mots_cles | join: " · " }}</p>
+  </div>
+</article>
+{% endfor %}

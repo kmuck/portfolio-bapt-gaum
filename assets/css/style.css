@@ -1,0 +1,35 @@
+:root { --fond: #0d0d0d; --texte: #ececec; --doux: #9a9a9a; --trait: #2a2a2a; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fond); color: var(--texte); font: 17px/1.6 "Helvetica Neue", Arial, sans-serif; }
+a { color: inherit; }
+img { max-width: 100%; display: block; }
+main { max-width: 1200px; margin: 0 auto; padding: 0 16px 64px; }
+.site-header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; max-width: 1200px; margin: 0 auto; padding: 24px 16px; }
+.logo { font-size: 1.3rem; letter-spacing: .08em; text-transform: uppercase; text-decoration: none; }
+nav { display: flex; gap: 24px; }
+nav a { text-decoration: none; color: var(--doux); }
+nav a:hover { color: var(--texte); }
+h1 { font-weight: 300; font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1.2; }
+h2 { font-weight: 400; margin-top: 2.5em; border-bottom: 1px solid var(--trait); padding-bottom: .3em; }
+.intro { padding: 8vh 0 4vh; max-width: 760px; }
+.grille { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
+.carte { text-decoration: none; }
+.carte img { aspect-ratio: 4 / 3; object-fit: cover; width: 100%; transition: opacity .2s; }
+.carte:hover img { opacity: .75; }
+.carte span { display: block; margin-top: 8px; }
+.apropos-court, .ecrit { display: grid; grid-template-columns: minmax(0, 220px) 1fr; gap: 32px; align-items: start; margin-top: 48px; }
+.ecrit h2 { margin-top: 0; border: 0; }
+.surtitre, .mots-cles { color: var(--doux); font-size: .9rem; margin: 0; }
+.page { max-width: 760px; }
+.portrait { max-width: 280px; margin-top: 32px; }
+.sous-titre { color: var(--doux); font-size: 1.1rem; margin-top: -.5em; }
+.contenu > p, .contenu > ul, .contenu > h2 { max-width: 760px; }
+.contenu > h2 { font-family: Georgia, serif; }
+.contenu p { text-align: justify; }
+.contenu p.legende { color: var(--doux); font-size: .9rem; font-style: italic; text-align: left; margin-top: -.4em; }
+.planche, .galerie { margin: 32px 0 16px; }
+.planche img { width: 100%; }
+.galerie { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; align-items: start; }
+.galerie img { width: 100%; }
+.site-footer { display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; padding: 32px 16px; border-top: 1px solid var(--trait); color: var(--doux); }
+@media (max-width: 640px) { .apropos-court, .ecrit { grid-template-columns: 1fr; } }
