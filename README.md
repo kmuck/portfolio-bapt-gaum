@@ -1,13 +1,10 @@
 # Portfolio de Baptiste Gaumont
 
-Site statique Jekyll, publié sur GitHub Pages par le workflow `.github/workflows/pages.yml`
-à chaque push sur `main`.
+Site statique Jekyll, publié par GitHub Pages (Settings → Pages → Deploy from a branch → `main`, dossier `/`)
+à chaque push sur `main`, sur `https://kmuck.github.io/portfolio-bapt-gaum/`.
 
-## Mise en ligne (une seule fois)
-
-Settings → Pages → Build and deployment → Source : **GitHub Actions**.
-Le site est alors servi sur `https://kmuck.github.io/portfolio-bapt-gaum/`.
-Pour un nom de domaine, le renseigner dans Settings → Pages → Custom domain.
+Pour un nom de domaine : le renseigner dans Settings → Pages → Custom domain, puis mettre `baseurl: ""`
+dans `_config.yml`.
 
 ## Modifier le contenu
 
@@ -28,6 +25,6 @@ bundle exec jekyll serve
 ## Import depuis Wix
 
 Le contenu vient de l'ancien site Wix :
-1. `scripts/import_wix.py` (lancé par `.github/workflows/import-wix.yml`) aspire le HTML de chaque page
+1. `scripts/import_wix.py` (lancé à la main par le workflow « Import depuis Wix ») aspire le HTML de chaque page
    dans `import/raw/` et les images, compressées en WebP, dans `assets/img/wix/` ;
 2. `scripts/build_from_wix.py` régénère le corps des fichiers `_projets/*.md` à partir de ce HTML.

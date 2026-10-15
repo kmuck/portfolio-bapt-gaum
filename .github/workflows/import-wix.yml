@@ -1,11 +1,8 @@
 name: Import depuis Wix
 
+# Lancement manuel uniquement (onglet Actions), tant que le site Wix existe encore.
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - scripts/import_wix.py
-      - .github/workflows/import-wix.yml
 
 permissions:
   contents: write
