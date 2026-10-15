@@ -28,6 +28,12 @@ jobs:
       - run: node scripts/capture_wix.js
         env:
           CAPTURES: ${{ inputs.captures || 'boites' }}
+      - name: Captures d'écran du site Wix (pour comparer, gardées 30 jours)
+        uses: actions/upload-artifact@v4
+        with:
+          name: captures-wix
+          path: import/captures/**/*.jpg
+          retention-days: 30
       - name: Images du diaporama et des cartes de l'accueil
         run: |
           pip install requests pillow

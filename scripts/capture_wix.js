@@ -1,5 +1,6 @@
 // Captures d'écran et styles calculés du site Wix d'origine, pour reproduire son design.
 // Sorties : import/captures/<page>-<largeur>.jpg, styles.json, diaporama.json
+// (les .jpg ne sont pas versionnés : le workflow capture-wix les publie en artefact)
 // et boites/<projet>.json (position de chaque élément des pages projet, pour build_from_wix.py).
 // CAPTURES=boites ne refait que les positions.
 const { chromium } = require('playwright');

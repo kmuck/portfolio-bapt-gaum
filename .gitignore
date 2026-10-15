@@ -3,3 +3,5 @@ _site/
 .bundle/
 vendor/
 __pycache__/
+# captures d'écran du site Wix : artefact du workflow capture-wix, pas dans le dépôt
+import/captures/**/*.jpg
