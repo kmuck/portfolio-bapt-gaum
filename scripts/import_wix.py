@@ -5,6 +5,9 @@ Sorties :
   assets/img/wix/<media-id>.webp  images, redimensionnées (2400 px max) et compressées
 
 Le texte des pages est ensuite extrait en local par scripts/build_from_wix.py.
+
+Usage : python3 scripts/import_wix.py              tout réimporter
+        python3 scripts/import_wix.py orientation  redresser les photos prises de travers
 """
 import io
 import pathlib
@@ -15,7 +18,7 @@ import time
 import urllib.parse
 
 import requests
-from PIL import Image
+from PIL import Image, ImageOps
 
 BASE = "https://baptistegmtc.wixsite.com/website"
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -34,9 +37,9 @@ def webp_name(media_id):
     return media_id.split(".")[0].replace("~", "-") + ".webp"
 
 
-def download(media_id):
+def download(media_id, force=False):
     dest = IMG / webp_name(media_id)
-    if dest.exists():
+    if dest.exists() and not force:
         return
     r = session.get(f"https://static.wixstatic.com/media/{media_id}", timeout=120)
     if not r.ok:
@@ -48,6 +51,7 @@ def download(media_id):
     except Exception as e:  # format non pris en charge (svg, etc.)
         print("image ignorée", media_id, e, file=sys.stderr)
         return
+    im = ImageOps.exif_transpose(im)  # photos d'appareil : sens indiqué dans les données EXIF
     im = im.convert("RGBA" if im.mode in ("RGBA", "LA", "P") else "RGB")
     im.thumbnail((MAX_PX, MAX_PX))
     im.save(dest, "WEBP", quality=80, method=6)
@@ -75,5 +79,21 @@ def main():
         time.sleep(0.5)
 
 
+def orientation():
+    """Reconvertit les images dont l'original porte une rotation EXIF (oubliée lors du premier import)."""
+    ids = {m for f in RAW.glob("*.html") for m in MEDIA_RE.findall(f.read_text(encoding="utf-8"))}
+    for media_id in sorted(ids):
+        if not (IMG / webp_name(media_id)).exists() or not media_id.lower().endswith((".jpg", ".jpeg")):
+            continue
+        r = session.get(f"https://static.wixstatic.com/media/{media_id}", headers={"Range": "bytes=0-131071"}, timeout=60)
+        try:
+            sens = Image.open(io.BytesIO(r.content)).getexif().get(0x0112, 1)
+        except Exception:
+            continue
+        if sens not in (1, None):
+            print("redressée", media_id, sens)
+            download(media_id, force=True)
+
+
 if __name__ == "__main__":
-    main()
+    orientation() if sys.argv[1:] == ["orientation"] else main()

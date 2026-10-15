@@ -10,6 +10,7 @@ on:
     branches: ['claude/**']
     paths:
       - scripts/capture_wix.js
+      - scripts/import_wix.py
       - .github/workflows/capture-wix.yml
 
 permissions:
@@ -37,12 +38,13 @@ jobs:
           d = json.load(open("import/captures/diaporama.json"))
           ids = [s["uri"] for s in d["slides"] if s["uri"]]
           ids += ["51f7bd_5052c9db550b4a0297ba2439bf9ddac7~mv2.png", "51f7bd_22010bb170274682986fc98a2c25a7a6~mv2.jpg",
-                  "ec3d4bcc20929babb63857380b708cd4.jpg", "51f7bd_67d1e2a5d59c4fdb9d1e553d1fbaf9df~mv2.jpg",
-                  "11062b_7cf73902d06c4f3685c379a21c6c8285~mv2.png"]
+                  "ec3d4bcc20929babb63857380b708cd4.jpg"]
           import_wix.IMG.mkdir(parents=True, exist_ok=True)
           for i in ids:
               import_wix.download(i)
           PY
+      - name: Photos à redresser (rotation EXIF)
+        run: python scripts/import_wix.py orientation
       - name: Commit des captures
         run: |
           git config user.name "github-actions[bot]"

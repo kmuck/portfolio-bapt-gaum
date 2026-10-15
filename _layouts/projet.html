@@ -1,4 +1,4 @@
 ---
 layout: default
 ---
-<article class="projet">{{ content }}</article>
+<article class="projet"{% if page.texte %} style="font:{{ page.texte }} var(--raleway)"{% endif %}>{{ content }}</article>

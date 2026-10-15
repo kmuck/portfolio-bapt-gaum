@@ -4,11 +4,17 @@ categorie: "Projets ecotive"
 rang_categorie: 0
 ordre: 20
 couverture: "/assets/img/wix/51f7bd_73b39aa0f7bc4acdafe061dc20887037-mv2.webp"
+texte: "14px/1.5em"
 ---
 
-{% include diaporama.html images="/assets/img/wix/51f7bd_94de539606844a3ebaa21990ec52182c-mv2.webp,/assets/img/wix/51f7bd_70a2a3e29dec4caa8506e90f5e02702e-mv2.webp,/assets/img/wix/51f7bd_903be254ac144a07a5c22255d8062599-mv2.webp,/assets/img/wix/51f7bd_f6ec7a05624a4b1590a00c1b698125f3-mv2.webp,/assets/img/wix/51f7bd_a6a1b215842e4dcf9a762986f587c60a-mv2.webp,/assets/img/wix/51f7bd_2f9de34c2fe343c9aa2dfaca095e481f-mv2.webp,/assets/img/wix/51f7bd_4ce38fa91235422b92b8186aed1ea866-mv2.webp,/assets/img/wix/51f7bd_c294c714a3334d05804784a14fa0c4d7-mv2.webp" %}
+<div class="bloc" style="--mt:2px">
+{% include diaporama.html images="/assets/img/wix/51f7bd_94de539606844a3ebaa21990ec52182c-mv2.webp,/assets/img/wix/51f7bd_70a2a3e29dec4caa8506e90f5e02702e-mv2.webp,/assets/img/wix/51f7bd_903be254ac144a07a5c22255d8062599-mv2.webp,/assets/img/wix/51f7bd_f6ec7a05624a4b1590a00c1b698125f3-mv2.webp,/assets/img/wix/51f7bd_a6a1b215842e4dcf9a762986f587c60a-mv2.webp,/assets/img/wix/51f7bd_2f9de34c2fe343c9aa2dfaca095e481f-mv2.webp,/assets/img/wix/51f7bd_4ce38fa91235422b92b8186aed1ea866-mv2.webp,/assets/img/wix/51f7bd_c294c714a3334d05804784a14fa0c4d7-mv2.webp" hauteur=486 %}
+</div>
 
-## Réalisé avec Ecotive.
+<div class="bloc" style="--h:657px;--x:3.47%;--w:92.86%;--mt:40px" markdown="1">
+
+## <strong>Réalisé avec Ecotive.</strong>
+{: style="font-size:18px;line-height:1.5em"}
 
 Ce projet répond à une série de prototypes réalisés par Ecotive observables à Gallardon proche de Rambouillet en Ile-de-France, Ce dernier sera disponible en fin d'année 2020. Les objectifs de ce projet étaient les suivants : faire une structure plus simple que les deux autres, conserver un style similaire, mieux optimiser les pièces en plan que les deux autres,
 
@@ -19,3 +25,5 @@ Le bois du Forez (Massif Central) pour le bardage et la fibre de bois pour l’i
 Les matériaux de construction ont été choisis avec soin : noblesse, qualité esthétique et environnementale. Le bardé de douglas ou mélèze (bois naturellement résistant aux intempéries) est posé à clin horizontaux à claire-voie. De plus, l’aspect extérieur est pensé dans la durée puisque le bois prendra une certaine patine en grisant avec le temps. Le bardage recouvre les façades et la toiture Sud. Sur la toiture Nord, c’est du bac acier aspect anthracite s’accordant avec les menuiseries en aluminium étant d’aspect anthracite aussi. Le bandeau métallique encadrant la terrasse reprend la signature des maisons du quartier.
 
 Au RDC, nous avons placé l'escalier, les W.C. et le cellier contre le mur Nord afin de libérer un espace généreux pouvant accueillir le séjour et la cuisine. Par les deux baies vitrées donnant sur le Sud, le salon profite d'une belle lumière naturelle. A l'étage, les chambres sont plus grandes et sont distribués par un coeur central qui rend la disposition des pièces plus optimisée en comparaison aux deux maisons voisines précédentes.
+
+</div>

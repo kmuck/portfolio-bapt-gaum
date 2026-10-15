@@ -20,13 +20,13 @@ main { width: 100%; max-width: var(--largeur); margin: 0 auto; }
 
 /* En-tête */
 .site-header {
-  position: relative; max-width: var(--largeur); height: 108px; margin: 0 auto;
+  position: relative; max-width: var(--largeur); height: 103px; margin: 0 auto;
 }
 .logo {
   position: absolute; left: 121px; top: 30px;
   font: 22px/1.2 "Playfair Display", serif; color: #000; text-decoration: underline;
 }
-.site-header nav { position: absolute; right: 0; top: 54px; display: flex; }
+.site-header nav { position: absolute; right: 0; top: 60px; display: flex; }
 .site-header nav a {
   width: 110px; text-align: center; font: 14px/25px var(--raleway); color: #000; text-decoration: none;
 }
@@ -45,12 +45,13 @@ main { width: 100%; max-width: var(--largeur); margin: 0 auto; }
   display: flex; max-width: var(--largeur); margin: 0 auto; padding: 140px 0 48px;
 }
 .site-footer .contact { display: flex; align-items: center; gap: 20px; font-size: 14px; color: #000; }
+.site-footer .contact img { width: 25px; height: 25px; object-fit: cover; }
 .site-footer .contact span { text-decoration: underline; }
 .site-footer .contact:first-child { margin-left: 84px; }
 .site-footer .contact:last-child { margin-left: auto; margin-right: 101px; }
 
 /* Accueil */
-.carrousel { position: relative; height: 488px; overflow: hidden; background: #eee; }
+.carrousel { position: relative; height: 488px; margin-top: 5px; overflow: hidden; background: #eee; }
 .carrousel .diapo { position: absolute; inset: 0; opacity: 0; transition: opacity .8s; }
 .carrousel .diapo.active { opacity: 1; z-index: 1; }
 .carrousel .diapo img { width: 100%; height: 100%; object-fit: cover; }
@@ -62,7 +63,7 @@ main { width: 100%; max-width: var(--largeur); margin: 0 auto; }
 .compteur { right: 20px; }
 .carrousel:hover .legende-diapo, .carrousel:hover .compteur { opacity: 1; }
 .bienvenue { margin: 43px 0 0; text-align: center; font: 300 20px/25px var(--cormorant); }
-.cartes-accueil { display: flex; justify-content: space-between; padding: 0 98px 0 95px; margin-top: 50px; }
+.cartes-accueil { display: flex; justify-content: space-between; padding: 0 98px 0 95px; margin-top: 55px; }
 .carte-accueil { position: relative; width: 302px; height: 259px; text-decoration: none; }
 .carte-accueil img { width: 100%; height: 100%; object-fit: cover; }
 .carte-accueil span {
@@ -87,13 +88,13 @@ main { width: 100%; max-width: var(--largeur); margin: 0 auto; }
 .fleche:hover { opacity: 1; }
 
 /* Projets */
-.annee { padding: 0 0 22px; }
+.annee { padding: 0 0 30px; }
 .annee-titre {
   display: flex; justify-content: space-between; align-items: baseline;
-  padding: 17px 9px 12px 19px; border-bottom: 1px solid var(--gris);
+  padding: 17px 9px 24px 19px; border-bottom: 1px solid var(--gris);
 }
 .annee-titre h2 { margin: 0; font: 900 12px var(--inter); letter-spacing: .2em; }
-.annee-titre p { margin: 0; font: italic 300 14px var(--cormorant); color: #8a8a8a; }
+.annee-titre p { margin: 0; font: italic 400 14px var(--cormorant); color: #666; }
 .vignettes-projets {
   display: grid; grid-template-columns: repeat(3, 245px); column-gap: 68px; row-gap: 26px;
   justify-content: center; padding-top: 16px;
@@ -110,49 +111,70 @@ main { width: 100%; max-width: var(--largeur); margin: 0 auto; }
 }
 .ecrit {
   display: grid; grid-template-columns: 233px 1fr; gap: 23px; align-items: start;
-  padding: 35px 21px 35px 18px; border-bottom: 1px solid var(--gris-clair);
+  padding: 38px 21px 50px 18px; border-bottom: 1px solid var(--gris-clair);
 }
+.ecrit:first-of-type { padding-top: 28px; padding-bottom: 33px; }
 .ecrit img { width: 233px; height: 230px; object-fit: cover; border: 1px solid var(--gris); }
 .ecrit .type { margin: 0 0 6px; font-size: 14px; line-height: 23px; }
 .ecrit h2 { margin: 0 0 14px; font: 700 14px/24px var(--raleway); }
-.ecrit .resume { font-size: 12px; line-height: 18px; text-align: justify; margin-bottom: 16px; }
+.ecrit .resume { font-size: 12px; line-height: 18px; text-align: justify; margin-bottom: 21px; }
 .ecrit .meta { margin: 0 0 4px; font-size: 12px; line-height: 20px; }
 
 /* À propos */
-.apropos { display: grid; grid-template-columns: 284px 1fr; gap: 34px; padding: 39px 25px 0 1px; }
+.apropos { display: grid; grid-template-columns: 284px 1fr; gap: 34px; padding: 44px 25px 0 1px; }
 .apropos img { width: 284px; height: 351px; object-fit: cover; }
 .apropos p { margin: 0 0 21px; font-size: 14px; line-height: 21px; text-align: justify; }
 .apropos p:first-child { margin-top: 27px; }
-.contact-apropos { margin: 220px 0 0; text-align: center; font: 700 15px/1.4 var(--raleway); }
+.apropos p:nth-child(-n+2) { text-align: left; }
+.contact-apropos { margin: 240px 0 -75px; text-align: center; font: 700 15px/1.4 var(--raleway); }
 .contact-apropos a { text-decoration: none; }
 
-/* Pages projet */
-.projet { padding-bottom: 10px; }
+/* Pages projet : build_from_wix.py reproduit la mise en page Wix. Chaque bloc porte son décalage (--x)
+   et sa largeur (--w) en % de sa zone, et son écart avec l'élément du dessus (--mt). */
+.projet { padding-bottom: 10px; font: 13px/2em var(--raleway); }
+/* Les variables ne doivent pas passer d'une colonne aux blocs qu'elle contient */
+.projet .bloc, .projet .col, .projet .rangee, .projet .case, .projet .etiquette { --x: 0px; --w: auto; --mt: 0px; --h: auto; }
+.projet .bloc, .projet .col { margin-left: var(--x); width: var(--w); margin-top: var(--mt); text-align: justify; }
+.projet .bloc { min-height: var(--h); }
+.projet .rangee { display: flex; align-items: flex-start; margin-top: var(--mt); }
+.projet .col { flex: none; }
+.bloc.centre { text-align: center; }
+.bloc.droite { text-align: right; }
+.bloc.gauche { text-align: left; }
+.bloc img { width: 100%; object-fit: cover; }
+.superpose { position: relative; }
+.etiquette { position: absolute; top: var(--y); left: var(--x); width: var(--w); text-align: justify; }
+.etiquette > :last-child { margin-bottom: 0; }
+.etiquette.centre { text-align: center; }
+.etiquette.droite { text-align: right; }
+.etiquette.gauche { text-align: left; }
+.grille { display: flex; align-items: flex-start; }
+.grille .case { flex: none; margin-left: var(--x); width: var(--w); }
+/* Sur Wix les paragraphes n'ont pas de marge : un paragraphe vide fait une ligne d'espace */
+.projet p, .projet ul { margin: 0 0 1.5em; margin: 0 0 1lh; }
+.projet ul { padding-left: 1.3em; text-align: left; }
+.projet h2 { margin: 0; font: 400 22px/1.3em var(--raleway); text-align: left; }
+.projet h2.caslon { font: 600 20px/1.3em "Crimson Text", serif; } /* proche de l'Adobe Caslon du site Wix */
+.projet p.legende { font-style: italic; text-decoration: underline; }
+.bloc > :last-child { margin-bottom: 0; }
+/* Ancienne mise en page linéaire (pages sans positions Wix) */
 .projet > p, .projet > ul, .projet > h2 { margin-left: 35px; margin-right: 35px; }
-.projet p { font-size: 13px; line-height: 26px; text-align: justify; margin-top: 0; margin-bottom: 13px; }
-.projet ul { font-size: 13px; line-height: 26px; padding-left: 40px; }
-.projet h2 { margin-top: 32px; margin-bottom: 18px; font: 400 22px/1.3 var(--raleway); }
-.projet p.legende {
-  margin-top: 8px; margin-bottom: 24px; font-size: 13px; line-height: 18px; text-align: center;
-  font-style: italic; text-decoration: underline;
-}
 .planche, .galerie { margin: 0 0 20px; }
 .planche img { width: 100%; }
 .galerie { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; align-items: center; }
 .galerie img { width: 100%; }
-.projet > .planche:first-child, .projet > .galerie:first-child, .projet > .diaporama:first-child { margin-top: 0; }
 
 /* Diaporama avec vignettes (galeries des projets) */
-.diaporama { margin: 0 0 34px; }
-.diaporama-scene { position: relative; height: 486px; background: #fff; }
+.diaporama { margin: 0; }
+.diaporama-scene { position: relative; height: var(--h, 486px); background: #fff; }
 .diaporama-scene .diapo { position: absolute; inset: 0; display: none; }
 .diaporama-scene .diapo.active { display: block; }
 .diaporama-scene img { width: 100%; height: 100%; object-fit: contain; }
 .diaporama .fleche::before { border-color: #9a9a9a; filter: none; width: 26px; height: 26px; top: 8px; }
 .vignettes { display: flex; overflow-x: auto; scrollbar-width: none; }
 .vignettes::-webkit-scrollbar { display: none; }
-.vignette { flex: 0 0 auto; height: 80px; padding: 0; border: 0; background: none; cursor: pointer; opacity: .6; }
-.vignette.active, .vignette:hover { opacity: 1; }
+.vignette { flex: 0 0 auto; height: 80px; padding: 0; border: 0; background: none; cursor: pointer; }
+.vignette:hover { opacity: .8; }
 .vignette img { height: 80px; width: auto; max-width: none; }
 
 /* Mobile : le site Wix n'était pas adapté, celui-ci l'est */
@@ -173,9 +195,19 @@ main { width: 100%; max-width: var(--largeur); margin: 0 auto; }
   .ecrit img { width: 100%; max-width: 320px; height: auto; aspect-ratio: 233 / 230; }
   .apropos { grid-template-columns: 1fr; padding: 24px 0 0; }
   .apropos img { width: 100%; max-width: 320px; height: auto; }
-  .contact-apropos { margin-top: 60px; }
+  .contact-apropos { margin: 60px 0 0; }
   .projet > p, .projet > ul, .projet > h2 { margin-left: 0; margin-right: 0; }
-  .projet > .planche, .projet > .galerie, .projet > .diaporama { margin-left: -16px; margin-right: -16px; }
+  .projet > .planche, .projet > .galerie { margin-left: -16px; margin-right: -16px; }
+  /* Les blocs côte à côte passent l'un sous l'autre */
+  .projet .rangee { flex-wrap: wrap; column-gap: 12px; }
+  .projet .bloc, .projet .col { margin-left: 0; width: auto; margin-top: min(var(--mt), 28px); }
+  .projet .rangee { margin-top: min(var(--mt), 16px); }
+  .projet .col, .projet .col + .col { width: 100%; margin-top: 12px; }
+  .projet .col.etroite { width: calc(50% - 6px); }
+  .projet .bloc { min-height: 0; }
+  .grille { flex-wrap: wrap; gap: 8px; }
+  .grille .case { margin-left: 0; width: calc(50% - 4px); }
+  .projet .bloc + .bloc, .projet .col + .col { margin-top: max(min(var(--mt), 28px), 12px); }
   .diaporama-scene { height: 62vw; }
   .vignette, .vignette img { height: 56px; }
   .site-footer { flex-direction: column; gap: 14px; padding: 70px 16px 40px; }
