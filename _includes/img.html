@@ -1,6 +1,8 @@
-{%- comment -%} Accepte une URL absolue ou un chemin local /assets/... ; lien=true ouvre l'image en grand.
+{%- comment -%} Accepte une URL absolue ou un chemin local /assets/... ; lien=true ouvre l'image en grand,
+href="/assets/..." ouvre ce fichier à la place.
 ratio="largeur/hauteur" recadre l'image comme sur le site Wix (cadre="contain" : sans couper). {%- endcomment -%}
 {%- if include.src contains '://' -%}{%- assign src = include.src -%}{%- else -%}{%- assign src = include.src | relative_url -%}{%- endif -%}
-{%- if include.lien -%}<a href="{{ src }}" target="_blank" rel="noopener">{%- endif -%}
+{%- if include.href -%}{%- assign cible = include.href | relative_url -%}{%- else -%}{%- assign cible = src -%}{%- endif -%}
+{%- if include.lien or include.href -%}<a href="{{ cible }}" target="_blank" rel="noopener">{%- endif -%}
 <img src="{{ src }}" alt="{{ include.alt }}" loading="lazy"{% if include.ratio %} style="aspect-ratio: {{ include.ratio }}{% if include.cadre %}; object-fit: {{ include.cadre }}{% endif %}"{% endif %}>
-{%- if include.lien -%}</a>{%- endif -%}
+{%- if include.lien or include.href -%}</a>{%- endif -%}

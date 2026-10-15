@@ -141,7 +141,21 @@ A l’échelle du quartier, il s’intègrera dans une constellation d'établiss
 
 <div class="bloc" style="--x:2.28%;--w:95.22%;--mt:38px">{% include img.html src="/assets/img/wix/51f7bd_f93812db0b804e9cb8778b10c97b97cc-mv2-crop-5-0-1744-1164.webp" lien=true ratio="418/277" %}</div>
 
-<div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:18px;--x:3.19%;--w:93.85%;--mt:11px" markdown="1">
+</div>
+
+<div class="col" style="--x:4.59%;--w:43.27%;--mt:10px" markdown="1">
+
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_6eb1681eff6149659759a5e761639911-mv2-crop-708-1134-5778-5214.webp" lien=true ratio="424/383" %}</div>
+
+</div>
+
+</div>
+
+<div class="rangee" style="--mt:11px" markdown="1">
+
+<div class="col" style="--x:4.90%;--w:42.04%" markdown="1">
+
+<div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:18px" markdown="1">
 
 <p class="legende">Photographie de l'usine Toulemonde</p>
 
@@ -149,11 +163,9 @@ A l’échelle du quartier, il s’intègrera dans une constellation d'établiss
 
 </div>
 
-<div class="col" style="--x:4.59%;--w:43.27%;--mt:10px" markdown="1">
+<div class="col" style="--x:6.53%;--w:42.04%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_6eb1681eff6149659759a5e761639911-mv2-crop-708-1134-5778-5214.webp" lien=true ratio="424/383" %}</div>
-
-<div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:18px;--x:1.42%;--w:97.17%;--mt:11px" markdown="1">
+<div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:18px" markdown="1">
 
 <p class="legende">Plan de situation et repérage des établissements proches</p>
 
@@ -239,7 +251,21 @@ En 1980, la désindustrialisation impose un renouvellement urbain. La partie bas
 
 <div class="bloc" style="--x:11.81%;--w:73.52%;--mt:48px">{% include img.html src="/assets/img/wix/51f7bd_d73418eeae404a9cbb0eda244e3590d6-mv2.webp" lien=true ratio="386/267" %}</div>
 
-<div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:18px;--x:23.81%;--w:49.52%;--mt:14px" markdown="1">
+</div>
+
+<div class="col etroite" style="--x:8.78%;--w:25.92%" markdown="1">
+
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_97982ff0834a4db48e78e2f948395b37-mv2.webp" lien=true ratio="254/581" %}</div>
+
+</div>
+
+</div>
+
+<div class="rangee" style="--mt:14px" markdown="1">
+
+<div class="col etroite" style="--x:16.22%;--w:26.53%" markdown="1">
+
+<div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:18px" markdown="1">
 
 <p class="legende">Les blocs successifs</p>
 
@@ -247,11 +273,9 @@ En 1980, la désindustrialisation impose un renouvellement urbain. La partie bas
 
 </div>
 
-<div class="col etroite" style="--x:6.22%;--w:30.31%" markdown="1">
+<div class="col etroite" style="--x:20.51%;--w:30.31%" markdown="1">
 
-<div class="bloc" style="--x:8.42%;--w:85.52%">{% include img.html src="/assets/img/wix/51f7bd_97982ff0834a4db48e78e2f948395b37-mv2.webp" lien=true ratio="254/581" %}</div>
-
-<div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:36px;--mt:14px" markdown="1">
+<div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:36px" markdown="1">
 
 <p class="legende">Axonométrie de l'existant (vert : logements HLM ; gris : friche)</p>
 
@@ -716,7 +740,21 @@ Je retire l’ensemble des cloisonnements existants et me sert des voutains comm
 
 <div class="bloc" style="--mt:59px">{% include img.html src="/assets/img/wix/51f7bd_aca05160c36b494a94eefa388f6f2a51-mv2-crop-195-1308-3673-5933.webp" lien=true ratio="387/625" %}</div>
 
-<div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:18px;--x:2.58%;--w:94.57%;--mt:7px" markdown="1">
+</div>
+
+<div class="col" style="--x:4.59%;--w:51.12%" markdown="1">
+
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_ef1f94432abe40908d40245526f5a924-mv2-crop-45-465-6024-11859.webp" lien=true ratio="501/986" %}</div>
+
+</div>
+
+</div>
+
+<div class="rangee" style="--mt:7px" markdown="1">
+
+<div class="col" style="--x:3.57%;--w:37.35%" markdown="1">
+
+<div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:18px" markdown="1">
 
 <p class="legende">Intervention sur l'existant : élargissement des patios existants</p>
 
@@ -724,11 +762,9 @@ Je retire l’ensemble des cloisonnements existants et me sert des voutains comm
 
 </div>
 
-<div class="col" style="--x:4.59%;--w:51.12%" markdown="1">
+<div class="col etroite" style="--x:18.27%;--w:25.92%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_ef1f94432abe40908d40245526f5a924-mv2-crop-45-465-6024-11859.webp" lien=true ratio="501/986" %}</div>
-
-<div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:18px;--x:24.55%;--w:50.70%;--mt:7px" markdown="1">
+<div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:18px" markdown="1">
 
 <p class="legende">Axonométrie programmatique</p>
 

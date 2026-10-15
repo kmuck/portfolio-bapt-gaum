@@ -23,6 +23,7 @@ PROJETS = ROOT / "_projets"
 IMG_DIR = ROOT / "assets" / "img" / "wix"
 BOITES = ROOT / "import" / "captures" / "boites"
 MEDIA_RE = re.compile(r"static\.wixstatic\.com/media/([0-9a-zA-Z_]+~mv2\.[a-zA-Z]+|[0-9a-f]{32}\.[a-zA-Z]+)")
+DOC_RE = re.compile(r"https://[^\"\s]*filesusr\.com/ugd/([0-9a-z_]+\.pdf)")  # voir import_wix.py documents
 APERCU_RE = re.compile(r"static\.wixstatic\.com/media/(([0-9a-z]+_[0-9a-f]{32})f00\d\.jpg)")  # aperçu d'une vidéo
 MESH = "inlineContent-gridContainer"
 LARGEUR = 980  # largeur de la colonne de contenu Wix
@@ -72,6 +73,10 @@ def rich_text(el, bords=False):
             return t
         if node.name == "br":
             return "\n"
+        doc = DOC_RE.match(node.get("href") or "") if node.name == "a" else None
+        if doc:  # lien vers un document déposé sur Wix, repris dans assets/docs
+            corps = "".join(walk(c, bold, ital) for c in node.children)
+            return f'<a href="{{{{ \'/assets/docs/{doc.group(1)}\' | relative_url }}}}" target="_blank" rel="noopener">{corps}</a>'
         style = node.get("style") or ""
         b = bold or bool(re.search(r"font-weight:\s*(bold|[6-9]00)", style))
         i = ital or bool(re.search(r"font-style:\s*italic", style))
@@ -79,7 +84,9 @@ def rich_text(el, bords=False):
             b = False
         if re.search(r"font-style:\s*normal", style):
             i = False
-        return "".join(walk(c, b, i) for c in node.children)
+        corps = "".join(walk(c, b, i) for c in node.children)
+        ombre = re.search(r"text-shadow:\s*([^;]+)", style)
+        return f'<span style="text-shadow:{ombre.group(1).strip()}">{corps}</span>' if ombre and corps.strip() else corps
 
     t = walk(el, False, False)
     t = re.sub(r"</(strong|em)>(\s*)<\1>", r"\2", t)  # fusionne les balises voisines
@@ -207,7 +214,10 @@ def walk(tag, pos, out, comp=None):
         if m:
             fit = "contain" if "contain" in (tag.get("style") or "") or "/v1/fit/" in tag["src"] else "cover"
             crop = re.search(r"/v1/crop/x_(\d+),y_(\d+),w_(\d+),h_(\d+)/", tag["src"])
-            out.append(("image", m.group(1), comp, (fit, crop.groups() if crop else None)))
+            a = tag.find_parent("a")
+            doc = DOC_RE.match(a.get("href") or "") if a else None
+            out.append(("image", m.group(1), comp, (fit, crop.groups() if crop else None)
+                        + ((f"/assets/docs/{doc.group(1)}",) if doc else ())))
         return
     grille = tag.find(id="pro-gallery-container-" + tag["id"]) if tag.get("id", "").startswith("comp-") else None
     if grille and not tag.select_one(".thumbnailItem"):  # galerie Wix en grille : images côte à côte
@@ -326,13 +336,14 @@ def crop_name(media_id, x, y, w, h):
 
 def image_md(media, extra, w=None, h=None):
     """Image Wix ; extra = (cadrage, recadrage fait dans l'éditeur Wix ou None)."""
-    fit, crop = extra
+    fit, crop, *lien = extra  # lien : document ouvert au clic, sinon l'image elle-même
     src = f"/assets/img/wix/{webp_name(media)}"
     if crop and (IMG_DIR / crop_name(media, *crop)).exists():  # voir import_wix.py recadrages
         src = f"/assets/img/wix/{crop_name(media, *crop)}"
     ratio = f' ratio="{w}/{h}"' if w and h else ""
     cadre = ' cadre="contain"' if fit == "contain" else ""
-    return f'{{% include img.html src="{src}" lien=true{ratio}{cadre} %}}'
+    cible = f'href="{lien[0]}"' if lien else "lien=true"
+    return f'{{% include img.html src="{src}" {cible}{ratio}{cadre} %}}'
 
 
 def video_md(apercu, video, w, h):
@@ -422,7 +433,13 @@ def bandes(blocs):
 
 
 def alignees(a, b):
+    """Vrai si les colonnes des deux rangées se correspondent et si chaque rangée est d'un seul genre
+    (images au-dessus, légendes en dessous) : une mise en page en quinconce (image et texte, puis
+    texte et image) reste en rangées, pour que l'ordre de lecture tienne sur mobile."""
     if len(a) < 2 or len(a) != len(b):
+        return False
+    genre = lambda col: col[0]["items"][0][0] in ("image", "diaporama", "grille", "forme")
+    if len({genre(c) for c in a}) > 1 or len({genre(c) for c in b}) > 1:
         return False
     span = lambda col: (min(x["box"][0] for x in col), max(x["box"][0] + x["box"][2] for x in col))
     return all(sa[0] < sb[1] and sb[0] < sa[1] for sa, sb in zip(map(span, a), map(span, b)))

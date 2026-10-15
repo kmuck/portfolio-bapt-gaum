@@ -144,17 +144,37 @@ Comment rapporter la lumière au cœur d'une structure close de 21m d’épaisse
 
 <div class="rangee" style="--mt:46px" markdown="1">
 
-<div class="col" style="--x:3.98%;--w:65.71%;--mt:9px" markdown="1">
+<div class="col" style="--x:3.98%;--w:63.16%;--mt:9px" markdown="1">
 
-<div class="bloc" style="--x:15.22%;--w:65.53%">{% include img.html src="/assets/img/wix/51f7bd_6ee6a7db2cf241c794a948f65d72b4bd-mv2-crop-0-366-1675-954.webp" lien=true ratio="422/240" %}</div>
+<div class="bloc" style="--x:15.83%;--w:68.17%">{% include img.html src="/assets/img/wix/51f7bd_6ee6a7db2cf241c794a948f65d72b4bd-mv2-crop-0-366-1675-954.webp" lien=true ratio="422/240" %}</div>
 
-<div class="bloc" style="--h:104px;--w:96.12%;--mt:47px" markdown="1">
+<div class="bloc" style="--h:104px;--mt:47px" markdown="1">
 
 Dans cette volonté de pouvoir accéder physiquement et visuellement aux quais, nous venons évider le rez-de chaussée du silo. Cette intervention architecturale est rendue possible par une distinction structurelle entre la partie basse du silo composée de larges poteaux tandis que la partie stockage de grain est faite de structures plus fines reposant sur une large dalle béton structurelle.
 
 </div>
 
-<div class="bloc" style="--mt:68px">{% include img.html src="/assets/img/wix/51f7bd_39061707282447339920f1c0e061e2df-mv2-crop-197-223-3684-1957.webp" lien=true ratio="644/342" %}</div>
+</div>
+
+<div class="col etroite" style="--x:5.92%;--w:23.27%" markdown="1">
+
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_5b670897f0d446a88d2d38e10e7530cb-mv2-crop-321-118-2443-4030.webp" lien=true ratio="228/359" %}</div>
+
+<div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:18px;--mt:14px" markdown="1">
+
+<p class="legende">Axonométrie éclatée</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="rangee" style="--mt:68px" markdown="1">
+
+<div class="col" style="--x:3.98%;--w:65.71%" markdown="1">
+
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_39061707282447339920f1c0e061e2df-mv2-crop-197-223-3684-1957.webp" lien=true ratio="644/342" %}</div>
 
 <div class="bloc gauche" style="font:13px/1.4em var(--raleway);--h:18px;--w:35.40%;--mt:11px" markdown="1">
 
@@ -164,19 +184,11 @@ Dans cette volonté de pouvoir accéder physiquement et visuellement aux quais, 
 
 </div>
 
-<div class="col etroite" style="--x:2.65%;--w:23.98%" markdown="1">
+<div class="col etroite" style="--x:2.65%;--w:23.27%" markdown="1">
 
-<div class="bloc" style="--x:2.98%;--w:97.02%">{% include img.html src="/assets/img/wix/51f7bd_5b670897f0d446a88d2d38e10e7530cb-mv2-crop-321-118-2443-4030.webp" lien=true ratio="228/359" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_d0e1f0e08411481199dd4dfec9a2b5a9-mv2.webp" lien=true ratio="228/342" %}</div>
 
-<div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:18px;--x:2.98%;--w:97.02%;--mt:14px" markdown="1">
-
-<p class="legende">Axonométrie éclatée</p>
-
-</div>
-
-<div class="bloc" style="--w:97.02%;--mt:77px">{% include img.html src="/assets/img/wix/51f7bd_d0e1f0e08411481199dd4dfec9a2b5a9-mv2.webp" lien=true ratio="228/342" %}</div>
-
-<div class="bloc gauche" style="font:13px/1.4em var(--raleway);--h:18px;--w:97.02%;--mt:11px" markdown="1">
+<div class="bloc gauche" style="font:13px/1.4em var(--raleway);--h:18px;--mt:11px" markdown="1">
 
 <p class="legende">Perspective depuis le RDC du silo</p>
 
@@ -388,7 +400,21 @@ Nous avons par ailleurs souhaité préserver au maximum ce qui faisait les repè
 
 </div>
 
-<div class="bloc" style="--h:156px;--w:92.49%;--mt:90px" markdown="1">
+</div>
+
+<div class="col etroite" style="--x:0.71%;--w:31.73%" markdown="1">
+
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_edabfb6d186d464faf23424d706efb01-mv2-crop-0-364-4535-7695.webp" lien=true ratio="311/528" %}</div>
+
+</div>
+
+</div>
+
+<div class="rangee" style="--mt:81px" markdown="1">
+
+<div class="col" style="--x:3.78%;--w:55.61%" markdown="1">
+
+<div class="bloc" style="--h:156px" markdown="1">
 
 Un système de dalle sur plot modulable s’appuie sur une dalle béton nouvellement créée pour y faire passer les réseaux et la ventilation. Une distinction est faite au niveau du traitement au sol. Les espaces de circulation et de stockage seront matérialisés par une expression métallique légère, faite de caillebotis et de structure acier tandis que les espaces statiques seront dans une matérialité béton dialoguant avec l’existant afin de dialoguer avec la structure existante.
 
@@ -396,7 +422,7 @@ Un système de dalle sur plot modulable s’appuie sur une dalle béton nouvelle
 
 <div class="rangee" style="--mt:29px" markdown="1">
 
-<div class="col" style="--w:44.20%;--mt:26px" markdown="1">
+<div class="col" style="--w:47.52%;--mt:26px" markdown="1">
 
 <div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_f061bc4581c445c89e0608840189f502-mv2-crop-146-9-2362-1834.webp" lien=true ratio="259/201" %}</div>
 
@@ -408,7 +434,7 @@ Un système de dalle sur plot modulable s’appuie sur une dalle béton nouvelle
 
 </div>
 
-<div class="col" style="--x:8.87%;--w:39.93%" markdown="1">
+<div class="col" style="--x:9.54%;--w:42.94%" markdown="1">
 
 <div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_50f1df99f75c41da8cf21bbe773b39bc-mv2-crop-290-155-2265-2431.webp" lien=true ratio="234/251" %}</div>
 
@@ -424,11 +450,9 @@ Un système de dalle sur plot modulable s’appuie sur une dalle béton nouvelle
 
 </div>
 
-<div class="col etroite" style="--x:0.71%;--w:33.27%" markdown="1">
+<div class="col etroite" style="--x:6.22%;--w:31.94%" markdown="1">
 
-<div class="bloc" style="--w:95.40%">{% include img.html src="/assets/img/wix/51f7bd_edabfb6d186d464faf23424d706efb01-mv2-crop-0-364-4535-7695.webp" lien=true ratio="311/528" %}</div>
-
-<div class="bloc" style="--x:3.99%;--w:96.01%;--mt:81px">{% include img.html src="/assets/img/wix/51f7bd_73e65d6cd61b4b69b1a89c05f681703a-mv2.webp" lien=true ratio="313/473" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_73e65d6cd61b4b69b1a89c05f681703a-mv2.webp" lien=true ratio="313/473" %}</div>
 
 </div>
 

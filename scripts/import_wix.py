@@ -11,6 +11,7 @@ Usage : python3 scripts/import_wix.py              tout réimporter
         python3 scripts/import_wix.py recadrages   images recadrées comme sur Wix
         python3 scripts/import_wix.py manquantes   images des pages pas encore téléchargées
         python3 scripts/import_wix.py videos       vidéos des galeries (et leur image d'aperçu)
+        python3 scripts/import_wix.py documents    documents (pdf) déposés sur Wix et liés depuis les pages
 """
 import io
 import pathlib
@@ -28,6 +29,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 RAW = ROOT / "import" / "raw"
 IMG = ROOT / "assets" / "img" / "wix"
 VIDEO = ROOT / "assets" / "video" / "wix"
+DOCS = ROOT / "assets" / "docs"
 MAX_PX = 2400
 MEDIA_RE = re.compile(r"static\.wixstatic\.com/media/([0-9a-zA-Z_]+~mv2\.[a-zA-Z]+|[0-9a-f]{32}\.[a-zA-Z]+)")
 VIDEO_RE = re.compile(r'"type":"video".*?"posters":\[(.*?)\].*?"qualities":\[((?:[^\[\]]|\[[^\]]*\])*)\].*?"mediaUrl":"([0-9a-z]+_[0-9a-f]{32})"')
@@ -119,8 +121,7 @@ def videos():
     VIDEO.mkdir(parents=True, exist_ok=True)
     for f in RAW.glob("*.html"):
         for posters, qualities, media in set(VIDEO_RE.findall(f.read_text(encoding="utf-8"))):
-            for poster in re.findall(r'"url":"([^"]+)"', posters):
-                download(poster)
+            download(re.findall(r'"url":"([^"]+)"', posters)[-1])  # l'aperçu affiché par la galerie
             dest = VIDEO / f"{media}.mp4"
             if dest.exists():
                 continue
@@ -132,6 +133,22 @@ def videos():
                 print("vidéo", dest.name, q, len(r.content) // 1024, "Ko")
             else:
                 print("échec vidéo", media, q, r.status_code, file=sys.stderr)
+
+
+def documents():
+    DOCS.mkdir(parents=True, exist_ok=True)
+    urls = {u for f in RAW.glob("*.html")
+            for u in re.findall(r"https://[^\"\s]*filesusr\.com/ugd/[0-9a-z_]+\.pdf", f.read_text(encoding="utf-8"))}
+    for url in sorted(urls):
+        dest = DOCS / url.rsplit("/", 1)[1]
+        if dest.exists():
+            continue
+        r = session.get(url, timeout=300)
+        if r.ok and r.content.startswith(b"%PDF"):
+            dest.write_bytes(r.content)
+            print("document", dest.name, len(r.content) // 1024, "Ko")
+        else:
+            print("échec document", url, r.status_code, file=sys.stderr)
 
 
 def recadrages():
@@ -163,6 +180,6 @@ def recadrages():
 
 if __name__ == "__main__":
     taches = {"main": main, "orientation": orientation, "recadrages": recadrages, "manquantes": manquantes,
-              "videos": videos}
+              "videos": videos, "documents": documents}
     for t in sys.argv[1:] or ["main"]:
         taches[t]()

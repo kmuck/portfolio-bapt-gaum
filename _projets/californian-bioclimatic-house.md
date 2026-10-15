@@ -31,7 +31,7 @@ L'ensemble de cette étude est résumer dans le pdf suivant :
 
 <div class="col etroite" style="--x:33.78%;--w:8.37%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_e5e76aeb37ca429fa1a05eca6387ef8d-mv2.webp" lien=true ratio="82/81" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_e5e76aeb37ca429fa1a05eca6387ef8d-mv2.webp" href="/assets/docs/51f7bd_8cfa01f568c84294a039e2792ee5b925.pdf" ratio="82/81" %}</div>
 
 </div>
 
@@ -39,7 +39,7 @@ L'ensemble de cette étude est résumer dans le pdf suivant :
 
 <div class="bloc" style="--h:23px" markdown="1">
 
-## <strong>Télécharger le pdf</strong>
+## <a href="{{ '/assets/docs/51f7bd_8cfa01f568c84294a039e2792ee5b925.pdf' | relative_url }}" target="_blank" rel="noopener"><strong>Télécharger le pdf</strong></a>
 {: style="font-size:18px;line-height:1.3em"}
 
 </div>

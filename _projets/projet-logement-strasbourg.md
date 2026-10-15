@@ -143,31 +143,19 @@ La distribution des logements se fait par des coursives extérieures enlaçant l
 
 <div class="rangee" style="--mt:38px" markdown="1">
 
-<div class="col" style="--x:8.37%;--w:54.29%" markdown="1">
+<div class="col" style="--x:8.37%;--w:41.84%" markdown="1">
 
-<div class="bloc" style="--w:77.07%">{% include img.html src="/assets/img/wix/51f7bd_c09bd1cc3dc04a6dbf4862db24747426-mv2-crop-590-713-4083-2094.webp" lien=true ratio="410/214" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_c09bd1cc3dc04a6dbf4862db24747426-mv2-crop-590-713-4083-2094.webp" lien=true ratio="410/214" %}</div>
 
-<div class="bloc" style="--h:26px;--x:23.31%;--w:30.45%;--mt:6px" markdown="1">
+<div class="bloc" style="--h:26px;--x:30.24%;--w:39.51%;--mt:6px" markdown="1">
 
 <p class="legende">Coupe transversale</p>
 
 </div>
 
-<div class="bloc" style="--h:156px;--x:3.38%;--w:96.62%;--mt:49px" markdown="1">
-
-Par des pincements et des élargissements, les coursives se différencient en trois catégories : les accès, les espaces de circulation, et les balcons. Leur largeur a été déterminée en fonction de l’ensoleillement, c’est pourquoi nous avons placé les balcons au sud et à l'ouest. A l'est, les balcons s'affinent pour ombrager au minimum les étages inférieurs. Au Nord, il n’y en a pas afin de préserver une homogénéité avec la rue.
-
 </div>
 
-<div class="bloc" style="--h:78px;--x:3.38%;--w:96.62%;--mt:26px" markdown="1">
-
-Par ailleurs, nous avons aussi pris en compte les conditions climatiques locales en fonction des saisons puisque chaque logement dispose d’un sas afin de contrer l’hiver froid strasbourgeois.
-
-</div>
-
-</div>
-
-<div class="col etroite" style="--w:27.65%" markdown="1">
+<div class="col etroite" style="--x:12.45%;--w:27.65%" markdown="1">
 
 <div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_cfd0f995ea544416a498375627c7528e-mv2-crop-314-209-877-688.webp" lien=true ratio="271/214" %}</div>
 
@@ -177,7 +165,31 @@ Par ailleurs, nous avons aussi pris en compte les conditions climatiques locales
 
 </div>
 
-<div class="bloc" style="--x:26.57%;--w:73.06%;--mt:17px">{% include img.html src="/assets/img/wix/51f7bd_7947a6887b994b9fb13d1929b468a2f9-mv2.webp" lien=true ratio="198/294" %}</div>
+</div>
+
+</div>
+
+<div class="rangee" style="--mt:17px" markdown="1">
+
+<div class="col" style="--x:10.20%;--w:52.45%;--mt:32px" markdown="1">
+
+<div class="bloc" style="--h:156px" markdown="1">
+
+Par des pincements et des élargissements, les coursives se différencient en trois catégories : les accès, les espaces de circulation, et les balcons. Leur largeur a été déterminée en fonction de l’ensoleillement, c’est pourquoi nous avons placé les balcons au sud et à l'ouest. A l'est, les balcons s'affinent pour ombrager au minimum les étages inférieurs. Au Nord, il n’y en a pas afin de préserver une homogénéité avec la rue.
+
+</div>
+
+<div class="bloc" style="--h:78px;--mt:26px" markdown="1">
+
+Par ailleurs, nous avons aussi pris en compte les conditions climatiques locales en fonction des saisons puisque chaque logement dispose d’un sas afin de contrer l’hiver froid strasbourgeois.
+
+</div>
+
+</div>
+
+<div class="col etroite" style="--x:7.35%;--w:20.20%" markdown="1">
+
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_7947a6887b994b9fb13d1929b468a2f9-mv2.webp" lien=true ratio="198/294" %}</div>
 
 </div>
 
@@ -225,17 +237,37 @@ Travailler en duplex a participé à l’implantation de grands logements de typ
 
 <div class="rangee" style="--mt:2px" markdown="1">
 
-<div class="col" style="--x:3.88%;--w:50.00%" markdown="1">
+<div class="col etroite" style="--x:11.02%;--w:32.04%" markdown="1">
 
-<div class="bloc" style="--x:14.29%;--w:64.08%">{% include img.html src="/assets/img/wix/51f7bd_caeb1bcb781847afb4f41a23a4a91075-mv2-crop-385-682-1044-1162.webp" lien=true ratio="314/346" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_caeb1bcb781847afb4f41a23a4a91075-mv2-crop-385-682-1044-1162.webp" lien=true ratio="314/346" %}</div>
 
-<div class="bloc" style="--h:26px;--x:29.80%;--w:33.06%" markdown="1">
+<div class="bloc" style="--h:26px;--x:24.20%;--w:51.59%" markdown="1">
 
 <p class="legende">Cellule de logement RDC</p>
 
 </div>
 
-<div class="bloc" style="--h:338px;--mt:141px" markdown="1">
+</div>
+
+<div class="col etroite" style="--x:14.90%;--w:30.41%;--mt:23px" markdown="1">
+
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_556760fef98247439df457d4c167d0e4-mv2-crop-350-649-1032-1082.webp" lien=true ratio="298/310" %}</div>
+
+<div class="bloc" style="--h:26px;--x:22.82%;--w:54.36%;--mt:13px" markdown="1">
+
+<p class="legende">Cellule de logement R+1</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="rangee" style="--mt:34px" markdown="1">
+
+<div class="col" style="--x:3.88%;--w:50.00%;--mt:107px" markdown="1">
+
+<div class="bloc" style="--h:338px" markdown="1">
 
 Sur la façade Nord sur rue, il n’y a pas de balcons, la trame des coursives se fond sur les arêtes du de la façade Ouest. On a donc un contraste entre la façade Nord homogène à la rue très verticale, et les volumes du bâtiment qui, grâce aux coursives, s'étirent à l'horizontale. Notre ambition est donc de proposer une évolution de la rue, d’un modèle vertical à l’horizontal.
 
@@ -247,17 +279,9 @@ Les gardes corps sont en bardage métallique. Par leurs mailles fines, de loin i
 
 </div>
 
-<div class="col" style="--x:3.88%;--w:38.06%;--mt:23px" markdown="1">
+<div class="col" style="--x:3.88%;--w:38.06%" markdown="1">
 
-<div class="bloc" style="--w:79.89%">{% include img.html src="/assets/img/wix/51f7bd_556760fef98247439df457d4c167d0e4-mv2-crop-350-649-1032-1082.webp" lien=true ratio="298/310" %}</div>
-
-<div class="bloc" style="--h:26px;--x:18.77%;--w:43.43%;--mt:13px" markdown="1">
-
-<p class="legende">Cellule de logement R+1</p>
-
-</div>
-
-<div class="bloc" style="--mt:34px">{% include img.html src="/assets/img/wix/51f7bd_474f1bcf07e64bba97bceb689414dd57-mv2-crop-0-27-5040-3210.webp" lien=true ratio="371/236" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_474f1bcf07e64bba97bceb689414dd57-mv2-crop-0-27-5040-3210.webp" lien=true ratio="371/236" %}</div>
 
 <div class="bloc centre" style="--h:26px;--x:28.42%;--w:43.43%" markdown="1">
 

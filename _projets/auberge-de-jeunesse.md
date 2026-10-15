@@ -72,27 +72,21 @@ Pour m’aider dans mon travail, j’ai établi un graphique répertoriant les t
 
 <div class="rangee" style="--mt:23px" markdown="1">
 
-<div class="col" style="--x:4.49%;--w:53.67%" markdown="1">
+<div class="col" style="--x:4.49%;--w:45.10%" markdown="1">
 
-<div class="bloc" style="--w:84.03%">{% include img.html src="/assets/img/wix/51f7bd_4b124b4806444bd992a50d4d35cd72f9-mv2-crop-4-78-2476-1630.webp" lien=true ratio="442/290" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_4b124b4806444bd992a50d4d35cd72f9-mv2-crop-4-78-2476-1630.webp" lien=true ratio="442/290" %}</div>
 
-<div class="bloc gauche" style="--h:16px;--x:3.04%;--w:80.99%;--mt:4px" markdown="1">
+<div class="bloc gauche" style="--h:16px;--x:3.62%;--w:96.38%;--mt:4px" markdown="1">
 
 <p class="legende">Température diurnes de Elisabeth Peak au cours de l'année</p>
 
 </div>
 
-<div class="bloc" style="--h:78px;--x:3.04%;--w:96.96%;--mt:64px" markdown="1">
-
-J’ai aussi récolté les informations sur l’indice ulra-violet de la Californie au cours de l’année dans un tableau. Ces documents révèlent que Twolumne City a des hivers très frais, où les températures avoisinent les 0°C, et connaît des étés chauds au climat sec.
-
 </div>
 
-</div>
+<div class="col" style="--x:2.86%;--w:43.47%" markdown="1">
 
-<div class="col" style="--x:-5.71%;--w:43.57%" markdown="1">
-
-<div class="bloc" style="--w:95.08%">{% include img.html src="/assets/img/wix/51f7bd_4b124b4806444bd992a50d4d35cd72f9-mv2-crop-0-1741-2476-1766.webp" lien=true ratio="406/290" %}</div>
+<div class="bloc" style="--w:95.31%">{% include img.html src="/assets/img/wix/51f7bd_4b124b4806444bd992a50d4d35cd72f9-mv2-crop-0-1741-2476-1766.webp" lien=true ratio="406/290" %}</div>
 
 <div class="bloc gauche" style="--h:16px" markdown="1">
 
@@ -100,7 +94,25 @@ J’ai aussi récolté les informations sur l’indice ulra-violet de la Califor
 
 </div>
 
-<div class="bloc" style="--x:25.76%;--w:74.24%;--mt:73px">{% include img.html src="/assets/img/wix/51f7bd_50ae0c00a40e46028a90b705810975ef-mv2.webp" lien=true ratio="317/57" %}</div>
+</div>
+
+</div>
+
+<div class="rangee" style="--mt:64px" markdown="1">
+
+<div class="col" style="--x:6.12%;--w:52.04%" markdown="1">
+
+<div class="bloc" style="--h:78px" markdown="1">
+
+J’ai aussi récolté les informations sur l’indice ulra-violet de la Californie au cours de l’année dans un tableau. Ces documents révèlent que Twolumne City a des hivers très frais, où les températures avoisinent les 0°C, et connaît des étés chauds au climat sec.
+
+</div>
+
+</div>
+
+<div class="col etroite" style="--x:5.51%;--w:32.35%;--mt:5px" markdown="1">
+
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_50ae0c00a40e46028a90b705810975ef-mv2.webp" lien=true ratio="317/57" %}</div>
 
 </div>
 
@@ -239,11 +251,9 @@ Afin d’obtenir un bâtiment avec une forte efficacité énergétique, le choix
 
 <div class="bloc forme" style="--h:12px"><span style="background:rgb(135,196,214)"></span></div>
 
-<div class="bloc forme" style="--mt:19px;--h:12px"><span style="background:rgb(240,144,0)"></span></div>
-
 </div>
 
-<div class="col etroite" style="--x:1.53%;--w:26.94%" markdown="1">
+<div class="col etroite" style="--x:1.73%;--w:26.73%" markdown="1">
 
 <div class="bloc gauche" style="--h:15px" markdown="1">
 
@@ -251,7 +261,21 @@ Afin d’obtenir un bâtiment avec une forte efficacité énergétique, le choix
 
 </div>
 
-<div class="bloc gauche" style="--h:15px;--mt:16px" markdown="1">
+</div>
+
+</div>
+
+<div class="rangee" style="--mt:16px" markdown="1">
+
+<div class="col etroite" style="--x:68.78%;--w:2.76%;--mt:2px" markdown="1">
+
+<div class="bloc forme" style="--h:12px"><span style="background:rgb(240,144,0)"></span></div>
+
+</div>
+
+<div class="col etroite" style="--x:1.53%;--w:26.94%" markdown="1">
+
+<div class="bloc gauche" style="--h:15px" markdown="1">
 
 <em>Murs à fortes résistances thermiques</em>
 

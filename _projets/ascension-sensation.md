@@ -65,8 +65,6 @@ Notre opération programmatique reconduit le centre zen actuellement présent, c
 
 <div class="bloc forme" style="--h:14px"><span style="background:rgb(212,139,129)"></span></div>
 
-<div class="bloc forme" style="--mt:25px;--h:14px"><span style="background:rgb(191,191,191)"></span></div>
-
 </div>
 
 <div class="col" style="--x:5.56%;--w:62.63%" markdown="1">
@@ -77,7 +75,21 @@ Notre opération programmatique reconduit le centre zen actuellement présent, c
 
 </div>
 
-<div class="bloc" style="font:10px/2em var(--raleway);--h:20px;--mt:19px" markdown="1">
+</div>
+
+</div>
+
+<div class="rangee" style="--mt:19px" markdown="1">
+
+<div class="col etroite" style="--x:9.09%;--w:13.64%" markdown="1">
+
+<div class="bloc forme" style="--h:14px"><span style="background:rgb(191,191,191)"></span></div>
+
+</div>
+
+<div class="col" style="--x:5.56%;--w:62.63%" markdown="1">
+
+<div class="bloc" style="font:10px/2em var(--raleway);--h:20px" markdown="1">
 
 <em>Maison Zen</em>
 
@@ -190,8 +202,6 @@ Enfin, les logements occupent des positions aux extrémités du bâtiment afin d
 
 </div>
 
-<div class="bloc" style="--x:5.53%;--w:86.38%;--mt:62px">{% include img.html src="/assets/img/wix/51f7bd_6d84f5428b33482da093b0a811e5d84c-mv2-crop-0-399-3564-3994.webp" lien=true ratio="406/450" %}</div>
-
 </div>
 
 <div class="col" style="--x:0.82%;--w:47.76%" markdown="1">
@@ -214,7 +224,21 @@ Enfin, les logements occupent des positions aux extrémités du bâtiment afin d
 </div>
 </div>
 
-<div class="bloc" style="--h:390px;--x:2.14%;--w:89.32%;--mt:113px" markdown="1">
+</div>
+
+</div>
+
+<div class="rangee" style="--mt:48px" markdown="1">
+
+<div class="col" style="--x:6.12%;--w:41.43%" markdown="1">
+
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_6d84f5428b33482da093b0a811e5d84c-mv2-crop-0-399-3564-3994.webp" lien=true ratio="406/450" %}</div>
+
+</div>
+
+<div class="col" style="--x:5.71%;--w:42.65%;--mt:65px" markdown="1">
+
+<div class="bloc" style="--h:390px" markdown="1">
 
 Le parcours s’étend jusque sur la place publique. En effet, une partie de la place est aménagée grâce à un système de terrasses par des irrigations en plaque d’acier corten noir surélevées par rapport au sol. Elles permettent d’étendre les flux du bâtiments sur la place, et ainsi dynamiser le quartier. Les jeux de niveaux entre les différentes terrasses permettent une progression fluide entre l’espace de la rue et l’espace créé. Cet espace de respiration laissé public est ponctué de zones végétales en jachères qui continuent jusque sous les terrasses surélevées. permettant une perméabilité du sol plus grande que le revêtement actuel en asphalte. Cette matérialité se poursuit aussi sur la terrasse panoramique. Nos pontons et terrasses sont étudiées pour que les personnes qui désirent marquer une pause pour se restaurer par exemple aient la place pour s’asseoir au bord des pontons avec les pieds effleurant l’herbe haute sans déranger les flux.
 
