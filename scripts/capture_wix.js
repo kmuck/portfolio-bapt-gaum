@@ -15,7 +15,10 @@ const OUT = 'import/captures';
     for (const slug of PAGES) {
       const name = (slug || 'accueil') + '-' + width;
       const page = await browser.newPage({ viewport: { width, height: width > 500 ? 800 : 844 } });
-      await page.goto(`${BASE}/${slug}`, { waitUntil: 'networkidle', timeout: 90000 });
+      try {
+      // Wix ne devient jamais « networkidle » (statistiques) : on attend le chargement puis un délai
+      await page.goto(`${BASE}/${slug}`, { waitUntil: 'load', timeout: 90000 });
+      await page.waitForTimeout(4000);
       // Fait défiler pour charger les images paresseuses
       await page.evaluate(async () => {
         for (let y = 0; y < document.body.scrollHeight; y += 600) {
@@ -58,6 +61,9 @@ const OUT = 'import/captures';
         });
       }
       console.log('ok', name);
+      } catch (e) {
+        console.log('échec', name, e.message.split('\n')[0]);
+      }
       await page.close();
     }
   }
