@@ -23,10 +23,11 @@ texte: "13px/2em"
 
 Prenant place dans la Petite France, quartier historique de Strasbourg, l’enjeu de ce projet était d’émettre une proposition architecturale contemporaine s’inscrivant dans un tissu ancien. Animé par les touristes et face à la rivière de l’Ill, le cadre est idyllique pour faire rencontrer les qualités architecturales contemporaines avec celles plus anciennes.
 
-Le projet repose sur trois concepts fondamentaux :<br>
-Fermer l’angle et marquer la ponctuation finale de la bande bâtie existante ;<br>
-Jouer sur les concepts de fréquence : musicalité du café, rythme en façade, fonctionnement diurne et nocturne ;<br>
-Tension entre l’intérieur et extérieur.
+Le projet repose sur trois concepts fondamentaux :
+
+- Fermer l’angle et marquer la ponctuation finale de la bande bâtie existante ;
+- Jouer sur les concepts de fréquence : musicalité du café, rythme en façade, fonctionnement diurne et nocturne ;
+- Tension entre l’intérieur et extérieur.
 
 </div>
 

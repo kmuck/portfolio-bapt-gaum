@@ -19,7 +19,17 @@ Le site d’intervention se situe au 1 rue Adèle Riton dans le quartier de la g
 
 </div>
 
-<div class="bloc" style="--h:291px;--x:52.45%;--w:40.71%;--mt:68px" markdown="1">
+<div class="rangee" style="--mt:68px" markdown="1">
+
+<div class="col" style="--x:5.92%;--w:39.08%" markdown="1">
+
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_c5e57b7f0878462c89e23c85280df2d5-mv2.webp" lien=true ratio="383/425" %}</div>
+
+</div>
+
+<div class="col" style="--x:7.45%;--w:40.71%" markdown="1">
+
+<div class="bloc" style="--h:390px" markdown="1">
 
 Alors que dans les villes le foncier se raréfie et que l’étalement urbain menace plus que jamais l’avenir de la planète, réhabiliter et surélever le bâti existant, tout en rendant cette densité agréable et attractive nous semblait primordial.
 
@@ -29,20 +39,20 @@ Lorsque l'on visite le quartier, on découvre que les étudiants ou les cadres n
 
 </div>
 
-<div class="bloc centre" style="--h:15px;--x:36.12%;--w:27.14%" markdown="1">
-
-<p class="legende">Circulation de l'air au R+1</p>
+</div>
 
 </div>
 
-<div class="bloc" style="--h:78px;--x:3.67%;--w:92.86%;--mt:154px" markdown="1">
+<div class="bloc" style="--h:78px;--x:3.67%;--w:92.86%;--mt:35px" markdown="1">
 
 L’objectif était donc de créer un lieu de convivialité, dynamique et fédérateur pour tout le quartier où les gens peuvent se rencontrer et échanger.<br>
 Notre opération programmatique reconduit le centre zen actuellement présent, car faisant partie du patrimoine culturel de la ville depuis les années 80, et accueille une galerie restaurant ainsi que des logements.
 
 </div>
 
-<div class="rangee" style="--mt:305px" markdown="1">
+<div class="bloc" style="--x:3.06%;--w:93.78%;--mt:23px">{% include img.html src="/assets/img/wix/51f7bd_d203ba940d4645dfab6d03c915982216-mv2.webp" lien=true ratio="919/246" %}</div>
+
+<div class="rangee" style="--mt:36px" markdown="1">
 
 <div class="col etroite" style="--x:7.76%;--w:20.20%" markdown="1">
 

@@ -19,7 +19,7 @@ texte: "13px/2em"
 
 <div class="bloc gauche" style="--h:21px;--x:44.29%;--w:11.22%;--mt:39px" markdown="1">
 
-## Axonométrie
+<p class="legende">Axonométrie</p>
 
 </div>
 

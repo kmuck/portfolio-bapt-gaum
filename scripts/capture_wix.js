@@ -135,7 +135,20 @@ async function boites(browser) {
           const top = Math.min(...rs.map(r => r.top)), bottom = Math.max(...rs.map(r => r.bottom));
           textes[el.id] = [Math.round(top + window.scrollY), Math.round(bottom - top)];
         });
-        return { page: box(root), comps, textes };
+        // Textes recouverts par un autre élément (bande de couleur, image) : invisibles sur Wix
+        const caches = [];
+        root.querySelectorAll('[data-testid="richTextElement"]').forEach(el => {
+          const p = [...el.querySelectorAll('p, li, h1, h2, h3, h4, h5, h6')]
+            .find(p => (p.innerText || '').replace(/[\s\u200b]/g, ''));
+          if (!p) return;
+          p.scrollIntoView({ block: 'center' });
+          const r = p.getBoundingClientRect();
+          if (!r.width || !r.height) return;
+          const hit = document.elementFromPoint(r.left + Math.min(r.width / 2, 40), r.top + r.height / 2);
+          if (hit && !el.contains(hit)) caches.push(el.id);
+        });
+        window.scrollTo(0, 0);
+        return { page: box(root), comps, textes, caches };
       });
       fs.writeFileSync(`${OUT}/boites/${slug}.json`, JSON.stringify(data));
       fs.mkdirSync(`${OUT}/projets`, { recursive: true });

@@ -56,13 +56,27 @@ Tout d’abord, afin d’attirer une ambiance familiale et conviviale au quartie
 
 </div>
 
-<div class="bloc" style="--h:26px;--x:83.47%;--w:7.96%;--mt:237px" markdown="1">
+<div class="rangee" style="--mt:33px" markdown="1">
+
+<div class="col" style="--x:13.88%;--w:64.80%" markdown="1">
+
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_19f84d99b66846a89182492b736316c2-mv2.webp" lien=true ratio="635/436" %}</div>
+
+</div>
+
+<div class="col etroite" style="--x:4.80%;--w:7.96%;--mt:204px" markdown="1">
+
+<div class="bloc" style="--h:26px" markdown="1">
 
 <p class="legende">Plan du RDC</p>
 
 </div>
 
-<div class="bloc" style="--h:78px;--x:3.67%;--w:92.86%;--mt:250px" markdown="1">
+</div>
+
+</div>
+
+<div class="bloc" style="--h:78px;--x:3.67%;--w:92.86%;--mt:44px" markdown="1">
 
 Nos logements sont regroupés dans deux bâtiments reliés par un système de coursives. Le premier est à l’alignement avec la rue. Le second se retire afin de libérer une placette. De plus, on observe une circulation en gradation de l'espace public à l’espace privé le long de la parcelle. Plus on s’éloigne de la rue, plus l’espace devient privé.
 

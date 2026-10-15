@@ -116,7 +116,21 @@ L’approche architecturale aborde une nouvelle manière de construire, où l’
 
 </div>
 
-<div class="bloc" style="--x:4.49%;--w:37.96%;--mt:48px">{% include img.html src="/assets/img/wix/51f7bd_2ca785a78c264103bfc988054466ab17-mv2.webp" lien=true ratio="372/238" %}</div>
+<div class="rangee" style="--mt:48px" markdown="1">
+
+<div class="col" style="--x:4.49%;--w:37.96%" markdown="1">
+
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_2ca785a78c264103bfc988054466ab17-mv2.webp" lien=true ratio="372/238" %}</div>
+
+</div>
+
+<div class="col" style="--x:9.18%;--w:41.63%" markdown="1">
+
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_f81c42607249409ba09b2c61b9e69cc1-mv2.webp" lien=true ratio="408/238" %}</div>
+
+</div>
+
+</div>
 
 <div class="bloc centre" style="--h:26px;--x:21.73%;--w:56.43%;--mt:10px" markdown="1">
 
@@ -137,7 +151,21 @@ L’espace d’exposition est dédiée à la présentation du projet urbanistiqu
 
 </div>
 
-<div class="bloc" style="--x:3.47%;--w:48.27%;--mt:23px">{% include img.html src="/assets/img/wix/51f7bd_c225f852ec42450d8a0b0e171ee6324c-mv2.webp" lien=true ratio="473/309" %}</div>
+<div class="rangee" style="--mt:23px" markdown="1">
+
+<div class="col" style="--x:3.47%;--w:48.27%" markdown="1">
+
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_c225f852ec42450d8a0b0e171ee6324c-mv2.webp" lien=true ratio="473/309" %}</div>
+
+</div>
+
+<div class="col" style="--x:1.22%;--w:41.53%" markdown="1">
+
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_c225f852ec42450d8a0b0e171ee6324c-mv2.webp" lien=true ratio="407/309" %}</div>
+
+</div>
+
+</div>
 
 <div class="bloc centre" style="--h:26px;--x:20.71%;--w:56.43%;--mt:14px" markdown="1">
 
@@ -164,11 +192,13 @@ Au sud de la halle de bureaux, tel une vitrine, ce seront les artisans et les en
 
 </div>
 
+<div class="bloc" style="--x:15.65%;--w:68.69%;--mt:22px">{% include img.html src="/assets/img/wix/51f7bd_b59cd46ed15349b3ac85e7939c702e4b-mv2.webp" lien=true ratio="294/409" %}</div>
+
 </div>
 
-<div class="col" style="--x:4.18%;--w:44.18%;--mt:13px" markdown="1">
+<div class="col" style="--x:0.61%;--w:47.76%;--mt:13px" markdown="1">
 
-<div class="bloc superpose" markdown="1">
+<div class="bloc superpose" style="--x:7.48%;--w:92.52%" markdown="1">
 <div>{% include img.html src="/assets/img/wix/51f7bd_b59cd46ed15349b3ac85e7939c702e4b-mv2.webp" lien=true ratio="433/502" %}</div>
 <div class="etiquette droite" style="--y:97.61%;--h:26px;--x:-30.95%" markdown="1">
 
@@ -177,17 +207,17 @@ Au sud de la halle de bureaux, tel une vitrine, ce seront les artisans et les en
 </div>
 </div>
 
-</div>
-
-</div>
-
-<div class="bloc" style="--h:156px;--x:48.78%;--w:44.18%;--mt:78px" markdown="1">
+<div class="bloc" style="--h:156px;--w:92.52%;--mt:78px" markdown="1">
 
 Les conteneurs pourront se déployer en duplex et atteindre des grandes hauteurs sous plafond. Pour l’isolation thermique, le liège permettra de maintenir un confort idéal en maintenant une température correcte tout au long de l’année. De plus, en venant ouvrir la halle en toiture, une trame sur deux, l’ensemble des bureaux bénéficieront d’une lumière naturelle.
 
 </div>
 
-<div class="bloc gauche" style="--h:33px;--x:5.51%;--w:88.98%;--mt:95px" markdown="1">
+</div>
+
+</div>
+
+<div class="bloc gauche" style="--h:33px;--x:5.51%;--w:88.98%;--mt:49px" markdown="1">
 
 ## <strong>05 - Food-court et café</strong>
 {: style="font-size:25px;line-height:1.3em"}
@@ -217,9 +247,9 @@ Le foodcourt travaille en dialogue avec le parc, en offrant de très belles vues
 
 </div>
 
-<div class="col" style="--x:7.86%;--w:41.33%" markdown="1">
+<div class="col" style="--x:6.02%;--w:43.27%" markdown="1">
 
-<div class="bloc superpose" markdown="1">
+<div class="bloc superpose" style="--x:4.25%;--w:95.52%" markdown="1">
 <div>{% include img.html src="/assets/img/wix/51f7bd_9c95ccb709f74443a314d83b530a1842-mv2.webp" lien=true ratio="405/413" %}</div>
 <div class="etiquette droite" style="--y:97.34%;--h:26px;--x:2.72%;--w:90.12%" markdown="1">
 
@@ -228,11 +258,13 @@ Le foodcourt travaille en dialogue avec le parc, en offrant de très belles vues
 </div>
 </div>
 
-</div>
+<div class="bloc" style="--mt:31px">{% include img.html src="/assets/img/wix/51f7bd_50187d14d5414fa78eb010267adfe87e-mv2.webp" lien=true ratio="424/286" %}</div>
 
 </div>
 
-<div class="bloc gauche" style="--h:33px;--x:5.51%;--w:88.98%;--mt:212px" markdown="1">
+</div>
+
+<div class="bloc gauche" style="--h:33px;--x:5.51%;--w:88.98%;--mt:26px" markdown="1">
 
 ## <strong>06 - Park</strong>
 {: style="font-size:25px;line-height:1.3em"}

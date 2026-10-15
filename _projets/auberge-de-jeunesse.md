@@ -68,19 +68,19 @@ Pour m’aider dans mon travail, j’ai établi un graphique répertoriant les t
 
 </div>
 
-<div class="bloc" style="--x:4.49%;--w:45.10%;--mt:23px">{% include img.html src="/assets/img/wix/51f7bd_4b124b4806444bd992a50d4d35cd72f9-mv2.webp" lien=true ratio="442/290" %}</div>
+<div class="rangee" style="--mt:23px" markdown="1">
 
-<div class="rangee" markdown="1">
+<div class="col" style="--x:4.49%;--w:53.67%" markdown="1">
 
-<div class="col" style="--x:6.12%;--w:52.04%;--mt:4px" markdown="1">
+<div class="bloc" style="--w:84.03%">{% include img.html src="/assets/img/wix/51f7bd_4b124b4806444bd992a50d4d35cd72f9-mv2.webp" lien=true ratio="442/290" %}</div>
 
-<div class="bloc gauche" style="--h:16px;--w:83.53%" markdown="1">
+<div class="bloc gauche" style="--h:16px;--x:3.04%;--w:80.99%;--mt:4px" markdown="1">
 
-## Température diurnes de Elisabeth Peak au cours de l'année
+<p class="legende">Température diurnes de Elisabeth Peak au cours de l'année</p>
 
 </div>
 
-<div class="bloc" style="--h:78px;--mt:64px" markdown="1">
+<div class="bloc" style="--h:78px;--x:3.04%;--w:96.96%;--mt:64px" markdown="1">
 
 J’ai aussi récolté les informations sur l’indice ulra-violet de la Californie au cours de l’année dans un tableau. Ces documents révèlent que Twolumne City a des hivers très frais, où les températures avoisinent les 0°C, et connaît des étés chauds au climat sec.
 
@@ -90,9 +90,11 @@ J’ai aussi récolté les informations sur l’indice ulra-violet de la Califor
 
 <div class="col" style="--x:-5.71%;--w:43.57%" markdown="1">
 
+<div class="bloc" style="--w:95.08%">{% include img.html src="/assets/img/wix/51f7bd_4b124b4806444bd992a50d4d35cd72f9-mv2.webp" lien=true ratio="406/290" %}</div>
+
 <div class="bloc gauche" style="--h:16px" markdown="1">
 
-## Température nocturnes de Elisabeth Peak au cours de l'année
+<p class="legende">Température nocturnes de Elisabeth Peak au cours de l'année</p>
 
 </div>
 
@@ -195,7 +197,9 @@ En utilisant les données de Windfinder, on remarque que le vent provient princi
 
 </div>
 
-<div class="bloc" style="--h:59px;--x:6.53%;--w:86.94%;--mt:236px" markdown="1">
+<div class="bloc" style="--x:42.04%;--w:15.82%;--mt:35px">{% include img.html src="/assets/img/wix/51f7bd_78ab8ecccb2d477fb9349ed83f99b39b-mv2.webp" lien=true ratio="155/170" %}</div>
+
+<div class="bloc" style="--h:59px;--x:6.53%;--w:86.94%;--mt:31px" markdown="1">
 
 J’ai créé de grandes ouvertures au niveau du restaurant et de la pièce commune puis en rendant la façade intérieure des logements perméables par de petites ouvertures, l’air est amené dans les chambres. Ainsi la circulation de l’air dans le bâtiment se fait de la façon suivante :
 

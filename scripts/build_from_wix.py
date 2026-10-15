@@ -112,19 +112,21 @@ def rich_text_items(block):
         if not t:
             vide = True
             continue
-        if el.name.startswith("h"):
-            kind = "titre"
-        elif big_font(el):
+        brut = t
+        if big_font(el):
             kind = "inter-caslon" if el.find(style=re.compile(r"font-family:\s*'?adobe-caslon")) else "inter"
             st = el.get("style") or ""
             fs, lh = re.search(r"font-size:\s*(\d+)px", st), re.search(r"line-height:\s*([\d.]+em)", st)
             t = (rich_text(el), f"{fs.group(1)}px/{lh.group(1)}" if fs and lh else None)
         elif covered_by(el, re.compile(r"font-style:\s*italic")) and len(t) < 200:
             kind = "legende"
-        elif el.name == "li":
+        elif el.name == "li" or el.find_parent("li"):
             kind, t = "liste", rich_text(el)
         else:
             kind, t = "texte", rich_text(el)
+        if el.name.startswith("h"):
+            # le premier titre de la page est celui du bandeau ; les autres sont mis en page selon leur style
+            kind, t = "titre", (brut, kind, t)
         if items and items[-1][0] == kind and kind in ("texte", "legende", "liste") and (not vide or kind == "liste"):
             items[-1] = (kind, items[-1][1] + "\n" + t)
         else:
@@ -170,7 +172,8 @@ def walk(tag, pos, out, comp=None):
         m = MEDIA_RE.search(tag.get("src") or "")
         if m:
             fit = "contain" if "contain" in (tag.get("style") or "") or "/v1/fit/" in tag["src"] else "cover"
-            out.append(("image", m.group(1), comp, fit))
+            crop = re.search(r"/v1/crop/x_(\d+),y_(\d+),w_(\d+),h_(\d+)/", tag["src"])
+            out.append(("image", m.group(1), comp, (fit, crop.groups() if crop else None)))
         return
     grille = tag.find(id="pro-gallery-container-" + tag["id"]) if tag.get("id", "").startswith("comp-") else None
     if grille and not tag.select_one(".thumbnailItem"):  # galerie Wix en grille : images côte à côte
@@ -195,7 +198,7 @@ def walk(tag, pos, out, comp=None):
     if "background-image" in (tag.get("style") or ""):
         m = MEDIA_RE.search(tag["style"])
         if m:
-            out.append(("image", m.group(1), comp, "cover"))
+            out.append(("image", m.group(1), comp, ("cover", None)))
     kids = [c for c in tag.children if isinstance(c, Tag)]
     mesh = tag.get("data-mesh-id", "")
     if mesh.endswith(MESH):
@@ -222,21 +225,20 @@ def page_items(html, decor):
     seen, items = set(), []
     for kind, val, cid, extra in out:
         if kind == "grille":
-            val = [c for c in val if c[0] not in decor and c[0] not in seen]
-            seen.update(c[0] for c in val)
+            val = [c for c in val if c[0] not in decor]
             if val:
                 items.append((kind, val, cid, extra))
             continue
         if kind == "diaporama":
-            val = [i for i in val if i not in decor and i not in seen]
-            seen.update(val)
+            val = list(dict.fromkeys(i for i in val if i not in decor))
             if val:
                 items.append((kind, val, cid, extra))
             continue
         if kind == "image":
-            if val in decor or val in seen:
+            # une même image peut revenir ailleurs sur la page (galerie puis image seule)
+            if val in decor or (cid, val) in seen:
                 continue
-            seen.add(val)
+            seen.add((cid, val))
         items.append((kind, val, cid, extra))
     return items
 
@@ -266,8 +268,6 @@ def texte_md(kind, val):
             return f'## {titre}\n{{: style="font-size:{fs};line-height:{lh}"}}\n'
         return f"## {titre}\n"
     lignes = [l for l in val.split("\n") if l.strip()]
-    if kind == "titre":
-        return f"## {' '.join(lignes)}\n"
     if kind == "legende":
         return '<p class="legende">' + "<br>".join(lignes) + "</p>\n"
     if kind == "liste" or all(l.startswith("-") for l in lignes):
@@ -275,8 +275,16 @@ def texte_md(kind, val):
     return "<br>\n".join(ligne(l) for l in lignes) + "\n"
 
 
-def image_md(media, fit, w=None, h=None):
+def crop_name(media_id, x, y, w, h):
+    return media_id.split(".")[0].replace("~", "-") + f"-crop-{x}-{y}-{w}-{h}.webp"
+
+
+def image_md(media, extra, w=None, h=None):
+    """Image Wix ; extra = (cadrage, recadrage fait dans l'éditeur Wix ou None)."""
+    fit, crop = extra
     src = f"/assets/img/wix/{webp_name(media)}"
+    if crop and (IMG_DIR / crop_name(media, *crop)).exists():  # voir import_wix.py recadrages
+        src = f"/assets/img/wix/{crop_name(media, *crop)}"
     ratio = f' ratio="{w}/{h}"' if w and h else ""
     cadre = ' cadre="contain"' if fit == "contain" else ""
     return f'{{% include img.html src="{src}" lien=true{ratio}{cadre} %}}'
@@ -320,7 +328,7 @@ def bloc_md(b, zx, zw, mt, texte_page, hauteur):
         gw = max(c[1] + c[3] for c in cases)
         parts = []
         for media, l, t, cw, ch in cases:
-            parts.append(f'<div class="case"{style(l - droite, cw, gw, 0)}>{image_md(media, "cover", round(cw), round(ch))}</div>')
+            parts.append(f'<div class="case"{style(l - droite, cw, gw, 0)}>{image_md(media, ("cover", None), round(cw), round(ch))}</div>')
             droite = l + cw
         return f'<div class="bloc grille"{st}{debug(b)}>' + "\n".join(parts) + "</div>\n"
     if items[0][0] == "diaporama":
@@ -506,10 +514,11 @@ def main(slugs):
             continue
         page = raw.read_text(encoding="utf-8")
         items = page_items(page, decor)
-        titre = next((v for k, v, *_ in items if k == "titre"), "")
+        titre = next((v[0] for k, v, *_ in items if k == "titre"), "")
         if titre:  # le premier titre est celui du bandeau
             i = next(i for i, it in enumerate(items) if it[0] == "titre")
             items = items[:i] + items[i + 1:]
+        items = [(v[1], v[2], cid, extra) if k == "titre" else (k, v, cid, extra) for k, v, cid, extra in items]
         ids = [i for k, v, *_ in items if k in ("image", "diaporama", "grille")
                for i in ([v] if k == "image" else v if k == "diaporama" else [c[0] for c in v])]
         missing = [i for i in ids if not (IMG_DIR / webp_name(i)).exists()]
