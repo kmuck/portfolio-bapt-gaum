@@ -4,6 +4,7 @@ categorie: "Année 3 : AI3"
 rang_categorie: 3
 ordre: 8
 couverture: "/assets/img/wix/51f7bd_80c4387cc32447aab830574a314ce6a1-mv2.webp"
+bandeau: "Urbanisme - Plaine des Bouchers, Strasbourg"
 texte: "13px/2em"
 ---
 

@@ -4,11 +4,14 @@ categorie: "Année 2 : AI2"
 rang_categorie: 2
 ordre: 15
 couverture: "/assets/img/wix/51f7bd_bf2e72c2f13d49e9ae31bb937dd1009f-mv2.webp"
+bandeau: "Résille, Carré - Façades"
 texte: "13px/2em"
 ---
 
-<div class="bloc grille" style="--mt:48px"><div class="case" style="--w:23.90%">{% include img.html src="/assets/img/wix/51f7bd_56210b328c8c40bf8c8bac225b18b3b4-mv2.webp" lien=true ratio="234/414" %}</div>
-<div class="case" style="--x:52.30%;--w:23.80%">{% include img.html src="/assets/img/wix/51f7bd_3375dd8a2b9145bfa4a37d500c5037f5-mv2.webp" lien=true ratio="233/414" %}</div></div>
+<div class="bloc grille" style="--mt:48px"><div class="case" style="--w:23.90%">{% include img.html src="/assets/img/wix/51f7bd_56210b328c8c40bf8c8bac225b18b3b4-mv2.webp" lien=true ratio="234/414" cadre="contain" %}</div>
+<div class="case" style="--x:1.53%;--w:23.80%"><video src="{{ '/assets/video/wix/51f7bd_60681b8bfb7c48a3977a82744b510bc5.mp4' | relative_url }}" poster="{{ '/assets/img/wix/51f7bd_60681b8bfb7c48a3977a82744b510bc5f003.webp' | relative_url }}" controls playsinline preload="none" style="aspect-ratio: 233 / 414"></video></div>
+<div class="case" style="--x:1.53%;--w:23.90%"><video src="{{ '/assets/video/wix/51f7bd_2c0446fae587404492e6b444daf23927.mp4' | relative_url }}" poster="{{ '/assets/img/wix/51f7bd_2c0446fae587404492e6b444daf23927f003.webp' | relative_url }}" controls playsinline preload="none" style="aspect-ratio: 234 / 414"></video></div>
+<div class="case" style="--x:1.53%;--w:23.80%">{% include img.html src="/assets/img/wix/51f7bd_3375dd8a2b9145bfa4a37d500c5037f5-mv2.webp" lien=true ratio="233/414" cadre="contain" %}</div></div>
 
 <div class="bloc" style="font:13px/1.2em var(--raleway);--h:47px;--x:3.67%;--w:92.65%;--mt:39px" markdown="1">
 

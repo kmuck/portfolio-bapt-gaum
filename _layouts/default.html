@@ -22,7 +22,7 @@
   {%- assign fond_bandeau = '/assets/img/wix/ec3d4bcc20929babb63857380b708cd4.webp' | relative_url -%}
   {% if page.collection == 'projets' %}
   <div class="bandeau bandeau-projet" style="background-image: url('{{ fond_bandeau }}')">
-    <h1>{{ page.title }}{% if page.sous_titre %} |&nbsp;<em>{{ page.sous_titre }}</em>{% endif %}</h1>
+    <h1>{{ page.bandeau | default: page.title }}{% if page.sous_titre %} |&nbsp;<em>{{ page.sous_titre }}</em>{% endif %}</h1>
   </div>
   {% elsif page.bandeau %}
   <div class="bandeau" style="background-image: url('{{ fond_bandeau }}')">

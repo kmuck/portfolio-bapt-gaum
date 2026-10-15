@@ -10,6 +10,7 @@ Usage : python3 scripts/import_wix.py              tout réimporter
         python3 scripts/import_wix.py orientation  redresser les photos prises de travers
         python3 scripts/import_wix.py recadrages   images recadrées comme sur Wix
         python3 scripts/import_wix.py manquantes   images des pages pas encore téléchargées
+        python3 scripts/import_wix.py videos       vidéos des galeries (et leur image d'aperçu)
 """
 import io
 import pathlib
@@ -26,8 +27,10 @@ BASE = "https://baptistegmtc.wixsite.com/website"
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 RAW = ROOT / "import" / "raw"
 IMG = ROOT / "assets" / "img" / "wix"
+VIDEO = ROOT / "assets" / "video" / "wix"
 MAX_PX = 2400
 MEDIA_RE = re.compile(r"static\.wixstatic\.com/media/([0-9a-zA-Z_]+~mv2\.[a-zA-Z]+|[0-9a-f]{32}\.[a-zA-Z]+)")
+VIDEO_RE = re.compile(r'"type":"video".*?"posters":\[(.*?)\].*?"qualities":\[((?:[^\[\]]|\[[^\]]*\])*)\].*?"mediaUrl":"([0-9a-z]+_[0-9a-f]{32})"')
 CROP_RE = re.compile(r"static\.wixstatic\.com/media/([^/\"]+)/v1/crop/x_(\d+),y_(\d+),w_(\d+),h_(\d+)/fill/w_(\d+),h_(\d+)")
 HEADERS = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/124 Safari/537.36"}
 
@@ -111,6 +114,26 @@ def manquantes():
             download(media_id)
 
 
+def videos():
+    """Vidéos des galeries Wix, en 720p (ou moins), avec leurs images d'aperçu."""
+    VIDEO.mkdir(parents=True, exist_ok=True)
+    for f in RAW.glob("*.html"):
+        for posters, qualities, media in set(VIDEO_RE.findall(f.read_text(encoding="utf-8"))):
+            for poster in re.findall(r'"url":"([^"]+)"', posters):
+                download(poster)
+            dest = VIDEO / f"{media}.mp4"
+            if dest.exists():
+                continue
+            dispo = re.findall(r'"quality":"(\d+p)"', qualities)
+            q = next((q for q in ("720p", "480p", "1080p") if q in dispo), None)
+            r = session.get(f"https://video.wixstatic.com/video/{media}/{q}/mp4/file.mp4", timeout=300)
+            if r.ok and q:
+                dest.write_bytes(r.content)
+                print("vidéo", dest.name, q, len(r.content) // 1024, "Ko")
+            else:
+                print("échec vidéo", media, q, r.status_code, file=sys.stderr)
+
+
 def recadrages():
     """Télécharge, tels que Wix les affiche, les recadrages faits dans l'éditeur Wix (dans la plus grande
     taille proposée par la page, en général le double de la taille affichée)."""
@@ -139,6 +162,7 @@ def recadrages():
 
 
 if __name__ == "__main__":
-    taches = {"main": main, "orientation": orientation, "recadrages": recadrages, "manquantes": manquantes}
+    taches = {"main": main, "orientation": orientation, "recadrages": recadrages, "manquantes": manquantes,
+              "videos": videos}
     for t in sys.argv[1:] or ["main"]:
         taches[t]()

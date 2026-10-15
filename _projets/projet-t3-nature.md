@@ -4,6 +4,7 @@ categorie: "Projets ecotive"
 rang_categorie: 0
 ordre: 19
 couverture: "/assets/img/wix/51f7bd_bc6c7db40b0e41e98c41603069603c37-mv2.webp"
+bandeau: "Ecotive - Projet T3 Nature"
 texte: "14px/1.5em"
 ---
 
@@ -15,6 +16,8 @@ texte: "14px/1.5em"
 
 ## <strong>Ce projet est disponible à la vente et sera réalisé en collaboration avec l'entreprise Ecotive, pour plus de renseignements, contactez-moi.</strong>
 {: style="font-size:18px;line-height:1.5em"}
+
+<p class="espace"></p>
 
 L'objectif de ce projet est de pouvoir proposer une maison arborant un design unique à un prix abordable tout en étant écologique. Le projet paraît simple à première vue pourtant c'est une liste de qualités dont la réunion a demeuré complexe lors de la conception :
 

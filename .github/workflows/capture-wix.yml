@@ -43,12 +43,12 @@ jobs:
           for i in ids:
               import_wix.download(i)
           PY
-      - name: Images manquantes, photos à redresser (rotation EXIF) et recadrages Wix
-        run: python scripts/import_wix.py manquantes orientation recadrages
+      - name: Images manquantes, photos à redresser (rotation EXIF), recadrages et vidéos Wix
+        run: python scripts/import_wix.py manquantes orientation recadrages videos
       - name: Commit des captures
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
-          git add import/captures assets/img/wix
+          git add import/captures assets/img/wix $(ls -d assets/video/wix 2>/dev/null)
           git diff --cached --quiet || git commit -m "Captures du site Wix"
           git push

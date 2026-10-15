@@ -4,6 +4,7 @@ categorie: "Année 2 : AI2"
 rang_categorie: 2
 ordre: 10
 couverture: "/assets/img/wix/51f7bd_418201d67b3642cc9252cc2c400f5067-mv2.webp"
+bandeau: "Ascension et sensation"
 texte: "13px/2em"
 ---
 
@@ -100,8 +101,8 @@ Ce sont deux volumes, l’un atteignant 17m de haut, l’autre 21m, séparé par
 
 </div>
 
-<div class="bloc grille gris" style="--mt:23px"><div class="case" style="--w:42.88%">{% include img.html src="/assets/img/wix/51f7bd_39ff7e3cd8584fb9b2bee48c84188905-mv2.webp" lien=true ratio="235/234" %}</div>
-<div class="case" style="--x:14.42%;--w:42.70%">{% include img.html src="/assets/img/wix/51f7bd_7026df7a55124980b867a667f6d8ab3e-mv2.webp" lien=true ratio="234/234" %}</div></div>
+<div class="bloc grille gris" style="--mt:23px"><div class="case" style="--w:42.88%">{% include img.html src="/assets/img/wix/51f7bd_39ff7e3cd8584fb9b2bee48c84188905-mv2.webp" lien=true ratio="235/234" cadre="contain" %}</div>
+<div class="case" style="--x:14.42%;--w:42.70%">{% include img.html src="/assets/img/wix/51f7bd_7026df7a55124980b867a667f6d8ab3e-mv2.webp" lien=true ratio="234/234" cadre="contain" %}</div></div>
 
 </div>
 
@@ -159,7 +160,8 @@ Le dialogue que nous mettons en place entre toutes les activités se fait par le
 
 <div class="bloc" style="--h:338px" markdown="1">
 
-Pour favoriser ces rencontres, nous créons un parcours vertical sur 5 niveaux, invitant à l’élévation en prolongement de l’espace public vers le ciel. Cette déambulation à travers le bâti est permise par un escalier monumental au coeur du patio. Il suggère aux usagers de prendre le temps, de se perdre et de se retrouver, de faire des rencontres et de porter un regard neuf sur les anciens entrepôts. Il donne alors au patio un caractère exceptionnel, telle une parenthèse au sein du tumulte de la ville. Par sa double révolution il distingue par ses accès le visiteur de l’habitant tout en maintenant des frictions entre eux.<br>
+Pour favoriser ces rencontres, nous créons un parcours vertical sur 5 niveaux, invitant à l’élévation en prolongement de l’espace public vers le ciel. Cette déambulation à travers le bâti est permise par un escalier monumental au coeur du patio. Il suggère aux usagers de prendre le temps, de se perdre et de se retrouver, de faire des rencontres et de porter un regard neuf sur les anciens entrepôts. Il donne alors au patio un caractère exceptionnel, telle une parenthèse au sein du tumulte de la ville. Par sa double révolution il distingue par ses accès le visiteur de l’habitant tout en maintenant des frictions entre eux.
+
 De bas en haut, le mélange des flux entre logements et activités dynamise le lieu et mêle successivement espaces privés, communs et publics pour finalement déboucher sur une terrasse panoramique en toiture. Cette terrasse, véritable aboutissement du parcours, offre un point de vue inédit sur le quartier.
 
 </div>

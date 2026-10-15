@@ -4,6 +4,7 @@ categorie: "Année 3 : AI3"
 rang_categorie: 3
 ordre: 7
 couverture: "/assets/img/wix/51f7bd_d5c83f945162417ab788b3b0a329f4ce-mv2.webp"
+bandeau: "Symbiose industrielle et sociale - Strasbourg"
 sous_titre: "avec Adam Tissier"
 texte: "13px/2em"
 ---
@@ -45,9 +46,9 @@ Les bâtiments sur lesquels nous venons travailler sont facilement distinguables
 
 </div>
 
-<div class="bloc grille gris" style="--x:1.94%;--w:96.02%;--mt:38px"><div class="case" style="--w:31.24%">{% include img.html src="/assets/img/wix/51f7bd_64aa554b0a9e4ed79a599db5c0c9ffa7-mv2.webp" lien=true ratio="294/293" %}</div>
-<div class="case" style="--x:3.19%;--w:31.24%">{% include img.html src="/assets/img/wix/51f7bd_7ac1e784ccff4834bf52d694e166897a-mv2.webp" lien=true ratio="294/293" %}</div>
-<div class="case" style="--x:3.19%;--w:31.14%">{% include img.html src="/assets/img/wix/51f7bd_9ed114ac51374cf9b71c3a73f2fde5f5-mv2.webp" lien=true ratio="293/293" %}</div></div>
+<div class="bloc grille gris" style="--x:1.94%;--w:96.02%;--mt:38px"><div class="case" style="--w:31.24%">{% include img.html src="/assets/img/wix/51f7bd_64aa554b0a9e4ed79a599db5c0c9ffa7-mv2.webp" lien=true ratio="294/293" cadre="contain" %}</div>
+<div class="case" style="--x:3.19%;--w:31.24%">{% include img.html src="/assets/img/wix/51f7bd_7ac1e784ccff4834bf52d694e166897a-mv2.webp" lien=true ratio="294/293" cadre="contain" %}</div>
+<div class="case" style="--x:3.19%;--w:31.14%">{% include img.html src="/assets/img/wix/51f7bd_9ed114ac51374cf9b71c3a73f2fde5f5-mv2.webp" lien=true ratio="293/293" cadre="contain" %}</div></div>
 
 <div class="bloc" style="--h:123px;--x:3.57%;--w:92.86%;--mt:16px" markdown="1">
 
@@ -68,9 +69,12 @@ Le projet intègre dans les deux bâtiments à dent de scie : une pépinière d�
 
 <div class="bloc" style="--h:494px" markdown="1">
 
-Nous venons dépouiller les extensions du bâtiment de scie afin de souligner la linéarité de la façade. L’ensemble du projet est tenu par cette enveloppe extérieure.<br>
-Pour mettre en valeur l’existant et le respecter, nous venons nous détacher de la structure métallique pour y insérer nos volumes.<br>
-Nous venons tirer un axe central de circulation douce marqué par un pont roulant existant venant faire colonne vertébrale à l’ensemble. Il distribue et croise des plus grands axes de distribution reliant le Fab LAB et l’esplanade.<br>
+Nous venons dépouiller les extensions du bâtiment de scie afin de souligner la linéarité de la façade. L’ensemble du projet est tenu par cette enveloppe extérieure.
+
+Pour mettre en valeur l’existant et le respecter, nous venons nous détacher de la structure métallique pour y insérer nos volumes.
+
+Nous venons tirer un axe central de circulation douce marqué par un pont roulant existant venant faire colonne vertébrale à l’ensemble. Il distribue et croise des plus grands axes de distribution reliant le Fab LAB et l’esplanade.
+
 Nous avons fait le choix de distinguer trois sous-parties à notre projet. Chacune de ces parties est rendue unique et se distingue des autres par un geste architectural et climatique correspondant à un besoin particulier. Nous avons les îlots couverts sous la grande halle. les logements communautaires non couverts et enfin la galerie restaurant.
 
 </div>
@@ -211,7 +215,8 @@ A l’intérieur, nous avons souhaité offrir des espaces spacieux pouvant corre
 
 <div class="bloc" style="--h:182px;--x:10.78%;--w:89.22%" markdown="1">
 
-Afin de préserver leur intimité, chacun dispose d’une salle d’eau et d’une chambre donnant sur les esplanades vertes. Ainsi les séjours se regardent au centre pour conserver ce contact visuel pouvant renforcer le sentiment de vivre en communauté.<br>
+Afin de préserver leur intimité, chacun dispose d’une salle d’eau et d’une chambre donnant sur les esplanades vertes. Ainsi les séjours se regardent au centre pour conserver ce contact visuel pouvant renforcer le sentiment de vivre en communauté.
+
 Le système est complété par l’apport de de balcons avec un jeu d’ouverture par des panneaux accordéons en acier que l’on vient perforer en ré-employant le bac acier des façades actuelles.
 
 </div>
@@ -241,8 +246,10 @@ Le système est complété par l’apport de de balcons avec un jeu d’ouvertur
 
 <div class="bloc" style="--h:260px" markdown="1">
 
-Vient ensuite, dans la continuité et au contact direct des logements, les ilôts travailleurs, qui représentent la plus grande superficie et le cœur de vie de notre programme.<br>
-Nous avons stratégiquement placé les équipements (shops, salles de conférence, cafés) en face de la trame verte et les ateliers et bureaux en contact avec le Fab-Lab pour favoriser les échanges et les connexions entre eux.<br>
+Vient ensuite, dans la continuité et au contact direct des logements, les ilôts travailleurs, qui représentent la plus grande superficie et le cœur de vie de notre programme.
+
+Nous avons stratégiquement placé les équipements (shops, salles de conférence, cafés) en face de la trame verte et les ateliers et bureaux en contact avec le Fab-Lab pour favoriser les échanges et les connexions entre eux.
+
 Pour donner de la transparence aux activités, et voir le bâtiment évoluer depuis l’extérieur, nous avons opté pour un revêtement en polycarbonate offrant légèreté à la façade.
 
 </div>
@@ -271,7 +278,8 @@ Pour donner de la transparence aux activités, et voir le bâtiment évoluer dep
 
 <div class="bloc" style="--h:390px" markdown="1">
 
-La combinaison des modules de 3,7 par 3,7 nous permet de dessiner des espaces de travail agréables, à la fois traversant et offrant un atrium végétalisé et ventilé. Les ilots sont ainsi coupés en deux pour laisser passer une circulation plus douce et venir y intégrer les escaliers. Les entreprises ont l’option de venir greffer des balcons métalliques autoportants. Ces derniers viennent donner de la vie aux circulations et favoriser le contact social. De plus, des escaliers métalliques de couleur vive marquent les circulations et l’identité visuelle des îlots.<br>
+La combinaison des modules de 3,7 par 3,7 nous permet de dessiner des espaces de travail agréables, à la fois traversant et offrant un atrium végétalisé et ventilé. Les ilots sont ainsi coupés en deux pour laisser passer une circulation plus douce et venir y intégrer les escaliers. Les entreprises ont l’option de venir greffer des balcons métalliques autoportants. Ces derniers viennent donner de la vie aux circulations et favoriser le contact social. De plus, des escaliers métalliques de couleur vive marquent les circulations et l’identité visuelle des îlots.
+
 A l’intérieur des volumes, un système de mezzanine modulable a été mis en place. Les espaces en double hauteur permettent de venir offrir des espaces généreux pour des shops, des cafés ou des ateliers tandis que l’installation de la mezzanine offre des espaces supplémentaires pour des bureaux ou du stockage. Enfin, au R+2, nous venons ajouter des espaces intermédiaires de travail, de coworking.
 
 </div>

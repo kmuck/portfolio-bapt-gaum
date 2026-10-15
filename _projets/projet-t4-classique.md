@@ -4,6 +4,7 @@ categorie: "Projets ecotive"
 rang_categorie: 0
 ordre: 20
 couverture: "/assets/img/wix/51f7bd_73b39aa0f7bc4acdafe061dc20887037-mv2.webp"
+bandeau: "Ecotive - Projet T4 Classique"
 texte: "14px/1.5em"
 ---
 
@@ -15,6 +16,8 @@ texte: "14px/1.5em"
 
 ## <strong>Réalisé avec Ecotive.</strong>
 {: style="font-size:18px;line-height:1.5em"}
+
+<p class="espace"></p>
 
 Ce projet répond à une série de prototypes réalisés par Ecotive observables à Gallardon proche de Rambouillet en Ile-de-France, Ce dernier sera disponible en fin d'année 2020. Les objectifs de ce projet étaient les suivants : faire une structure plus simple que les deux autres, conserver un style similaire, mieux optimiser les pièces en plan que les deux autres,
 

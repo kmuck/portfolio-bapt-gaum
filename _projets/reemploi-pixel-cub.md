@@ -4,6 +4,7 @@ categorie: "Année 3 : AI3"
 rang_categorie: 3
 ordre: 9
 couverture: "/assets/img/wix/51f7bd_6734ca08d3d045fd85b27ebd43080413-mv2.webp"
+bandeau: "Réemploi - Pixel Cub'"
 texte: "13px/1.2em"
 ---
 

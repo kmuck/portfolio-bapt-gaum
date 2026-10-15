@@ -151,6 +151,7 @@ main { width: 100%; max-width: var(--largeur); margin: 0 auto; }
 .forme > * { display: block; height: var(--h); }
 .grille { display: flex; align-items: flex-start; }
 .grille .case { flex: none; margin-left: var(--x); width: var(--w); }
+.grille video { display: block; width: 100%; height: auto; object-fit: cover; background: #000; }
 .grille.gris img { filter: grayscale(1); transition: filter .4s; }
 .grille.gris img:hover { filter: none; }
 /* Sur Wix les paragraphes n'ont pas de marge : un paragraphe vide fait une ligne d'espace */
@@ -158,6 +159,7 @@ main { width: 100%; max-width: var(--largeur); margin: 0 auto; }
 .projet ul { padding-left: 1.3em; text-align: left; }
 .projet h2 { margin: 0; font: 400 22px/1.3em var(--raleway); text-align: left; }
 .projet h2.caslon { font: 600 20px/1.3em "Crimson Text", serif; } /* proche de l'Adobe Caslon du site Wix */
+.projet p.espace { margin: 0; height: 1lh; }
 .projet p.legende { font-style: italic; text-decoration: underline; }
 .bloc > :last-child { margin-bottom: 0; }
 /* Ancienne mise en page linéaire (pages sans positions Wix) */
@@ -176,9 +178,10 @@ main { width: 100%; max-width: var(--largeur); margin: 0 auto; }
 .diaporama .fleche::before { border-color: #9a9a9a; filter: none; width: 26px; height: 26px; top: 8px; }
 .vignettes { display: flex; overflow-x: auto; scrollbar-width: none; }
 .vignettes::-webkit-scrollbar { display: none; }
-.vignette { flex: 0 0 auto; height: 80px; padding: 0; border: 0; background: none; cursor: pointer; }
+.vignette { flex: 0 0 auto; width: 80px; height: 80px; margin: 5px 0 0 5px; padding: 0; border: 0; background: none; cursor: pointer; }
+.vignette:first-child { margin-left: 0; }
 .vignette:hover { opacity: .8; }
-.vignette img { height: 80px; width: auto; max-width: none; }
+.vignette img { width: 100%; height: 100%; object-fit: cover; }
 
 /* Mobile : le site Wix n'était pas adapté, celui-ci l'est */
 @media (max-width: 1010px) {
@@ -212,7 +215,7 @@ main { width: 100%; max-width: var(--largeur); margin: 0 auto; }
   .grille .case { margin-left: 0; width: calc(50% - 4px); }
   .projet .bloc + .bloc, .projet .col + .col { margin-top: max(min(var(--mt), 28px), 12px); }
   .diaporama-scene { height: 62vw; }
-  .vignette, .vignette img { height: 56px; }
+  .vignette { width: 56px; height: 56px; }
   .site-footer { flex-direction: column; gap: 14px; padding: 70px 16px 40px; }
   .site-footer .contact:first-child, .site-footer .contact:last-child { margin: 0; }
 }

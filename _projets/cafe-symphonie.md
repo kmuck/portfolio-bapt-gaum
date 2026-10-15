@@ -4,6 +4,7 @@ categorie: "Année 6 : AI6"
 rang_categorie: 6
 ordre: 2
 couverture: "/assets/img/wix/51f7bd_82ee6144100f4b4d9de8e345e531c225-mv2.webp"
+bandeau: "Au Café Symphonie"
 texte: "13px/2em"
 ---
 

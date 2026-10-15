@@ -4,6 +4,7 @@ categorie: "Année 2 : AI2"
 rang_categorie: 2
 ordre: 13
 couverture: "/assets/img/wix/51f7bd_58ffbbcf2c844d77b630faf228b53473-mv2.webp"
+bandeau: "Projet logement - quartier de la Gare - Strasbourg"
 texte: "13px/2em"
 ---
 
@@ -46,9 +47,9 @@ Nous sommes sur une petite rue perpendiculaire à deux gros axes de circulation 
 
 </div>
 
-<div class="bloc grille gris" style="--x:9.59%;--w:80.82%;--mt:19px"><div class="case" style="--w:30.81%">{% include img.html src="/assets/img/wix/51f7bd_c4691ed60efa4de9a888b8e01ec59242-mv2.webp" lien=true ratio="244/244" %}</div>
-<div class="case" style="--x:3.79%;--w:30.81%">{% include img.html src="/assets/img/wix/51f7bd_a884e318a0d94cfa8ffe553506b4d412-mv2.webp" lien=true ratio="244/244" %}</div>
-<div class="case" style="--x:3.79%;--w:30.81%">{% include img.html src="/assets/img/wix/51f7bd_58286c93a83442abbc042fb0a676d235-mv2.webp" lien=true ratio="244/244" %}</div></div>
+<div class="bloc grille gris" style="--x:9.59%;--w:80.82%;--mt:19px"><div class="case" style="--w:30.81%">{% include img.html src="/assets/img/wix/51f7bd_c4691ed60efa4de9a888b8e01ec59242-mv2.webp" lien=true ratio="244/244" cadre="contain" %}</div>
+<div class="case" style="--x:3.79%;--w:30.81%">{% include img.html src="/assets/img/wix/51f7bd_a884e318a0d94cfa8ffe553506b4d412-mv2.webp" lien=true ratio="244/244" cadre="contain" %}</div>
+<div class="case" style="--x:3.79%;--w:30.81%">{% include img.html src="/assets/img/wix/51f7bd_58286c93a83442abbc042fb0a676d235-mv2.webp" lien=true ratio="244/244" cadre="contain" %}</div></div>
 
 <div class="bloc" style="--h:78px;--x:3.47%;--w:92.86%;--mt:14px" markdown="1">
 

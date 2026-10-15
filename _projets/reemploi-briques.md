@@ -4,12 +4,14 @@ categorie: "Année 2 : AI2"
 rang_categorie: 2
 ordre: 14
 couverture: "/assets/img/wix/51f7bd_b5a3ebaa05da499b946d95375c451e9e-mv2.webp"
+bandeau: "Réemploi de briques - Etude de matérialité"
 texte: "13px/1.8em"
 ---
 
 <div class="bloc grille" style="--mt:3px"><div class="case" style="--w:24.51%">{% include img.html src="/assets/img/wix/51f7bd_a78855ba6ebe4cc2b4b30862b0b42fb9-mv2.webp" lien=true ratio="240/427" %}</div>
 <div class="case" style="--x:0.61%;--w:24.51%">{% include img.html src="/assets/img/wix/51f7bd_5a797c6a269b45868c61be79ad5ab253-mv2.webp" lien=true ratio="240/427" %}</div>
-<div class="case" style="--x:25.84%;--w:24.51%">{% include img.html src="/assets/img/wix/51f7bd_92f7e9c5e56a47aa8d30d9a734a2cef0-mv2.webp" lien=true ratio="240/427" %}</div></div>
+<div class="case" style="--x:0.61%;--w:24.62%"><video src="{{ '/assets/video/wix/51f7bd_c7d60a1ed0bb421c807aa1fec1a0d766.mp4' | relative_url }}" poster="{{ '/assets/img/wix/51f7bd_c7d60a1ed0bb421c807aa1fec1a0d766f003.webp' | relative_url }}" controls playsinline preload="none" style="aspect-ratio: 241 / 427"></video></div>
+<div class="case" style="--x:0.61%;--w:24.51%">{% include img.html src="/assets/img/wix/51f7bd_92f7e9c5e56a47aa8d30d9a734a2cef0-mv2.webp" lien=true ratio="240/427" %}</div></div>
 
 <div class="bloc" style="font:13px/1.2em var(--raleway);--h:31px;--x:3.67%;--w:92.65%;--mt:24px" markdown="1">
 

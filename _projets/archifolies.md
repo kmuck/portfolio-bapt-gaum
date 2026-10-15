@@ -4,6 +4,7 @@ categorie: "Année 4 et 5 : AI4, AI5"
 rang_categorie: 5
 ordre: 5
 couverture: "/assets/img/wix/51f7bd_4301884e73cd4c74a85aef2608f333b6-mv2.webp"
+bandeau: "Archifolies - Pavillon du triathlon JO2024"
 texte: "13px/1.8em"
 ---
 

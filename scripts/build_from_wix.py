@@ -15,7 +15,7 @@ import pathlib
 import re
 import sys
 
-from bs4 import BeautifulSoup, NavigableString, Tag
+from bs4 import BeautifulSoup, Comment, NavigableString, Tag
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 RAW = ROOT / "import" / "raw"
@@ -23,6 +23,7 @@ PROJETS = ROOT / "_projets"
 IMG_DIR = ROOT / "assets" / "img" / "wix"
 BOITES = ROOT / "import" / "captures" / "boites"
 MEDIA_RE = re.compile(r"static\.wixstatic\.com/media/([0-9a-zA-Z_]+~mv2\.[a-zA-Z]+|[0-9a-f]{32}\.[a-zA-Z]+)")
+APERCU_RE = re.compile(r"static\.wixstatic\.com/media/(([0-9a-z]+_[0-9a-f]{32})f00\d\.jpg)")  # aperçu d'une vidéo
 MESH = "inlineContent-gridContainer"
 LARGEUR = 980  # largeur de la colonne de contenu Wix
 BANDEAU = 38  # hauteur du bandeau de titre, en haut de chaque page projet
@@ -48,18 +49,20 @@ def mesh_positions(html):
 
 
 def text_of(el):
-    for br in el.find_all("br"):
-        br.replace_with("\n")
-    t = el.get_text("")
+    """Texte brut de el ; <br> devient un saut de ligne (les retours à la ligne du code HTML n'en sont pas)."""
+    t = "".join("\n" if getattr(n, "name", None) == "br" else re.sub(r"[\r\n]", " ", str(n))
+                for n in el.descendants
+                if getattr(n, "name", None) == "br" or (isinstance(n, NavigableString) and not isinstance(n, Comment)))
     t = t.replace("​", "").replace("\xa0", " ")
     return "\n".join(re.sub(r"[ \t]+", " ", l).strip() for l in t.split("\n")).strip()
 
 
-def rich_text(el):
-    """Texte de el avec le gras et l'italique en <strong>/<em> ; <br> devient un saut de ligne."""
+def rich_text(el, bords=False):
+    """Texte de el avec le gras et l'italique en <strong>/<em> ; <br> devient un saut de ligne.
+    bords : garde les sauts de ligne du début et de la fin."""
     def walk(node, bold, ital):
         if isinstance(node, NavigableString):
-            t = html.escape(str(node).replace("​", "").replace("\xa0", " "), quote=False)
+            t = html.escape(re.sub(r"[\r\n]", " ", str(node)).replace("​", "").replace("\xa0", " "), quote=False)
             if not t:
                 return ""
             if ital:
@@ -80,7 +83,8 @@ def rich_text(el):
 
     t = walk(el, False, False)
     t = re.sub(r"</(strong|em)>(\s*)<\1>", r"\2", t)  # fusionne les balises voisines
-    return "\n".join(re.sub(r"[ \t]+", " ", l).strip() for l in t.split("\n")).strip()
+    t = "\n".join(re.sub(r"[ \t]+", " ", l).strip() for l in t.split("\n"))
+    return t if bords else t.strip()
 
 
 def covered_by(el, style_re):
@@ -124,15 +128,19 @@ def rich_text_items(block):
         elif el.name == "li" or el.find_parent("li"):
             kind, t = "liste", rich_text(el)
         else:
-            kind, t = "texte", rich_text(el)
+            kind, t = "texte", rich_text(el, bords=True)
+            vide = vide or t.startswith("\n")  # paragraphe qui commence par un saut de ligne
+            fin, t = t.endswith("\n"), t.strip()
         if el.name.startswith("h"):
             # le premier titre de la page est celui du bandeau ; les autres sont mis en page selon leur style
             kind, t = "titre", (brut, kind, t)
         if items and items[-1][0] == kind and kind in ("texte", "legende", "liste") and (not vide or kind == "liste"):
             items[-1] = (kind, items[-1][1] + "\n" + t)
         else:
+            if vide and items and items[-1][0] in ("inter", "inter-caslon"):
+                items.append(("espace", None))  # ligne vide sous un intertitre
             items.append((kind, t))
-        vide = False
+        vide = kind == "texte" and fin
     return items
 
 
@@ -209,8 +217,11 @@ def walk(tag, pos, out, comp=None):
             px = [float(m.group(1)) if (m := re.search(k + r":\s*(-?[\d.]+)px", st)) else 0
                   for k in ("left", "top", "width", "height")]
             m = MEDIA_RE.search(str(it))
-            if m:
-                cases.append((m.group(1), *px))
+            v = APERCU_RE.search(str(it)) if it.select_one(".video-item") else None
+            if v:  # vidéo (voir import_wix.py videos) : (aperçu, ..., identifiant de la vidéo)
+                cases.append((v.group(1), *px, "cover", v.group(2)))
+            elif m:  # « cube-type-fit » : image entière dans sa case, sans la recadrer
+                cases.append((m.group(1), *px, "contain" if it.select_one(".cube-type-fit") else "cover", None))
         # « color-in-on-hover » : images en noir et blanc, en couleur au survol
         gris = any("color-in-on-hover" in (it.get("class") or []) for it in grille.select(".gallery-item-container"))
         out.append(("grille", cases, comp, "gris" if gris else None))
@@ -297,12 +308,16 @@ def texte_md(kind, val):
             fs, lh = taille.split("/")
             return f'## {titre}\n{{: style="font-size:{fs};line-height:{lh}"}}\n'
         return f"## {titre}\n"
+    if kind == "espace":
+        return '<p class="espace"></p>\n'
     lignes = [l for l in val.split("\n") if l.strip()]
     if kind == "legende":
         return '<p class="legende">' + "<br>".join(lignes) + "</p>\n"
     if kind == "liste" or all(l.startswith("-") for l in lignes):
         return "\n".join("- " + l.lstrip("-• ").strip() for l in lignes) + "\n"
-    return "<br>\n".join(ligne(l) for l in lignes) + "\n"
+    # deux <br> à la suite dans Wix : saut de paragraphe
+    paras = [p for p in re.split(r"\n\s*\n", val) if p.strip()]
+    return "\n\n".join("<br>\n".join(ligne(l) for l in p.split("\n") if l.strip()) for p in paras) + "\n"
 
 
 def crop_name(media_id, x, y, w, h):
@@ -318,6 +333,12 @@ def image_md(media, extra, w=None, h=None):
     ratio = f' ratio="{w}/{h}"' if w and h else ""
     cadre = ' cadre="contain"' if fit == "contain" else ""
     return f'{{% include img.html src="{src}" lien=true{ratio}{cadre} %}}'
+
+
+def video_md(apercu, video, w, h):
+    url = lambda chemin: "{{ '" + chemin + "' | relative_url }}"
+    return (f'<video src="{url(f"/assets/video/wix/{video}.mp4")}" poster="{url(f"/assets/img/wix/{webp_name(apercu)}")}"'
+            f' controls playsinline preload="none" style="aspect-ratio: {w} / {h}"></video>')
 
 
 def style(dx, w, zw, mt, st=()):
@@ -359,8 +380,9 @@ def bloc_md(b, zx, zw, mt, texte_page, hauteur):
         cases, droite = sorted(items[0][1], key=lambda c: (c[2], c[1])), 0
         gw = max(c[1] + c[3] for c in cases)
         parts = []
-        for media, l, t, cw, ch in cases:
-            parts.append(f'<div class="case"{style(l - droite, cw, gw, 0)}>{image_md(media, ("cover", None), round(cw), round(ch))}</div>')
+        for media, l, t, cw, ch, fit, video in cases:
+            corps = video_md(media, video, round(cw), round(ch)) if video else image_md(media, (fit, None), round(cw), round(ch))
+            parts.append(f'<div class="case"{style(l - droite, cw, gw, 0)}>{corps}</div>')
             droite = l + cw
         cls = "bloc grille gris" if items[0][2] == "gris" else "bloc grille"
         return f'<div class="{cls}"{st}{debug(b)}>' + "\n".join(parts) + "</div>\n"
@@ -602,7 +624,10 @@ def main(slugs):
         missing = [i for i in ids if not (IMG_DIR / webp_name(i)).exists()]
         front = md.read_text(encoding="utf-8").split("---", 2)[1]
         front = re.sub(r"\nimages:\n(  - .*\n)+", "\n", front)
-        front = re.sub(r'\n(sous_titre|texte): .*', "", front).rstrip("\n") + "\n"
+        front = re.sub(r'\n(sous_titre|texte|bandeau): .*', "", front).rstrip("\n") + "\n"
+        bandeau = re.sub(r"\s+", " ", titre.split("|", 1)[0]).strip()
+        if bandeau and f'title: "{bandeau}"' not in front:  # titre complet de la page Wix
+            front += f'bandeau: "{bandeau}"\n'
         if "|" in titre:
             front += f'sous_titre: "{titre.split("|", 1)[1].strip()}"\n'
         texte = style_texte(page)
