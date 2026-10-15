@@ -2,6 +2,10 @@ name: Captures du site Wix
 
 on:
   workflow_dispatch:
+    inputs:
+      captures:
+        description: "tout, ou boites (positions des éléments des pages projet seulement)"
+        default: tout
   push:
     branches: ['claude/**']
     paths:
@@ -21,6 +25,8 @@ jobs:
           node-version: "22"
       - run: npm install --no-save playwright@1.48.2 && npx playwright install --with-deps chromium
       - run: node scripts/capture_wix.js
+        env:
+          CAPTURES: ${{ inputs.captures || 'boites' }}
       - name: Images du diaporama et des cartes de l'accueil
         run: |
           pip install requests pillow

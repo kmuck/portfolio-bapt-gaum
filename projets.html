@@ -1,12 +1,17 @@
 ---
 title: Projets
+bandeau: PROJETS
 permalink: /projets/
 ---
-<h1>Projets</h1>
 {% assign categories = site.projets | sort: "ordre" | group_by: "categorie" %}
 {% for cat in categories %}
-<h2>{{ cat.name }}</h2>
-<div class="grille">
-  {% for projet in cat.items %}{% include carte-projet.html projet=projet %}{% endfor %}
-</div>
+<section class="annee">
+  <div class="annee-titre">
+    <h2>{{ cat.name }}</h2>
+    <p>{% if cat.name contains "cotive" %}avec entreprise Ecotive{% else %}INSA Strasbourg{% endif %}</p>
+  </div>
+  <div class="vignettes-projets">
+    {% for projet in cat.items %}{% include carte-projet.html projet=projet %}{% endfor %}
+  </div>
+</section>
 {% endfor %}

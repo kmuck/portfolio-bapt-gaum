@@ -1,6 +1,6 @@
 ---
 title: "Panser la plaie dans sa continuité"
-categorie: "Années 4 et 5 : AI4, AI5"
+categorie: "Année 4 et 5 : AI4, AI5"
 rang_categorie: 5
 ordre: 4
 couverture: "/assets/img/wix/51f7bd_21103a9f53924b11ad438cb459ea178b-mv2.webp"
@@ -10,7 +10,7 @@ couverture: "/assets/img/wix/51f7bd_21103a9f53924b11ad438cb459ea178b-mv2.webp"
   {% include img.html src="/assets/img/wix/51f7bd_eab493e94244454eb4e7e89ecf1f7918-mv2.webp" lien=true %}
 </div>
 
-Ce projet correspond au projet d’architecture du second semestre de ma cinquième année du cursus architecture ingénierie, et a été mené seul.
+<strong>Ce projet correspond au projet d’architecture du second semestre de ma cinquième année du cursus architecture ingénierie, et a été mené seul. </strong>
 
 La gare de Metz se place au centre de Metz. Bien que le site soit une interface multimodale, sa position souffre d’un engorgement par ses axes de mobilités. Les couloirs souterrains actuels ne supportent plus les flux de visiteurs et de voyageurs. Avec l’émergence du nouveau quartier amphithéâtre, un nouveau dynamisme s’instaure. Pourtant les quartiers au Nord n’en profitent pas. La gare, les rails ferroviaires, et les long bâtiments barrières comme le Palais des Congrès et la gare créent une plaie béante au sein de la ville.
 

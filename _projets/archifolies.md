@@ -1,6 +1,6 @@
 ---
 title: "Archifolies - pavillon du triathlon JO2024"
-categorie: "Années 4 et 5 : AI4, AI5"
+categorie: "Année 4 et 5 : AI4, AI5"
 rang_categorie: 5
 ordre: 5
 couverture: "/assets/img/wix/51f7bd_4301884e73cd4c74a85aef2608f333b6-mv2.webp"
@@ -11,7 +11,7 @@ couverture: "/assets/img/wix/51f7bd_4301884e73cd4c74a85aef2608f333b6-mv2.webp"
   {% include img.html src="/assets/img/wix/51f7bd_40a88a4648fe445abbd4bce193198022-mv2.webp" lien=true %}
 </div>
 
-À l’occasion des jeux olympiques 2024, j’ai eu la chance de pouvoir travailler sur le pavillon destiné à la fédération française du triathlon placé au parc de la Villette. Ce projet a avant tout été social et relationnel, avec une mise en commun des enseignements entre chacun des corps de la construction. Elle a été réalisée par les Compagnons du Devoir du Grand-Est, l’INSA Strasbourg et l’ENSA Strasbourg.
+<strong>À l’occasion des jeux olympiques 2024, j’ai eu la chance de pouvoir travailler sur le pavillon destiné à la fédération française du triathlon placé au parc de la Villette. Ce projet a avant tout été social et relationnel, avec une mise en commun des enseignements entre chacun des corps de la construction. Elle a été réalisée par les Compagnons du Devoir du Grand-Est, l’INSA Strasbourg et l’ENSA Strasbourg.</strong>
 
 <div class="planche">
   {% include img.html src="/assets/img/wix/51f7bd_66b2061ef3a0435e8385f3e655090004-mv2.webp" lien=true %}

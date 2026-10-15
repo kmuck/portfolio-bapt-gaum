@@ -6,21 +6,9 @@ ordre: 10
 couverture: "/assets/img/wix/51f7bd_418201d67b3642cc9252cc2c400f5067-mv2.webp"
 ---
 
-<div class="galerie">
-  {% include img.html src="/assets/img/wix/51f7bd_07f1dafbf9ac4feaa60238129a1f77f0-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_97ca0d736cda442a956b1539ff19cac8-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_3ccbba6e4ff74726b4d4e03b434378de-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_c5e57b7f0878462c89e23c85280df2d5-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_d203ba940d4645dfab6d03c915982216-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_c459afbe12414e34a63ebcdd220d9c6d-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_e7339bdcd34a43f998dda349abb2be84-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_449d361ebd344fd88a2522864ae919dd-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_230eac2e99464627a4e6e9610842586f-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_353e2ee915eb4e0481357c91521a90c2-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_a1529730f49942b5ac39e531013bcb02-mv2.webp" lien=true %}
-</div>
+{% include diaporama.html images="/assets/img/wix/51f7bd_07f1dafbf9ac4feaa60238129a1f77f0-mv2.webp,/assets/img/wix/51f7bd_97ca0d736cda442a956b1539ff19cac8-mv2.webp,/assets/img/wix/51f7bd_3ccbba6e4ff74726b4d4e03b434378de-mv2.webp,/assets/img/wix/51f7bd_c5e57b7f0878462c89e23c85280df2d5-mv2.webp,/assets/img/wix/51f7bd_d203ba940d4645dfab6d03c915982216-mv2.webp,/assets/img/wix/51f7bd_c459afbe12414e34a63ebcdd220d9c6d-mv2.webp,/assets/img/wix/51f7bd_e7339bdcd34a43f998dda349abb2be84-mv2.webp,/assets/img/wix/51f7bd_449d361ebd344fd88a2522864ae919dd-mv2.webp,/assets/img/wix/51f7bd_230eac2e99464627a4e6e9610842586f-mv2.webp,/assets/img/wix/51f7bd_353e2ee915eb4e0481357c91521a90c2-mv2.webp,/assets/img/wix/51f7bd_a1529730f49942b5ac39e531013bcb02-mv2.webp" %}
 
-Ce projet correspond au projet d’architecture du second semestre de ma deuxième année du cursus ingénieur architecture. J’étais accompagné d’une camarade de classe, j’en profite donc pour la remercier.
+<strong>Ce projet correspond au projet d’architecture du second semestre de ma deuxième année du cursus ingénieur architecture. J’étais accompagné d’une camarade de classe, j’en profite donc pour la remercier.</strong>
 
 Le site d’intervention se situe au 1 rue Adèle Riton dans le quartier de la gare de Strasbourg. L'objectif de ce projet était d'appréhender la question de réhabilitation de l'existant afin de lui conférer des qualités en adéquation avec le contexte actuel. L'exercice a été pour nous de répondre à des problématiques sociales, thermiques, économiques, écologiques et esthétiques en accord aux enjeux actuels.
 

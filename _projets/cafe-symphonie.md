@@ -10,7 +10,7 @@ couverture: "/assets/img/wix/51f7bd_82ee6144100f4b4d9de8e345e531c225-mv2.webp"
   {% include img.html src="/assets/img/wix/51f7bd_a08151a62f98404582f8c38e06356e94-mv2.webp" lien=true %}
 </div>
 
-Ce projet correspond au projet d’architecture du premier semestre de ma sixième année du cursus architecture ingénierie, et a été mené seul.
+<strong>Ce projet correspond au projet d’architecture du premier semestre de ma sixième année du cursus architecture ingénierie, et a été mené seul. </strong>
 
 <div class="planche">
   {% include img.html src="/assets/img/wix/51f7bd_90a66f018b5d4e549ab8888f4d957682-mv2.webp" lien=true %}

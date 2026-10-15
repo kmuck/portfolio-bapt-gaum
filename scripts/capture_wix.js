@@ -1,7 +1,10 @@
 // Captures d'écran et styles calculés du site Wix d'origine, pour reproduire son design.
-// Sorties : import/captures/<page>-<largeur>.jpg et import/captures/styles.json
+// Sorties : import/captures/<page>-<largeur>.jpg, styles.json, diaporama.json
+// et boites/<projet>.json (position de chaque élément des pages projet, pour build_from_wix.py).
+// CAPTURES=boites ne refait que les positions.
 const { chromium } = require('playwright');
 const fs = require('fs');
+const MODE = process.env.CAPTURES || 'tout';
 
 const BASE = 'https://baptistegmtc.wixsite.com/website';
 const PAGES = ['', 'projets', 'ecrits-recherches', 'a-propos-de-moi', 'tisser-la-ville', 'silo-bernouilli', 'bibliotheque'];
@@ -10,6 +13,8 @@ const OUT = 'import/captures';
 (async () => {
   fs.mkdirSync(OUT, { recursive: true });
   const browser = await chromium.launch();
+  await boites(browser);
+  if (MODE === 'boites') return browser.close();
   const styles = {};
   for (const width of [1280, 390]) {
     for (const slug of PAGES) {
@@ -96,3 +101,39 @@ const OUT = 'import/captures';
   console.log('diaporama', slides.length, 'auto', auto);
   await browser.close();
 })();
+
+// Position (x, y, largeur, hauteur) de chaque composant Wix des pages projet, à 1280 px de large
+async function boites(browser) {
+  fs.mkdirSync(`${OUT}/boites`, { recursive: true });
+  const slugs = fs.readdirSync('_projets').filter(f => f.endsWith('.md')).map(f => f.slice(0, -3));
+  for (const slug of slugs) {
+    const page = await browser.newPage({ viewport: { width: 1280, height: 800 } });
+    try {
+      await page.goto(`${BASE}/${slug}`, { waitUntil: 'load', timeout: 90000 });
+      await page.waitForTimeout(3000);
+      await page.evaluate(async () => {
+        for (let y = 0; y < document.body.scrollHeight; y += 800) {
+          window.scrollTo(0, y);
+          await new Promise(r => setTimeout(r, 80));
+        }
+        window.scrollTo(0, 0);
+      });
+      await page.waitForTimeout(1000);
+      const data = await page.evaluate(() => {
+        const box = el => {
+          const r = el.getBoundingClientRect();
+          return [Math.round(r.x), Math.round(r.y + window.scrollY), Math.round(r.width), Math.round(r.height)];
+        };
+        const root = document.getElementById('PAGES_CONTAINER');
+        const comps = {};
+        root.querySelectorAll('[id^="comp-"]').forEach(el => { comps[el.id] = box(el); });
+        return { page: box(root), comps };
+      });
+      fs.writeFileSync(`${OUT}/boites/${slug}.json`, JSON.stringify(data));
+      console.log('boites', slug, Object.keys(data.comps).length);
+    } catch (e) {
+      console.log('échec boites', slug, e.message.split('\n')[0]);
+    }
+    await page.close();
+  }
+}

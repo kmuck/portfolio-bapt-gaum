@@ -7,22 +7,9 @@ couverture: "/assets/img/wix/51f7bd_f49ac087dbef455ca7347a1799d11b9b-mv2.webp"
 en_avant: true
 ---
 
-<div class="galerie">
-  {% include img.html src="/assets/img/wix/51f7bd_44fc471e2c9c4cae8a93d7368c959902-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_1441c78b11524b5f9dde9902e31c3595-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_15e01e55b3d64b3eb4920425fcf141f4-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_1f925e0b52744df29d9ff733de909459-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_061f1d57b7c34739967acd47dfe721e4-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_5f44afa734f842aa952f1411a57b0691-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_e5af176d40f444d4add7c6d358d3e58c-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_c45633cc083040b4ac6bfcfa60b7c97f-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_fd90d50c7328449f8c9e82a3302c9e8e-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_114503d14c1a439f82f3dbf7a43cb9e3-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_d1554409f46b4b4f82d8f680aaa8ead5-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_aef1b15615e34321be7bc21e6d7cf568-mv2.webp" lien=true %}
-</div>
+{% include diaporama.html images="/assets/img/wix/51f7bd_44fc471e2c9c4cae8a93d7368c959902-mv2.webp,/assets/img/wix/51f7bd_1441c78b11524b5f9dde9902e31c3595-mv2.webp,/assets/img/wix/51f7bd_15e01e55b3d64b3eb4920425fcf141f4-mv2.webp,/assets/img/wix/51f7bd_1f925e0b52744df29d9ff733de909459-mv2.webp,/assets/img/wix/51f7bd_061f1d57b7c34739967acd47dfe721e4-mv2.webp,/assets/img/wix/51f7bd_5f44afa734f842aa952f1411a57b0691-mv2.webp,/assets/img/wix/51f7bd_e5af176d40f444d4add7c6d358d3e58c-mv2.webp,/assets/img/wix/51f7bd_c45633cc083040b4ac6bfcfa60b7c97f-mv2.webp,/assets/img/wix/51f7bd_fd90d50c7328449f8c9e82a3302c9e8e-mv2.webp,/assets/img/wix/51f7bd_114503d14c1a439f82f3dbf7a43cb9e3-mv2.webp,/assets/img/wix/51f7bd_d1554409f46b4b4f82d8f680aaa8ead5-mv2.webp,/assets/img/wix/51f7bd_aef1b15615e34321be7bc21e6d7cf568-mv2.webp" %}
 
-Consigne : Concevoir une maison pour une famille de 4 personnes avec un studio dans une parcelle de 28 x 17 m encadrée par un mur en calcaire de 3 m de hauteur et 1 m d'épaisseur proche des côtes atlantiques de Bretagne.
+<strong>Consigne</strong> : <em>Concevoir une maison pour une famille de 4 personnes avec un studio dans une parcelle de 28 x 17 m encadrée par un mur en calcaire de 3 m de hauteur et 1 m d'épaisseur proche des côtes atlantiques de Bretagne. </em>
 
 Prenant place dans un cadre minéral et naturel, les landes de Bretagne, il me fallait une construction intégrée dans le paysage qui l'entoure. Le document consigne fourni n'indiquait pas de voisinage, donc j'ai imaginé la maison comme seule dans le paysage désertique des Landes. Je souhaitais que la maison fasse partie du paysage en tant que telle, et donc renoncer à une construction discrète mais plus réfléchir à une forme qui s'impose dans le paysage sans le dégrader. J'ai donc orienté mes recherches vers le land-art, et notamment en pierre, car j'avais retenu que le projet prenait place à 100 m des falaises.
 

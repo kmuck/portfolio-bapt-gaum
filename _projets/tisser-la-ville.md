@@ -12,11 +12,11 @@ sous_titre: "Projet de Fin d'Etudes"
   {% include img.html src="/assets/img/wix/51f7bd_c06995c1013d41528cf415175f95e69c-mv2.webp" lien=true %}
 </div>
 
-Ce travail s’inscrit dans le cadre de mon Projet de Fin d’Etudes (PFE) 2024/2025.
+<strong>Ce travail s’inscrit dans le cadre de mon Projet de Fin d’Etudes (PFE) 2024/2025.</strong>
 
 *S'étalant sur une année, il s'est achevé par une période d'intensifs collective d'une durée d'un mois. Cette période est particulière à l'INSA Strasbourg, où je me suis entouré d'une équipe (six personnes de chaque année) pour concrétiser mon projet. La version présentée est celle finale, prenant appui sur une base solide individuelle, et le fruit d'un travail collectif et pédagogique. Je tiens avant tout à remercier mon équipe : Noah ; Steven ; Héloïse ; Yoen ; Minasse ; Eliott.*
 
-Il s'intéresse à la réhabilitation d’un patrimoine industriel en un démonstrateur textile innovant, dans un quartier en centre-ville de Roubaix.
+<strong>Il s'intéresse à la réhabilitation d’un patrimoine industriel en un démonstrateur textile innovant, dans un quartier en centre-ville de Roubaix. </strong>
 
 ## Diagnostic territorial et urbain
 
@@ -118,7 +118,7 @@ Depuis 2016, l’université a quitté les lieux pour des problèmes d’étanch
 
 ## Enjeux programmatiques et problématique
 
-La complexité du projet réside alors dans cette hybridation entre des enjeux à échelles différentes : celle territoriale et celle du quartier. Il pose alors la problématique suivante : comment un démonstrateur agricole textile et de fabrication léger peut-il s’intégrer dans un quartier en centre-ville ?
+La complexité du projet réside alors dans cette hybridation entre des enjeux à échelles différentes : celle territoriale et celle du quartier. Il pose alors la problématique suivante : <strong>comment un démonstrateur agricole textile et de fabrication léger peut-il s’intégrer dans un quartier en centre-ville ? </strong>
 
 Pour y répondre, j’ai considéré ce démonstrateur d’un point de vue rationnel comme un système non autonome dépendant d’un réseau d’acteurs proches avec des intrants et des sortants, où sa vocation première est pédagogique, expérimentale et de sensibilisation.
 

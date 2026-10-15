@@ -7,6 +7,7 @@ conservant son en-tête (titre, catégorie, ordre...).
 Usage : python3 scripts/build_from_wix.py [slug ...]
 """
 import collections
+import html
 import pathlib
 import re
 import sys
@@ -47,6 +48,34 @@ def text_of(el):
     return "\n".join(re.sub(r"[ \t]+", " ", l).strip() for l in t.split("\n")).strip()
 
 
+def rich_text(el):
+    """Texte de el avec le gras et l'italique en <strong>/<em> ; <br> devient un saut de ligne."""
+    def walk(node, bold, ital):
+        if isinstance(node, NavigableString):
+            t = html.escape(str(node).replace("\u200b", "").replace("\xa0", " "), quote=False)
+            if not t:
+                return ""
+            if ital:
+                t = f"<em>{t}</em>" if t.strip() else t
+            if bold:
+                t = f"<strong>{t}</strong>" if t.strip() else t
+            return t
+        if node.name == "br":
+            return "\n"
+        style = node.get("style") or ""
+        b = bold or bool(re.search(r"font-weight:\s*(bold|[6-9]00)", style))
+        i = ital or bool(re.search(r"font-style:\s*italic", style))
+        if re.search(r"font-weight:\s*normal", style):
+            b = False
+        if re.search(r"font-style:\s*normal", style):
+            i = False
+        return "".join(walk(c, b, i) for c in node.children)
+
+    t = walk(el, False, False)
+    t = re.sub(r"</(strong|em)>(\s*)<\1>", r"\2", t)  # fusionne les balises voisines
+    return "\n".join(re.sub(r"[ \t]+", " ", l).strip() for l in t.split("\n")).strip()
+
+
 def covered_by(el, style_re):
     """Vrai si tout le texte de el est dans des spans dont le style correspond."""
     full = re.sub(r"\s+", "", el.get_text(""))
@@ -80,6 +109,7 @@ def rich_text_items(block):
             kind = "legende" if len(t) < 200 else "italique"
         else:
             kind = "texte"
+            t = rich_text(el)
         items.append((kind, t))
     return items
 
@@ -98,7 +128,15 @@ def walk(tag, pos, out):
         if m:
             out.append(("image", m.group(1)))
         return
-    if "background-image" in (tag.get("style") or ""):  # vignettes des galeries Wix
+    if tag.get("id", "").startswith("comp-") and tag.select_one(".thumbnailItem"):
+        thumbs = [t for t in tag.select(".thumbnailItem")
+                  if t.find_parent(id=re.compile("^comp-")) is tag]
+        if thumbs:  # galerie Wix (diaporama avec vignettes)
+            ids = list(dict.fromkeys(m.group(1) for t in thumbs
+                                     if (m := MEDIA_RE.search(t.get("style") or ""))))
+            out.append(("diaporama", ids))
+            return
+    if "background-image" in (tag.get("style") or ""):
         m = MEDIA_RE.search(tag["style"])
         if m:
             out.append(("image", m.group(1)))
@@ -122,6 +160,12 @@ def page_items(html, decor):
     walk(soup.find(id="PAGES_CONTAINER"), mesh_positions(html), out)
     seen, items = set(), []
     for kind, val in out:
+        if kind == "diaporama":
+            val = [i for i in val if i not in decor and i not in seen]
+            seen.update(val)
+            if val:
+                items.append((kind, val))
+            continue
         if kind == "image":
             if val in decor or val in seen:
                 continue
@@ -146,6 +190,10 @@ def to_markdown(items):
             galerie.append(val)
             continue
         flush()
+        if kind == "diaporama":
+            imgs = ",".join(f"/assets/img/wix/{webp_name(i)}" for i in val)
+            lines.append(f'{{% include diaporama.html images="{imgs}" %}}\n')
+            continue
         if kind == "inter":
             lines.append(f"## {val}\n")
         elif kind == "italique":
@@ -192,15 +240,16 @@ def main(slugs):
         items = page_items(raw.read_text(encoding="utf-8"), decor)
         titre = next((v for k, v in items if k == "titre"), "")
         items = [(k, v) for k, v in items if k != "titre"]
-        missing = [i for k, i in items if k == "image" and not (IMG_DIR / webp_name(i)).exists()]
+        ids = [i for k, v in items if k in ("image", "diaporama") for i in (v if k == "diaporama" else [v])]
+        missing = [i for i in ids if not (IMG_DIR / webp_name(i)).exists()]
         front = md.read_text(encoding="utf-8").split("---", 2)[1]
         front = re.sub(r"\nimages:\n(  - .*\n)+", "\n", front)
         front = re.sub(r'\nsous_titre: .*', "", front)
         if "|" in titre:
             front = front.rstrip("\n") + f'\nsous_titre: "{titre.split("|", 1)[1].strip()}"\n'
         md.write_text(f"---{front}---\n\n{to_markdown(items)}", encoding="utf-8")
-        n_img = sum(k == "image" for k, _ in items)
-        print(f"{slug}: {len(items) - n_img} blocs de texte, {n_img} images"
+        n_img = sum(1 if k == "image" else len(v) if k == "diaporama" else 0 for k, v in items)
+        print(f"{slug}: {sum(k not in ('image', 'diaporama') for k, _ in items)} blocs de texte, {n_img} images"
               + (f", {len(missing)} images manquantes" if missing else ""))
     localize_links()
 

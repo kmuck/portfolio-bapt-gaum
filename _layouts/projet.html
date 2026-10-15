@@ -1,10 +1,4 @@
 ---
 layout: default
 ---
-<article class="projet">
-  <p class="surtitre">{{ page.categorie }}</p>
-  <h1>{{ page.title }}</h1>
-  {% if page.sous_titre %}<p class="sous-titre">{{ page.sous_titre }}</p>{% endif %}
-  <div class="contenu">{{ content }}</div>
-  <p><a href="{{ '/projets/' | relative_url }}">← Tous les projets</a></p>
-</article>
+<article class="projet">{{ content }}</article>

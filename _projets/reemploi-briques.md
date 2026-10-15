@@ -12,7 +12,7 @@ couverture: "/assets/img/wix/51f7bd_b5a3ebaa05da499b946d95375c451e9e-mv2.webp"
   {% include img.html src="/assets/img/wix/51f7bd_92f7e9c5e56a47aa8d30d9a734a2cef0-mv2.webp" lien=true %}
 </div>
 
-Lors du séminaire de fin de semestre de la seconde année de mon cursus ingénieur-architecte, nous avons eu la chance d'expérimenter le réemploi de briques. Avec trois étudiants, nous nous en sommes servi pour en faire un pavement, un mur et un passage avec des percements.
+<strong>Lors du séminaire de fin de semestre de la seconde année de mon cursus ingénieur-architecte, nous avons eu la chance d'expérimenter le réemploi de briques. Avec trois étudiants, nous nous en sommes servi pour en faire un pavement, un mur et un passage avec des percements. </strong>
 
 Le séminaire brique organisé par Laurent Reynes s’est déroulé à la briqueterie Lanter qui se situe sur la commune de Hochfelden au Nord Ouest de Strasbourg. Cette société familiale depuis quatre générations est aujourd’hui gérée par Bruno Lanter qui travaille comme il y a 125 ans grâce à son four Hoffman. Ce four est le dernier à être encore en activité en Alsace. Avec le temps, la briqueterie est devenue une référence en artisanat.
 

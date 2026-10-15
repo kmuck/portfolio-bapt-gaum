@@ -11,7 +11,7 @@ sous_titre: "avec Adam Tissier"
   {% include img.html src="/assets/img/wix/51f7bd_c2ec09b5a2c44bee9da5bcf0ed12b469-mv2.webp" lien=true %}
 </div>
 
-Ce projet correspond au projet d’architecture du second semestre de ma troisième année du cursus architecture ingénierie. Pour ce projet, je me suis associé avec Adam Tissier, un camarade de classe, j'en profite donc pour le remercier.
+<strong>Ce projet correspond au projet d’architecture du second semestre de ma troisième année du cursus architecture ingénierie. Pour ce projet, je me suis associé avec Adam Tissier, un camarade de classe, j'en profite donc pour le remercier. </strong>
 
 Notre projet s’inscrit dans le projet d’urbanisme du premier semestre. L’ambition urbanistique précédente était de ré-organiser la Plaine des Bouchers, quartier de Strasbourg, afin d’augmenter la zone industrielle à l’Ouest et d’accueillir une zone plus résidentielle à l’Est. En re-mettant en service des voies ferroviaires existantes, nous gagnons en efficacité logistique et productive. Ainsi de nombreux bâtiments connectés à cette frange industrielle sont encouragés à se dynamiser. Notre projet urbain, connecté au ferroviaire, en fait partie. Placé dans la zone industrielle (le recto) mais en regard direct sur la zone résidentielle (le verso), il est un élément clé de l'interaction entre le public résidentiel et le privé travailleur. Notre projet vient donc s’inscrire dans ce double enjeu, à la fois productif et social.
 

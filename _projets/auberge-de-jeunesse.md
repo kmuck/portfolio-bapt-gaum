@@ -158,4 +158,4 @@ Toutes les informations sont stockées dans un tableur.
 
 L’étude prend aussi en compte l’emplacement du bâtiment avec ses conditions météorologiques.
 
-Mon facteur QLS obtenu est de 33,8 kWh/m3, ce qui est très bon car s’avoisinant de 0.
+Mon facteur QLS obtenu est de <strong>33,8 kWh/m3</strong>, ce qui est très bon car s’avoisinant de 0.

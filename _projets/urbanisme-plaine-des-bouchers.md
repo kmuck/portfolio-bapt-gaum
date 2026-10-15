@@ -6,21 +6,9 @@ ordre: 8
 couverture: "/assets/img/wix/51f7bd_80c4387cc32447aab830574a314ce6a1-mv2.webp"
 ---
 
-<div class="galerie">
-  {% include img.html src="/assets/img/wix/51f7bd_1d1a8864289343c3b2fd2ce3802d5e7d-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_552ff04a76a045f2b9c16e236353fd3c-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_f5bf4d977079431f8d4fbbb9dbc2a9a9-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_165eca32e32e445284b9c1ec8ab094b1-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_45347f7f3ba144dd92a131b8b1a9c321-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_2198c1f71eb74da4a99e37acd6b054a3-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_92d9cfbe44c1463aa634539ac43d2b21-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_67aa056ebfe14f7292ff09fa7514bf52-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_7643b4334fbb4060bf21daf8a0e28057-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_b00d0f877e0f49f88ee8c2756ba36b2d-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_6c8663e81a314baf8fcb97ceb41dfa4b-mv2.webp" lien=true %}
-</div>
+{% include diaporama.html images="/assets/img/wix/51f7bd_1d1a8864289343c3b2fd2ce3802d5e7d-mv2.webp,/assets/img/wix/51f7bd_552ff04a76a045f2b9c16e236353fd3c-mv2.webp,/assets/img/wix/51f7bd_f5bf4d977079431f8d4fbbb9dbc2a9a9-mv2.webp,/assets/img/wix/51f7bd_165eca32e32e445284b9c1ec8ab094b1-mv2.webp,/assets/img/wix/51f7bd_45347f7f3ba144dd92a131b8b1a9c321-mv2.webp,/assets/img/wix/51f7bd_2198c1f71eb74da4a99e37acd6b054a3-mv2.webp,/assets/img/wix/51f7bd_92d9cfbe44c1463aa634539ac43d2b21-mv2.webp,/assets/img/wix/51f7bd_67aa056ebfe14f7292ff09fa7514bf52-mv2.webp,/assets/img/wix/51f7bd_7643b4334fbb4060bf21daf8a0e28057-mv2.webp,/assets/img/wix/51f7bd_b00d0f877e0f49f88ee8c2756ba36b2d-mv2.webp,/assets/img/wix/51f7bd_6c8663e81a314baf8fcb97ceb41dfa4b-mv2.webp" %}
 
-Ce projet correspond au projet d’architecture du premier semestre de ma troisème année du cursus ingénieur architecture. J’étais accompagné de huit camarades de classe, j’en profite donc pour les remercier.
+<strong>Ce projet correspond au projet d’architecture du premier semestre de ma troisème année du cursus ingénieur architecture. J’étais accompagné de huit camarades de classe, j’en profite donc pour les remercier.</strong>
 
 <div class="planche">
   {% include img.html src="/assets/img/wix/51f7bd_c777866fdb1a4fa7912beeba906d6855-mv2.webp" lien=true %}

@@ -6,21 +6,9 @@ ordre: 13
 couverture: "/assets/img/wix/51f7bd_58ffbbcf2c844d77b630faf228b53473-mv2.webp"
 ---
 
-<div class="galerie">
-  {% include img.html src="/assets/img/wix/51f7bd_87d05c6004844e929ab4815ed97e05c0-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_ced33e4680b241d9949b406853bcac5a-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_859cee44198f42bc9ee735d15047f832-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_19f84d99b66846a89182492b736316c2-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_37c04f8b17864d0ca14f496a81c31faf-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_0299f79d52204ccfafbe5c4025522510-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_36b977e5f07e4dacaa9a707a8a227154-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_76d4546795d24731a1d04d4d2d6d349b-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_5c168f28509d4f5e844b769ae3a7a842-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_085cdcbb95474306ae817bb9b192f69a-mv2.webp" lien=true %}
-  {% include img.html src="/assets/img/wix/51f7bd_4042239b7a724e989a30752e9fa39edc-mv2.webp" lien=true %}
-</div>
+{% include diaporama.html images="/assets/img/wix/51f7bd_87d05c6004844e929ab4815ed97e05c0-mv2.webp,/assets/img/wix/51f7bd_ced33e4680b241d9949b406853bcac5a-mv2.webp,/assets/img/wix/51f7bd_859cee44198f42bc9ee735d15047f832-mv2.webp,/assets/img/wix/51f7bd_19f84d99b66846a89182492b736316c2-mv2.webp,/assets/img/wix/51f7bd_37c04f8b17864d0ca14f496a81c31faf-mv2.webp,/assets/img/wix/51f7bd_0299f79d52204ccfafbe5c4025522510-mv2.webp,/assets/img/wix/51f7bd_36b977e5f07e4dacaa9a707a8a227154-mv2.webp,/assets/img/wix/51f7bd_76d4546795d24731a1d04d4d2d6d349b-mv2.webp,/assets/img/wix/51f7bd_5c168f28509d4f5e844b769ae3a7a842-mv2.webp,/assets/img/wix/51f7bd_085cdcbb95474306ae817bb9b192f69a-mv2.webp,/assets/img/wix/51f7bd_4042239b7a724e989a30752e9fa39edc-mv2.webp" %}
 
-Ce projet correspond au projet d’architecture du premier semestre de ma deuxième année du cursus ingénieur architecture. J’étais accompagné d’une camarade de classe, j’en profite donc pour la remercier.
+<strong>Ce projet correspond au projet d’architecture du premier semestre de ma deuxième année du cursus ingénieur architecture. J’étais accompagné d’une camarade de classe, j’en profite donc pour la remercier.</strong>
 
 Le site d’intervention se situe au 17 rue de la Broque dans le quartier de la gare de Strasbourg. Dans la consigne la parcelle est considéré comme vide, et nécessitant un projet d’au moins 15 logements avec au moins 50 % de grands logements. Le PLU (Plan Local d’Urbanisme) doit être pris en compte mais a été revu par les professeurs afin qu’il puisse nous permettre une intervention correcte sur la parcelle.
 

@@ -1,13 +1,13 @@
 ---
 title: "Conteneurs comme unités sociales et environnementales"
-categorie: "Années 4 et 5 : AI4, AI5"
+categorie: "Année 4 et 5 : AI4, AI5"
 rang_categorie: 5
 ordre: 6
 couverture: "/assets/img/wix/51f7bd_2e0ec7aefdf74e21b25973af8b79d153-mv2.webp"
 sous_titre: "avec Lucas Straumann"
 ---
 
-Ce projet correspond au projet d’architecture du second semestre de ma quatrième année du cursus architecture ingénierie. Pour ce projet, je me suis associé avec Lucas Straumann, un camarade de classe, j'en profite donc pour le remercier.
+<strong>Ce projet correspond au projet d’architecture du second semestre de ma quatrième année du cursus architecture ingénierie. Pour ce projet, je me suis associé avec Lucas Straumann, un camarade de classe, j'en profite donc pour le remercier. </strong>
 
 Ce projet est à la suite d’un projet d’urbanisme prenant place au Marché Gare de Strasbourg. L’objectif était d’introduire de nouveaux modes de vie en se fondant sur les concepts de régénération temporelle, sociale et matérielle. En effet, en ne s’arrêtant pas seulement à imaginer l’humain comme seul habitant du quartier, nous avons souhaité traiter l’ensemble du système. Pour cela, nous nous sommes interrogés sur la vie des bâtiments, du sol, des êtres vivants, la nature, ainsi que les biens matériels en place pour en faire un écosystème le plus auto-suffisant et vertueux possible. Pour cela, la problématique du « déjà-là » (cf. Lacaton et Vassal) a guidé notre réflexion pour ce projet d’architectural.
 

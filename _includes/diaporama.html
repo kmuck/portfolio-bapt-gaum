@@ -1,0 +1,16 @@
+{%- comment -%} Diaporama avec vignettes (galeries Wix). images : chemins séparés par des virgules. {%- endcomment -%}
+{%- assign imgs = include.images | split: "," -%}
+<div class="diaporama" data-diaporama>
+  <div class="diaporama-scene">
+    {%- for i in imgs %}
+    <a href="{{ i | relative_url }}" target="_blank" rel="noopener" class="diapo{% if forloop.first %} active{% endif %}"><img src="{{ i | relative_url }}" alt="" {% unless forloop.first %}loading="lazy"{% endunless %}></a>
+    {%- endfor %}
+    <button class="fleche precedent" type="button" aria-label="Précédent"></button>
+    <button class="fleche suivant" type="button" aria-label="Suivant"></button>
+  </div>
+  <div class="vignettes">
+    {%- for i in imgs %}
+    <button type="button" class="vignette{% if forloop.first %} active{% endif %}" aria-label="Image {{ forloop.index }}"><img src="{{ i | relative_url }}" alt="" loading="lazy"></button>
+    {%- endfor %}
+  </div>
+</div>
