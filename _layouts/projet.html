@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article class="projet">
+  <p class="surtitre">{{ page.categorie }}</p>
+  <h1>{{ page.title }}</h1>
+  <div class="texte">{{ content }}</div>
+  <div class="planches">
+    {% for image in page.images %}{% include img.html src=image alt=page.title %}{% endfor %}
+  </div>
+  <p><a href="{{ '/projets/' | relative_url }}">← Tous les projets</a></p>
+</article>

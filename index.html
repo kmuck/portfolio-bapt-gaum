@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<section class="intro">
+  <h1>Bienvenue sur mon site personnel,</h1>
+  <p>ici je partage mes projets et réalisations en architecture que ce soit scolaire ou par loisir.</p>
+</section>
+<section>
+  <h2>Projets</h2>
+  <div class="grille">
+    {% assign en_avant = site.projets | where: "en_avant", true | sort: "ordre" %}
+    {% for projet in en_avant %}{% include carte-projet.html projet=projet %}{% endfor %}
+  </div>
+  <p><a href="{{ '/projets/' | relative_url }}">Voir tous les projets →</a></p>
+</section>
+<section class="apropos-court">
+  {% include img.html src="https://static.wixstatic.com/media/51f7bd_22010bb170274682986fc98a2c25a7a6~mv2.jpg" alt="Baptiste Gaumont" %}
+  <div>
+    <h2>À propos de moi</h2>
+    <p>Diplômé du double master architecture et ingénierie de l’INSA Strasbourg.</p>
+    <p><a href="{{ '/a-propos/' | relative_url }}">En savoir plus →</a></p>
+  </div>
+</section>

@@ -1,0 +1,12 @@
+---
+title: Projets
+permalink: /projets/
+---
+<h1>Projets</h1>
+{% assign categories = site.projets | sort: "ordre" | group_by: "categorie" %}
+{% for cat in categories %}
+<h2>{{ cat.name }}</h2>
+<div class="grille">
+  {% for projet in cat.items %}{% include carte-projet.html projet=projet %}{% endfor %}
+</div>
+{% endfor %}

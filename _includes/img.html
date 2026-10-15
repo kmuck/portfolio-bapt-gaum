@@ -1,0 +1,3 @@
+{%- comment -%} Accepte une URL absolue (Wix) ou un chemin local /assets/... {%- endcomment -%}
+{%- if include.src contains '://' -%}{%- assign src = include.src -%}{%- else -%}{%- assign src = include.src | relative_url -%}{%- endif -%}
+<img src="{{ src }}" alt="{{ include.alt }}" loading="lazy">
