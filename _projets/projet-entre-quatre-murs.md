@@ -9,7 +9,7 @@ texte: "14px/1.5em"
 ---
 
 <div class="bloc">
-{% include diaporama.html images="/assets/img/wix/51f7bd_44fc471e2c9c4cae8a93d7368c959902-mv2.webp,/assets/img/wix/51f7bd_1441c78b11524b5f9dde9902e31c3595-mv2.webp,/assets/img/wix/51f7bd_15e01e55b3d64b3eb4920425fcf141f4-mv2.webp,/assets/img/wix/51f7bd_1f925e0b52744df29d9ff733de909459-mv2.webp,/assets/img/wix/51f7bd_061f1d57b7c34739967acd47dfe721e4-mv2.webp,/assets/img/wix/51f7bd_5f44afa734f842aa952f1411a57b0691-mv2.webp,/assets/img/wix/51f7bd_e5af176d40f444d4add7c6d358d3e58c-mv2.webp,/assets/img/wix/51f7bd_c45633cc083040b4ac6bfcfa60b7c97f-mv2.webp,/assets/img/wix/51f7bd_fd90d50c7328449f8c9e82a3302c9e8e-mv2.webp,/assets/img/wix/51f7bd_114503d14c1a439f82f3dbf7a43cb9e3-mv2.webp,/assets/img/wix/51f7bd_d1554409f46b4b4f82d8f680aaa8ead5-mv2.webp,/assets/img/wix/51f7bd_aef1b15615e34321be7bc21e6d7cf568-mv2.webp" hauteur=486 %}
+{% include diaporama.html images="/assets/img/wix/51f7bd_f49ac087dbef455ca7347a1799d11b9b-mv2.webp,/assets/img/wix/51f7bd_44fc471e2c9c4cae8a93d7368c959902-mv2.webp,/assets/img/wix/51f7bd_1441c78b11524b5f9dde9902e31c3595-mv2.webp,/assets/img/wix/51f7bd_15e01e55b3d64b3eb4920425fcf141f4-mv2.webp,/assets/img/wix/51f7bd_1f925e0b52744df29d9ff733de909459-mv2.webp,/assets/img/wix/51f7bd_061f1d57b7c34739967acd47dfe721e4-mv2.webp,/assets/img/wix/51f7bd_5f44afa734f842aa952f1411a57b0691-mv2.webp,/assets/img/wix/51f7bd_e5af176d40f444d4add7c6d358d3e58c-mv2.webp,/assets/img/wix/51f7bd_c45633cc083040b4ac6bfcfa60b7c97f-mv2.webp,/assets/img/wix/51f7bd_fd90d50c7328449f8c9e82a3302c9e8e-mv2.webp,/assets/img/wix/51f7bd_114503d14c1a439f82f3dbf7a43cb9e3-mv2.webp,/assets/img/wix/51f7bd_d1554409f46b4b4f82d8f680aaa8ead5-mv2.webp,/assets/img/wix/51f7bd_aef1b15615e34321be7bc21e6d7cf568-mv2.webp" hauteur=486 %}
 </div>
 
 <div class="bloc" style="--h:399px;--x:3.47%;--w:92.86%;--mt:35px" markdown="1">
@@ -22,7 +22,7 @@ Afin de pouvoir offrir des vues et de la lumière au bâtiment, il fallait surpa
 
 </div>
 
-<div class="bloc" style="--x:33.88%;--w:32.04%;--mt:13px">{% include img.html src="/assets/img/wix/51f7bd_5546d15a866f44f78bfac22c281348ea-mv2.webp" lien=true ratio="314/218" %}</div>
+<div class="bloc" style="--x:33.88%;--w:32.04%;--mt:13px">{% include img.html src="/assets/img/wix/51f7bd_5546d15a866f44f78bfac22c281348ea-mv2-crop-0-1366-3024-2114.webp" lien=true ratio="314/218" %}</div>
 
 <div class="bloc" style="--h:84px;--x:3.47%;--w:92.86%;--mt:17px" markdown="1">
 
@@ -46,23 +46,33 @@ La partie commune entre chaque volume se veut de faible superficie pour renforce
 
 </div>
 
-<div class="col etroite" style="--x:5.31%;--w:32.24%;--mt:49px" markdown="1">
+<div class="col etroite" style="--x:1.63%;--w:3.16%;--mt:49px" markdown="1">
+
+<div class="bloc forme" style="--h:16px"><span style="background:rgb(250,211,140)"></span></div>
+
+<div class="bloc forme" style="--mt:34px;--h:16px"><span style="background:rgb(255,181,239)"></span></div>
+
+<div class="bloc forme" style="--x:32.26%;--w:35.48%;--mt:34px;--h:10px"><span style="background:rgb(255,0,0)"></span></div>
+
+</div>
+
+<div class="col etroite" style="--x:0.51%;--w:32.24%;--mt:49px" markdown="1">
 
 <div class="bloc gauche" style="--h:14px;--x:1.90%;--w:98.10%" markdown="1">
 
-<p class="legende">terrasse Ouest</p>
+<em>terrasse Ouest</em>
 
 </div>
 
 <div class="bloc gauche" style="--h:14px;--x:1.90%;--w:98.10%;--mt:36px" markdown="1">
 
-<p class="legende">terrasse Est</p>
+<em>terrasse Est</em>
 
 </div>
 
 <div class="bloc gauche" style="--h:14px;--w:98.10%;--mt:34px" markdown="1">
 
-<p class="legende">poteaux renforçant la structure</p>
+<em>poteaux renforçant la structure</em>
 
 </div>
 

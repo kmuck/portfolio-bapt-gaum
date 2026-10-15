@@ -17,7 +17,7 @@ texte: "13px/1.8em"
 
 <div class="col" style="--x:1.22%;--w:50.00%;--mt:1px" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_40a88a4648fe445abbd4bce193198022-mv2.webp" lien=true ratio="490/522" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_40a88a4648fe445abbd4bce193198022-mv2-crop-0-153-1586-1676.webp" lien=true ratio="490/522" %}</div>
 
 </div>
 
@@ -102,7 +102,7 @@ Pour faciliter le démontage et la seconde vie du pavillon, chaque assemblage es
 
 <div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_7b4166fa35994e5aa332417d4831652a-mv2.webp" lien=true ratio="285/263" %}</div>
 
-<div class="bloc" style="--mt:8px">{% include img.html src="/assets/img/wix/51f7bd_a157db3a1df34ac097028da5f65b8027-mv2.webp" lien=true ratio="285/269" %}</div>
+<div class="bloc" style="--mt:8px">{% include img.html src="/assets/img/wix/51f7bd_a157db3a1df34ac097028da5f65b8027-mv2-crop-43-62-979-965.webp" lien=true ratio="285/269" %}</div>
 
 </div>
 

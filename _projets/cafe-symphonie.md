@@ -7,7 +7,7 @@ couverture: "/assets/img/wix/51f7bd_82ee6144100f4b4d9de8e345e531c225-mv2.webp"
 texte: "13px/2em"
 ---
 
-<div class="bloc" style="--x:16.53%;--w:66.84%;--mt:8px">{% include img.html src="/assets/img/wix/51f7bd_a08151a62f98404582f8c38e06356e94-mv2.webp" lien=true ratio="655/708" %}</div>
+<div class="bloc" style="--x:16.53%;--w:66.84%;--mt:8px">{% include img.html src="/assets/img/wix/51f7bd_a08151a62f98404582f8c38e06356e94-mv2-crop-0-89-1759-1902.webp" lien=true ratio="655/708" %}</div>
 
 <div class="bloc" style="font:13px/1.3em var(--raleway);--h:17px;--x:3.47%;--w:92.86%;--mt:38px" markdown="1">
 
@@ -41,20 +41,14 @@ Le projet repose sur trois concepts fondamentaux :
 
 </div>
 
-<div class="bloc" style="--h:25px;--x:3.57%;--w:88.98%;--mt:64px" markdown="1">
+<div class="bloc" style="--h:33px;--x:3.57%;--w:88.98%;--mt:64px" markdown="1">
 
 ## <strong>Implantation</strong>
 {: style="font-size:25px;line-height:1.3em"}
 
 </div>
 
-<div class="bloc centre" style="--h:15px;--x:36.33%;--w:27.14%" markdown="1">
-
-<p class="legende">Circulation de l'air au R+1</p>
-
-</div>
-
-<div class="rangee" style="--mt:29px" markdown="1">
+<div class="rangee" style="--mt:36px" markdown="1">
 
 <div class="col" style="--x:3.57%;--w:49.49%" markdown="1">
 
@@ -192,7 +186,7 @@ Alignée avec les bandes principales des colombages voisins, la façade dialogue
 
 <div class="col" style="--x:2.35%;--w:56.43%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_eaa522a64d0346148b0b116087446f5c-mv2.webp" lien=true ratio="553/343" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_eaa522a64d0346148b0b116087446f5c-mv2-crop-186-133-2936-1820.webp" lien=true ratio="553/343" %}</div>
 
 </div>
 

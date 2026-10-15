@@ -9,6 +9,7 @@ Le texte des pages est ensuite extrait en local par scripts/build_from_wix.py.
 Usage : python3 scripts/import_wix.py              tout réimporter
         python3 scripts/import_wix.py orientation  redresser les photos prises de travers
         python3 scripts/import_wix.py recadrages   images recadrées comme sur Wix
+        python3 scripts/import_wix.py manquantes   images des pages pas encore téléchargées
 """
 import io
 import pathlib
@@ -101,6 +102,15 @@ def orientation():
             download(media_id, force=True)
 
 
+def manquantes():
+    """Télécharge les images des pages qui manquent, sauf le décor commun à toutes les pages (icônes)."""
+    pages = [set(MEDIA_RE.findall(f.read_text(encoding="utf-8"))) for f in RAW.glob("*.html")]
+    for media_id in sorted(set().union(*pages)):
+        if sum(media_id in p for p in pages) < len(pages) / 2 and not (IMG / webp_name(media_id)).exists():
+            print("téléchargée", media_id)
+            download(media_id)
+
+
 def recadrages():
     """Télécharge, tels que Wix les affiche, les recadrages faits dans l'éditeur Wix (dans la plus grande
     taille proposée par la page, en général le double de la taille affichée)."""
@@ -129,6 +139,6 @@ def recadrages():
 
 
 if __name__ == "__main__":
-    taches = {"main": main, "orientation": orientation, "recadrages": recadrages}
+    taches = {"main": main, "orientation": orientation, "recadrages": recadrages, "manquantes": manquantes}
     for t in sys.argv[1:] or ["main"]:
         taches[t]()

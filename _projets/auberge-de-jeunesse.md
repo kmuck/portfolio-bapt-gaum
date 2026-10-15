@@ -32,7 +32,9 @@ Afin d’obtenir les tracés fédérateurs de mon projet, je me suis aidé de l�
 
 <div class="bloc centre" style="--h:45px" markdown="1">
 
-<p class="legende">Wassily Kandinsky<br>Auf Weiss 2<br>1923</p>
+<em>Wassily Kandinsky</em><br>
+<em>Auf Weiss 2</em><br>
+<em>1923</em>
 
 </div>
 
@@ -72,7 +74,7 @@ Pour m’aider dans mon travail, j’ai établi un graphique répertoriant les t
 
 <div class="col" style="--x:4.49%;--w:53.67%" markdown="1">
 
-<div class="bloc" style="--w:84.03%">{% include img.html src="/assets/img/wix/51f7bd_4b124b4806444bd992a50d4d35cd72f9-mv2.webp" lien=true ratio="442/290" %}</div>
+<div class="bloc" style="--w:84.03%">{% include img.html src="/assets/img/wix/51f7bd_4b124b4806444bd992a50d4d35cd72f9-mv2-crop-4-78-2476-1630.webp" lien=true ratio="442/290" %}</div>
 
 <div class="bloc gauche" style="--h:16px;--x:3.04%;--w:80.99%;--mt:4px" markdown="1">
 
@@ -90,7 +92,7 @@ J’ai aussi récolté les informations sur l’indice ulra-violet de la Califor
 
 <div class="col" style="--x:-5.71%;--w:43.57%" markdown="1">
 
-<div class="bloc" style="--w:95.08%">{% include img.html src="/assets/img/wix/51f7bd_4b124b4806444bd992a50d4d35cd72f9-mv2.webp" lien=true ratio="406/290" %}</div>
+<div class="bloc" style="--w:95.08%">{% include img.html src="/assets/img/wix/51f7bd_4b124b4806444bd992a50d4d35cd72f9-mv2-crop-0-1741-2476-1766.webp" lien=true ratio="406/290" %}</div>
 
 <div class="bloc gauche" style="--h:16px" markdown="1">
 
@@ -112,7 +114,7 @@ Une fois, après avoir établi un croquis définitif de la forme générale de m
 
 </div>
 
-<div class="bloc" style="--x:19.39%;--w:61.22%;--mt:38px">{% include img.html src="/assets/img/wix/51f7bd_a6366fbd5625445a9c92199d2a966ff1-mv2.webp" lien=true ratio="600/472" %}</div>
+<div class="bloc" style="--x:19.39%;--w:61.22%;--mt:38px">{% include img.html src="/assets/img/wix/51f7bd_a6366fbd5625445a9c92199d2a966ff1-mv2-crop-0-336-2520-1982.webp" lien=true ratio="600/472" %}</div>
 
 <div class="bloc" style="--h:176px;--x:6.12%;--w:86.94%;--mt:24px" markdown="1">
 
@@ -155,7 +157,7 @@ Avec cette réflexion, j’ai donc choisi de créer un point chaud dans ma pièc
 
 </div>
 
-<div class="bloc" style="--x:25.71%;--w:48.57%;--mt:31px">{% include img.html src="/assets/img/wix/51f7bd_427ee5b6ddf44aa6af797513324199e6-mv2.webp" lien=true ratio="476/386" %}</div>
+<div class="bloc" style="--x:25.71%;--w:48.57%;--mt:31px">{% include img.html src="/assets/img/wix/51f7bd_427ee5b6ddf44aa6af797513324199e6-mv2-crop-4-280-1992-1615.webp" lien=true ratio="476/386" %}</div>
 
 <div class="bloc" style="--h:98px;--x:6.53%;--w:86.94%;--mt:20px" markdown="1">
 
@@ -167,11 +169,11 @@ Ce point chaud ne devait être actif que en Hiver donc j’ai du revoir toutes m
 
 <div class="col etroite" style="--x:13.06%;--w:30.00%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_b94fb1d688b1406f95084681653d8701-mv2.webp" lien=true ratio="294/188" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_b94fb1d688b1406f95084681653d8701-mv2-crop-3-0-847-542.webp" lien=true ratio="294/188" %}</div>
 
 <div class="bloc centre" style="--h:15px;--x:13.61%;--w:72.11%;--mt:8px" markdown="1">
 
-<p class="legende">Lumière zénithal donnant sur le Sud</p>
+<em>Lumière zénithal donnant sur le Sud</em>
 
 </div>
 
@@ -179,11 +181,11 @@ Ce point chaud ne devait être actif que en Hiver donc j’ai du revoir toutes m
 
 <div class="col etroite" style="--x:11.63%;--w:27.76%;--mt:4px" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_eaee0a31da164dc080d661fbff24ac5e-mv2.webp" lien=true ratio="272/186" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_eaee0a31da164dc080d661fbff24ac5e-mv2-crop-0-5-630-433.webp" lien=true ratio="272/186" %}</div>
 
 <div class="bloc centre" style="--h:15px;--x:1.47%;--w:97.79%;--mt:6px" markdown="1">
 
-<p class="legende">Lumière zénithal donnant sur l'Est et l'Ouest</p>
+<em>Lumière zénithal donnant sur l'Est et l'Ouest</em>
 
 </div>
 
@@ -197,7 +199,7 @@ En utilisant les données de Windfinder, on remarque que le vent provient princi
 
 </div>
 
-<div class="bloc" style="--x:42.04%;--w:15.82%;--mt:35px">{% include img.html src="/assets/img/wix/51f7bd_78ab8ecccb2d477fb9349ed83f99b39b-mv2.webp" lien=true ratio="155/170" %}</div>
+<div class="bloc" style="--x:42.04%;--w:15.82%;--mt:35px">{% include img.html src="/assets/img/wix/51f7bd_78ab8ecccb2d477fb9349ed83f99b39b-mv2-crop-170-1522-641-707.webp" lien=true ratio="155/170" %}</div>
 
 <div class="bloc" style="--h:59px;--x:6.53%;--w:86.94%;--mt:31px" markdown="1">
 
@@ -209,7 +211,7 @@ J’ai créé de grandes ouvertures au niveau du restaurant et de la pièce comm
 <div>{% include img.html src="/assets/img/wix/51f7bd_abe43868a8d846318cac4511cec9a85a-mv2.webp" lien=true ratio="507/514" %}</div>
 <div class="etiquette centre" style="--y:93.77%;--h:15px;--x:23.67%;--w:52.47%" markdown="1">
 
-<p class="legende">Circulation de l'air au RDC</p>
+<em>Circulation de l'air au RDC</em>
 
 </div>
 </div>
@@ -218,7 +220,7 @@ J’ai créé de grandes ouvertures au niveau du restaurant et de la pièce comm
 <div>{% include img.html src="/assets/img/wix/51f7bd_43e959f146a242c18c2c3dd984a4056e-mv2.webp" lien=true ratio="502/496" %}</div>
 <div class="etiquette centre" style="--y:94.56%;--h:15px;--x:23.51%;--w:52.99%" markdown="1">
 
-<p class="legende">Circulation de l'air au R+1</p>
+<em>Circulation de l'air au R+1</em>
 
 </div>
 </div>
@@ -231,21 +233,37 @@ Afin d’obtenir un bâtiment avec une forte efficacité énergétique, le choix
 
 <div class="bloc" style="--x:19.39%;--w:61.22%;--mt:25px">{% include img.html src="/assets/img/wix/51f7bd_e9f39080dc63480daa5f284038823fb4-mv2.webp" lien=true ratio="600/502" %}</div>
 
-<div class="bloc gauche" style="--h:15px;--x:73.27%;--w:26.73%" markdown="1">
+<div class="rangee" markdown="1">
 
-<p class="legende">Murs à fortes inerties thermiques</p>
+<div class="col etroite" style="--x:68.78%;--w:2.76%;--mt:2px" markdown="1">
+
+<div class="bloc forme" style="--h:12px"><span style="background:rgb(135,196,214)"></span></div>
+
+<div class="bloc forme" style="--mt:19px;--h:12px"><span style="background:rgb(240,144,0)"></span></div>
 
 </div>
 
-<div class="bloc gauche" style="--h:15px;--x:73.06%;--w:26.94%;--mt:16px" markdown="1">
+<div class="col etroite" style="--x:1.53%;--w:26.94%" markdown="1">
 
-<p class="legende">Murs à fortes résistances thermiques</p>
+<div class="bloc gauche" style="--h:15px" markdown="1">
+
+<em>Murs à fortes inerties thermiques</em>
+
+</div>
+
+<div class="bloc gauche" style="--h:15px;--mt:16px" markdown="1">
+
+<em>Murs à fortes résistances thermiques</em>
+
+</div>
+
+</div>
 
 </div>
 
 <div class="bloc centre" style="--h:15px;--x:36.33%;--w:27.14%;--mt:58px" markdown="1">
 
-<p class="legende">Choix des matériaux pour les parois</p>
+<em>Choix des matériaux pour les parois</em>
 
 </div>
 

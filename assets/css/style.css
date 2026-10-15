@@ -148,8 +148,11 @@ main { width: 100%; max-width: var(--largeur); margin: 0 auto; }
 .etiquette.centre { text-align: center; }
 .etiquette.droite { text-align: right; }
 .etiquette.gauche { text-align: left; }
+.forme > * { display: block; height: var(--h); }
 .grille { display: flex; align-items: flex-start; }
 .grille .case { flex: none; margin-left: var(--x); width: var(--w); }
+.grille.gris img { filter: grayscale(1); transition: filter .4s; }
+.grille.gris img:hover { filter: none; }
 /* Sur Wix les paragraphes n'ont pas de marge : un paragraphe vide fait une ligne d'espace */
 .projet p, .projet ul { margin: 0 0 1.5em; margin: 0 0 1lh; }
 .projet ul { padding-left: 1.3em; text-align: left; }

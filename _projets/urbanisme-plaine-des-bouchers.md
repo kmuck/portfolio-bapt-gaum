@@ -22,7 +22,7 @@ texte: "13px/2em"
 <div class="col" style="--x:5.51%;--w:39.08%" markdown="1">
 
 <div class="bloc superpose" markdown="1">
-<div>{% include img.html src="/assets/img/wix/51f7bd_c777866fdb1a4fa7912beeba906d6855-mv2.webp" lien=true ratio="383/482" %}</div>
+<div>{% include img.html src="/assets/img/wix/51f7bd_c777866fdb1a4fa7912beeba906d6855-mv2-crop-0-96-1241-1562.webp" lien=true ratio="383/482" %}</div>
 <div class="etiquette" style="--y:91.91%;--h:26px;--x:5.74%;--w:20.37%" markdown="1">
 
 <p class="legende">Logo</p>
@@ -44,7 +44,7 @@ La Plaine des Bouchers est économiquement très active et concentre une grande 
 
 </div>
 
-<div class="bloc" style="--x:10.00%;--w:80.20%;--mt:39px">{% include img.html src="/assets/img/wix/51f7bd_e7769ba0310046bf8f15ac959e13f2e9-mv2.webp" lien=true ratio="786/324" %}</div>
+<div class="bloc" style="--x:10.00%;--w:80.20%;--mt:39px">{% include img.html src="/assets/img/wix/51f7bd_e7769ba0310046bf8f15ac959e13f2e9-mv2-crop-0-101-2564-1057.webp" lien=true ratio="786/324" %}</div>
 
 <div class="bloc centre" style="--h:26px;--x:44.29%;--w:11.43%;--mt:17px" markdown="1">
 
@@ -73,7 +73,7 @@ La colonne de la trame paysagère se positionne de façon à relier les espaces 
 
 <div class="col etroite" style="--x:7.24%;--w:30.10%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_4dc7884d924f427c9fb1837635f8e816-mv2.webp" lien=true ratio="295/210" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_4dc7884d924f427c9fb1837635f8e816-mv2-crop-407-0-2688-1881.webp" lien=true ratio="295/210" %}</div>
 
 </div>
 
@@ -93,7 +93,7 @@ Architectures de verre, de brique et de métal se déploient le long de notre co
 
 <div class="col" style="--x:2.14%;--w:61.22%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_804bf7f62580491b928a7b6e10314d37-mv2.webp" lien=true ratio="600/341" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_804bf7f62580491b928a7b6e10314d37-mv2-crop-0-1437-9921-5633.webp" lien=true ratio="600/341" %}</div>
 
 </div>
 
@@ -142,7 +142,7 @@ Un des objectifs principaux de notre projets consiste à densifier la Plaine des
 
 </div>
 
-<div class="bloc" style="--mt:1px">{% include img.html src="/assets/img/wix/51f7bd_4dc46a4a649f4eeb831c338f006df7fa-mv2.webp" lien=true ratio="422/418" %}</div>
+<div class="bloc" style="--mt:1px">{% include img.html src="/assets/img/wix/51f7bd_4dc46a4a649f4eeb831c338f006df7fa-mv2-crop-522-0-3311-3309.webp" lien=true ratio="422/418" %}</div>
 
 </div>
 
@@ -154,7 +154,7 @@ Un des objectifs principaux de notre projets consiste à densifier la Plaine des
 
 </div>
 
-<div class="bloc" style="--mt:1px">{% include img.html src="/assets/img/wix/51f7bd_7550bdc0d7a64b6aa9710498aedd0d87-mv2.webp" lien=true ratio="419/410" %}</div>
+<div class="bloc" style="--mt:1px">{% include img.html src="/assets/img/wix/51f7bd_7550bdc0d7a64b6aa9710498aedd0d87-mv2-crop-1102-454-4321-4324.webp" lien=true ratio="419/410" %}</div>
 
 </div>
 
@@ -166,7 +166,7 @@ Un des objectifs principaux de notre projets consiste à densifier la Plaine des
 
 </div>
 
-<div class="bloc" style="--x:4.29%;--w:91.84%;--mt:1px">{% include img.html src="/assets/img/wix/51f7bd_44ef80f2892e4153b36f94940c9dfa9f-mv2.webp" lien=true ratio="900/448" %}</div>
+<div class="bloc" style="--x:4.29%;--w:91.84%;--mt:1px">{% include img.html src="/assets/img/wix/51f7bd_44ef80f2892e4153b36f94940c9dfa9f-mv2-crop-232-438-2721-1327.webp" lien=true ratio="900/448" %}</div>
 
 <div class="bloc" style="--h:46px;--x:3.67%;--w:92.86%;--mt:60px" markdown="1">
 
@@ -198,7 +198,7 @@ conservé dans son ensemble, est fortement animé par le domaine tertiaire. Enfi
 
 </div>
 
-<div class="bloc" style="--mt:54px">{% include img.html src="/assets/img/wix/51f7bd_7e0401d0005e42dbbc8a356e6cbb5878-mv2.webp" lien=true ratio="677/322" %}</div>
+<div class="bloc" style="--mt:54px">{% include img.html src="/assets/img/wix/51f7bd_7e0401d0005e42dbbc8a356e6cbb5878-mv2-crop-0-193-2268-1131.webp" lien=true ratio="677/322" %}</div>
 
 <div class="bloc droite" style="--h:26px;--x:36.78%;--w:62.33%" markdown="1">
 
@@ -210,10 +210,10 @@ conservé dans son ensemble, est fortement animé par le domaine tertiaire. Enfi
 
 </div>
 
-<div class="bloc" style="--x:4.08%;--w:92.04%;--mt:71px">{% include img.html src="/assets/img/wix/51f7bd_3e9f82ee704a485595cabb6d2d98ce07-mv2.webp" lien=true ratio="902/474" %}</div>
+<div class="bloc" style="--x:4.08%;--w:92.04%;--mt:71px">{% include img.html src="/assets/img/wix/51f7bd_3e9f82ee704a485595cabb6d2d98ce07-mv2-crop-3-438-2472-1308.webp" lien=true ratio="902/474" %}</div>
 
 <div class="bloc droite" style="--h:26px;--x:49.80%;--w:46.33%;--mt:9px" markdown="1">
 
-<p class="legende">Perspective zone industrielle</p>
+<em>Perspective zone industrielle</em>
 
 </div>

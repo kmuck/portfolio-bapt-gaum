@@ -24,7 +24,7 @@ Le site d’intervention se situe au 17 rue de la Broque dans le quartier de la 
 <div class="col" style="--x:7.14%;--w:39.08%" markdown="1">
 
 <div class="bloc superpose" markdown="1">
-<div>{% include img.html src="/assets/img/wix/51f7bd_14ee4775682f4e118c80434cce33b84a-mv2.webp" lien=true ratio="383/482" %}</div>
+<div>{% include img.html src="/assets/img/wix/51f7bd_14ee4775682f4e118c80434cce33b84a-mv2-crop-0-144-1782-2271.webp" lien=true ratio="383/482" %}</div>
 <div class="etiquette" style="--y:4.77%;--h:26px;--x:6.27%;--w:20.37%" markdown="1">
 
 <p class="legende">Plan masse</p>
@@ -46,7 +46,7 @@ Nous sommes sur une petite rue perpendiculaire à deux gros axes de circulation 
 
 </div>
 
-<div class="bloc grille" style="--x:9.59%;--w:80.82%;--mt:19px"><div class="case" style="--w:30.81%">{% include img.html src="/assets/img/wix/51f7bd_c4691ed60efa4de9a888b8e01ec59242-mv2.webp" lien=true ratio="244/244" %}</div>
+<div class="bloc grille gris" style="--x:9.59%;--w:80.82%;--mt:19px"><div class="case" style="--w:30.81%">{% include img.html src="/assets/img/wix/51f7bd_c4691ed60efa4de9a888b8e01ec59242-mv2.webp" lien=true ratio="244/244" %}</div>
 <div class="case" style="--x:3.79%;--w:30.81%">{% include img.html src="/assets/img/wix/51f7bd_a884e318a0d94cfa8ffe553506b4d412-mv2.webp" lien=true ratio="244/244" %}</div>
 <div class="case" style="--x:3.79%;--w:30.81%">{% include img.html src="/assets/img/wix/51f7bd_58286c93a83442abbc042fb0a676d235-mv2.webp" lien=true ratio="244/244" %}</div></div>
 
@@ -86,7 +86,7 @@ Nos logements sont regroupés dans deux bâtiments reliés par un système de co
 
 <div class="col etroite" style="--x:5.71%;--w:29.39%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_65a27011c1004d63a85d6006a9e6c4ba-mv2.webp" lien=true ratio="288/474" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_65a27011c1004d63a85d6006a9e6c4ba-mv2-crop-272-0-677-1161.webp" lien=true ratio="288/474" %}</div>
 
 </div>
 
@@ -116,13 +116,13 @@ Nous avons tenu à présenter une grande diversité de logements. Ils vont du st
 
 <div class="col" style="--x:0.82%;--w:37.86%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_828ea36317c444159da8d1d0e791ed40-mv2.webp" lien=true ratio="371/338" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_828ea36317c444159da8d1d0e791ed40-mv2-crop-37-0-1248-1161.webp" lien=true ratio="371/338" %}</div>
 
 </div>
 
 <div class="col" style="--w:61.22%;--mt:6px" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_4e53b800a5c44183b51084dcc0d15609-mv2.webp" lien=true ratio="600/284" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_4e53b800a5c44183b51084dcc0d15609-mv2-crop-0-672-5040-2387.webp" lien=true ratio="600/284" %}</div>
 
 <div class="bloc centre" style="--h:26px;--x:36.33%;--w:27.00%" markdown="1">
 
@@ -144,7 +144,7 @@ La distribution des logements se fait par des coursives extérieures enlaçant l
 
 <div class="col" style="--x:8.37%;--w:54.29%" markdown="1">
 
-<div class="bloc" style="--w:77.07%">{% include img.html src="/assets/img/wix/51f7bd_c09bd1cc3dc04a6dbf4862db24747426-mv2.webp" lien=true ratio="410/214" %}</div>
+<div class="bloc" style="--w:77.07%">{% include img.html src="/assets/img/wix/51f7bd_c09bd1cc3dc04a6dbf4862db24747426-mv2-crop-590-713-4083-2094.webp" lien=true ratio="410/214" %}</div>
 
 <div class="bloc" style="--h:26px;--x:23.31%;--w:30.45%;--mt:6px" markdown="1">
 
@@ -168,7 +168,7 @@ Par ailleurs, nous avons aussi pris en compte les conditions climatiques locales
 
 <div class="col etroite" style="--w:27.65%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_cfd0f995ea544416a498375627c7528e-mv2.webp" lien=true ratio="271/214" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_cfd0f995ea544416a498375627c7528e-mv2-crop-314-209-877-688.webp" lien=true ratio="271/214" %}</div>
 
 <div class="bloc" style="--h:26px;--x:19.93%;--w:59.78%;--mt:6px" markdown="1">
 
@@ -192,7 +192,7 @@ Au sein des bâtiments, nous avons eu la volonté d’orienter les pièces à vi
 
 <div class="col etroite" style="--x:13.88%;--w:31.22%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_826807a2e639484fbc4254328e901a0d-mv2.webp" lien=true ratio="306/368" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_826807a2e639484fbc4254328e901a0d-mv2-crop-0-304-1782-2141.webp" lien=true ratio="306/368" %}</div>
 
 <div class="bloc" style="--h:26px;--x:45.10%;--w:9.80%" markdown="1">
 
@@ -204,7 +204,7 @@ Au sein des bâtiments, nous avons eu la volonté d’orienter les pièces à vi
 
 <div class="col etroite" style="--x:9.80%;--w:31.22%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_03ba1bf25c0246e6b51ff710abcbd450-mv2.webp" lien=true ratio="306/362" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_03ba1bf25c0246e6b51ff710abcbd450-mv2-crop-0-320-1782-2104.webp" lien=true ratio="306/362" %}</div>
 
 <div class="bloc" style="--h:26px;--x:45.10%;--w:9.80%" markdown="1">
 
@@ -226,7 +226,7 @@ Travailler en duplex a participé à l’implantation de grands logements de typ
 
 <div class="col" style="--x:3.88%;--w:50.00%" markdown="1">
 
-<div class="bloc" style="--x:14.29%;--w:64.08%">{% include img.html src="/assets/img/wix/51f7bd_caeb1bcb781847afb4f41a23a4a91075-mv2.webp" lien=true ratio="314/346" %}</div>
+<div class="bloc" style="--x:14.29%;--w:64.08%">{% include img.html src="/assets/img/wix/51f7bd_caeb1bcb781847afb4f41a23a4a91075-mv2-crop-385-682-1044-1162.webp" lien=true ratio="314/346" %}</div>
 
 <div class="bloc" style="--h:26px;--x:29.80%;--w:33.06%" markdown="1">
 
@@ -248,7 +248,7 @@ Les gardes corps sont en bardage métallique. Par leurs mailles fines, de loin i
 
 <div class="col" style="--x:3.88%;--w:38.06%;--mt:23px" markdown="1">
 
-<div class="bloc" style="--w:79.89%">{% include img.html src="/assets/img/wix/51f7bd_556760fef98247439df457d4c167d0e4-mv2.webp" lien=true ratio="298/310" %}</div>
+<div class="bloc" style="--w:79.89%">{% include img.html src="/assets/img/wix/51f7bd_556760fef98247439df457d4c167d0e4-mv2-crop-350-649-1032-1082.webp" lien=true ratio="298/310" %}</div>
 
 <div class="bloc" style="--h:26px;--x:18.77%;--w:43.43%;--mt:13px" markdown="1">
 
@@ -256,7 +256,7 @@ Les gardes corps sont en bardage métallique. Par leurs mailles fines, de loin i
 
 </div>
 
-<div class="bloc" style="--mt:34px">{% include img.html src="/assets/img/wix/51f7bd_474f1bcf07e64bba97bceb689414dd57-mv2.webp" lien=true ratio="371/236" %}</div>
+<div class="bloc" style="--mt:34px">{% include img.html src="/assets/img/wix/51f7bd_474f1bcf07e64bba97bceb689414dd57-mv2-crop-0-27-5040-3210.webp" lien=true ratio="371/236" %}</div>
 
 <div class="bloc centre" style="--h:26px;--x:28.42%;--w:43.43%" markdown="1">
 
@@ -264,7 +264,7 @@ Les gardes corps sont en bardage métallique. Par leurs mailles fines, de loin i
 
 </div>
 
-<div class="bloc" style="--w:98.66%;--mt:19px">{% include img.html src="/assets/img/wix/51f7bd_f713d9786c0a44c5b99e245286b771f6-mv2.webp" lien=true ratio="368/218" %}</div>
+<div class="bloc" style="--w:98.66%;--mt:19px">{% include img.html src="/assets/img/wix/51f7bd_f713d9786c0a44c5b99e245286b771f6-mv2-crop-40-377-4959-2932.webp" lien=true ratio="368/218" %}</div>
 
 </div>
 
@@ -280,7 +280,7 @@ Les gardes corps sont en bardage métallique. Par leurs mailles fines, de loin i
 
 <div class="col" style="--w:61.22%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_7bb7774e93074d868fcbab3121e90147-mv2.webp" lien=true ratio="600/414" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_7bb7774e93074d868fcbab3121e90147-mv2-crop-0-102-4715-3255.webp" lien=true ratio="600/414" %}</div>
 
 </div>
 

@@ -45,13 +45,7 @@ Les bâtiments sur lesquels nous venons travailler sont facilement distinguables
 
 </div>
 
-<div class="bloc centre" style="--h:15px;--x:36.33%;--w:27.14%;--mt:5px" markdown="1">
-
-<p class="legende">Circulation de l'air au R+1</p>
-
-</div>
-
-<div class="bloc grille" style="--x:1.94%;--w:96.02%;--mt:18px"><div class="case" style="--w:31.24%">{% include img.html src="/assets/img/wix/51f7bd_64aa554b0a9e4ed79a599db5c0c9ffa7-mv2.webp" lien=true ratio="294/293" %}</div>
+<div class="bloc grille gris" style="--x:1.94%;--w:96.02%;--mt:38px"><div class="case" style="--w:31.24%">{% include img.html src="/assets/img/wix/51f7bd_64aa554b0a9e4ed79a599db5c0c9ffa7-mv2.webp" lien=true ratio="294/293" %}</div>
 <div class="case" style="--x:3.19%;--w:31.24%">{% include img.html src="/assets/img/wix/51f7bd_7ac1e784ccff4834bf52d694e166897a-mv2.webp" lien=true ratio="294/293" %}</div>
 <div class="case" style="--x:3.19%;--w:31.14%">{% include img.html src="/assets/img/wix/51f7bd_9ed114ac51374cf9b71c3a73f2fde5f5-mv2.webp" lien=true ratio="293/293" %}</div></div>
 
@@ -107,7 +101,7 @@ Le liant du projet passe par le système constructif mis en place. Pour venir re
 
 <div class="col etroite" style="--x:4.69%;--w:29.29%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_ceb3532463bc4e9a88676e553891be72-mv2.webp" lien=true ratio="287/311" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_ceb3532463bc4e9a88676e553891be72-mv2-crop-657-0-2286-2480.webp" lien=true ratio="287/311" %}</div>
 
 </div>
 
@@ -125,7 +119,7 @@ De plus, la richesse de ce principe réside aussi dans son détail. Tout repose 
 
 </div>
 
-<div class="bloc" style="--x:13.37%;--w:73.06%;--mt:69px">{% include img.html src="/assets/img/wix/51f7bd_2c8089c718e64c8683dfad9b296c7fa8-mv2.webp" lien=true ratio="716/287" %}</div>
+<div class="bloc" style="--x:13.37%;--w:73.06%;--mt:69px">{% include img.html src="/assets/img/wix/51f7bd_2c8089c718e64c8683dfad9b296c7fa8-mv2-crop-0-122-3127-1253.webp" lien=true ratio="716/287" %}</div>
 
 <div class="bloc droite" style="--h:26px;--x:72.14%;--w:13.57%;--mt:12px" markdown="1">
 
@@ -158,7 +152,7 @@ Elle a pour objectif de mettre en avant des restaurateurs et des producteurs loc
 
 <div class="col etroite" style="--x:6.94%;--w:30.92%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_32551111d8184e1ab3141fbfe684a94d-mv2.webp" lien=true ratio="303/318" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_32551111d8184e1ab3141fbfe684a94d-mv2-crop-0-1038-3712-3896.webp" lien=true ratio="303/318" %}</div>
 
 </div>
 
@@ -191,7 +185,7 @@ Le bâti se place donc côté Ouest et Est, ce qui correspond aux orientations d
 
 <div class="col etroite" style="--x:7.04%;--w:31.02%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_226128f050f04fd1b0ee8ed5fc1eb7db-mv2.webp" lien=true ratio="304/318" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_226128f050f04fd1b0ee8ed5fc1eb7db-mv2-crop-0-1001-3712-3883.webp" lien=true ratio="304/318" %}</div>
 
 </div>
 
@@ -257,7 +251,7 @@ Pour donner de la transparence aux activités, et voir le bâtiment évoluer dep
 
 <div class="col etroite" style="--x:8.67%;--w:29.29%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_a63885f8cca6488887a9d2393baea044-mv2.webp" lien=true ratio="287/301" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_a63885f8cca6488887a9d2393baea044-mv2-crop-0-843-3712-3883.webp" lien=true ratio="287/301" %}</div>
 
 </div>
 
@@ -269,7 +263,7 @@ Pour donner de la transparence aux activités, et voir le bâtiment évoluer dep
 
 <div class="col" style="--x:3.47%;--w:37.76%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_fa30e6346d724824a081468f5da8b059-mv2.webp" lien=true ratio="370/448" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_fa30e6346d724824a081468f5da8b059-mv2-crop-268-605-2400-2910.webp" lien=true ratio="370/448" %}</div>
 
 </div>
 
@@ -288,7 +282,7 @@ A l’intérieur des volumes, un système de mezzanine modulable a été mis en 
 
 <div class="bloc gauche" style="--h:26px;--x:5.31%;--w:29.80%;--mt:3px" markdown="1">
 
-<p class="legende">Coupe détail du système constructif</p>
+<em>Coupe détail du système constructif</em>
 
 </div>
 
@@ -306,4 +300,4 @@ La structuration du projet passe aussi par la mise en place d’un nouveau syst�
 
 </div>
 
-<div class="bloc" style="--x:16.12%;--w:67.65%;--mt:58px">{% include img.html src="/assets/img/wix/51f7bd_2018bdb7bb4748349b9ce2d82f8f0bdd-mv2.webp" lien=true ratio="663/369" %}</div>
+<div class="bloc" style="--x:16.12%;--w:67.65%;--mt:58px">{% include img.html src="/assets/img/wix/51f7bd_2018bdb7bb4748349b9ce2d82f8f0bdd-mv2-crop-0-1772-2970-1653.webp" lien=true ratio="663/369" %}</div>

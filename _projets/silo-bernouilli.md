@@ -49,7 +49,7 @@ Partant de l'urbanisme jusqu'à l'architecture, mon rôle a été de me concentr
 
 <div class="col etroite" style="--x:1.12%;--w:16.53%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_9d98c84c0d524c76997709960a430422-mv2.webp" lien=true ratio="162/388" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_9d98c84c0d524c76997709960a430422-mv2-crop-0-176-1185-2773.webp" lien=true ratio="162/388" %}</div>
 
 </div>
 
@@ -93,7 +93,7 @@ La frange de silos patrimoniaux, classés au registre national, accueille des pr
 
 <div class="col" style="--x:3.98%;--w:53.37%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_3b4282d3fa9f407d80bde352168dd8b9-mv2.webp" lien=true ratio="523/299" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_3b4282d3fa9f407d80bde352168dd8b9-mv2-crop-0-0-8434-4844.webp" lien=true ratio="523/299" %}</div>
 
 </div>
 
@@ -146,7 +146,7 @@ Comment rapporter la lumière au cœur d'une structure close de 21m d’épaisse
 
 <div class="col" style="--x:3.98%;--w:65.71%;--mt:9px" markdown="1">
 
-<div class="bloc" style="--x:15.22%;--w:65.53%">{% include img.html src="/assets/img/wix/51f7bd_6ee6a7db2cf241c794a948f65d72b4bd-mv2.webp" lien=true ratio="422/240" %}</div>
+<div class="bloc" style="--x:15.22%;--w:65.53%">{% include img.html src="/assets/img/wix/51f7bd_6ee6a7db2cf241c794a948f65d72b4bd-mv2-crop-0-366-1675-954.webp" lien=true ratio="422/240" %}</div>
 
 <div class="bloc" style="--h:104px;--w:96.12%;--mt:47px" markdown="1">
 
@@ -154,7 +154,7 @@ Dans cette volonté de pouvoir accéder physiquement et visuellement aux quais, 
 
 </div>
 
-<div class="bloc" style="--mt:68px">{% include img.html src="/assets/img/wix/51f7bd_39061707282447339920f1c0e061e2df-mv2.webp" lien=true ratio="644/342" %}</div>
+<div class="bloc" style="--mt:68px">{% include img.html src="/assets/img/wix/51f7bd_39061707282447339920f1c0e061e2df-mv2-crop-197-223-3684-1957.webp" lien=true ratio="644/342" %}</div>
 
 <div class="bloc gauche" style="font:13px/1.4em var(--raleway);--h:18px;--w:35.40%;--mt:11px" markdown="1">
 
@@ -166,7 +166,7 @@ Dans cette volonté de pouvoir accéder physiquement et visuellement aux quais, 
 
 <div class="col etroite" style="--x:2.65%;--w:23.98%" markdown="1">
 
-<div class="bloc" style="--x:2.98%;--w:97.02%">{% include img.html src="/assets/img/wix/51f7bd_5b670897f0d446a88d2d38e10e7530cb-mv2.webp" lien=true ratio="228/359" %}</div>
+<div class="bloc" style="--x:2.98%;--w:97.02%">{% include img.html src="/assets/img/wix/51f7bd_5b670897f0d446a88d2d38e10e7530cb-mv2-crop-321-118-2443-4030.webp" lien=true ratio="228/359" %}</div>
 
 <div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:18px;--x:2.98%;--w:97.02%;--mt:14px" markdown="1">
 
@@ -202,7 +202,7 @@ Cette masse est rendue accessible par deux circulations verticales distinctes qu
 
 <div class="col" style="--x:3.98%;--w:55.20%" markdown="1">
 
-<div class="bloc" style="--x:1.11%;--w:98.89%">{% include img.html src="/assets/img/wix/51f7bd_481abf20fd6245f6be786c928d6915a7-mv2.webp" lien=true ratio="535/229" %}</div>
+<div class="bloc" style="--x:1.11%;--w:98.89%">{% include img.html src="/assets/img/wix/51f7bd_481abf20fd6245f6be786c928d6915a7-mv2-crop-54-54-1528-653.webp" lien=true ratio="535/229" %}</div>
 
 <div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:18px;--w:96.30%;--mt:7px" markdown="1">
 
@@ -214,7 +214,7 @@ Cette masse est rendue accessible par deux circulations verticales distinctes qu
 
 <div class="col etroite" style="--x:9.18%;--w:25.20%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_64a039704ea8471ea42f21ae11ecc9ed-mv2.webp" lien=true ratio="247/264" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_64a039704ea8471ea42f21ae11ecc9ed-mv2-crop-71-12-2833-2949.webp" lien=true ratio="247/264" %}</div>
 
 </div>
 
@@ -246,7 +246,7 @@ Pour limiter le plus possible la démolition de planchers, les vides les plus g�
 
 <div class="col etroite" style="--x:6.84%;--w:24.39%" markdown="1">
 
-<div class="bloc" style="--x:5.86%;--w:87.87%">{% include img.html src="/assets/img/wix/51f7bd_70635bd3c76d4d49b1de97364ef3b2bc-mv2.webp" lien=true ratio="210/273" %}</div>
+<div class="bloc" style="--x:5.86%;--w:87.87%">{% include img.html src="/assets/img/wix/51f7bd_70635bd3c76d4d49b1de97364ef3b2bc-mv2-crop-254-429-883-1150.webp" lien=true ratio="210/273" %}</div>
 
 <div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:55px;--mt:13px" markdown="1">
 
@@ -268,7 +268,7 @@ Ces larges espaces seront ventilés naturellement par un tirage thermique puisan
 
 <div class="col" style="--x:3.98%;--w:60.71%" markdown="1">
 
-<div class="bloc" style="--w:89.24%">{% include img.html src="/assets/img/wix/51f7bd_ba536480400640e3bb9565d62e0e6ebc-mv2.webp" lien=true ratio="531/293" %}</div>
+<div class="bloc" style="--w:89.24%">{% include img.html src="/assets/img/wix/51f7bd_ba536480400640e3bb9565d62e0e6ebc-mv2-crop-458-0-3528-1947.webp" lien=true ratio="531/293" %}</div>
 
 <div class="bloc gauche" style="font:13px/1.4em var(--raleway);--h:18px;--w:86.72%;--mt:23px" markdown="1">
 
@@ -292,7 +292,7 @@ Ainsi, les blocs durs comme les sorties de secours se retrouvent au cœur du bâ
 
 <div class="col etroite" style="--x:4.39%;--w:23.78%;--mt:1px" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_101b7b20a14443118b9c5da4280c1e4a-mv2.webp" lien=true ratio="233/280" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_101b7b20a14443118b9c5da4280c1e4a-mv2-crop-256-0-1071-1284.webp" lien=true ratio="233/280" %}</div>
 
 <div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:18px;--w:96.57%;--mt:35px" markdown="1">
 
@@ -300,7 +300,7 @@ Ainsi, les blocs durs comme les sorties de secours se retrouvent au cœur du bâ
 
 </div>
 
-<div class="bloc" style="--x:15.02%;--w:69.53%;--mt:68px">{% include img.html src="/assets/img/wix/51f7bd_8cd00c67202445f7b4dd0cbf75ae746b-mv2.webp" lien=true ratio="162/191" %}</div>
+<div class="bloc" style="--x:15.02%;--w:69.53%;--mt:68px">{% include img.html src="/assets/img/wix/51f7bd_8cd00c67202445f7b4dd0cbf75ae746b-mv2-crop-286-67-986-1164.webp" lien=true ratio="162/191" %}</div>
 
 <div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:18px;--x:1.72%;--w:96.57%;--mt:13px" markdown="1">
 
@@ -312,7 +312,7 @@ Ainsi, les blocs durs comme les sorties de secours se retrouvent au cœur du bâ
 
 </div>
 
-<div class="bloc" style="--x:15.71%;--w:73.27%;--mt:62px">{% include img.html src="/assets/img/wix/51f7bd_34438fc0d85246d8bbfb59bab50feae8-mv2.webp" lien=true ratio="718/240" %}</div>
+<div class="bloc" style="--x:15.71%;--w:73.27%;--mt:62px">{% include img.html src="/assets/img/wix/51f7bd_34438fc0d85246d8bbfb59bab50feae8-mv2-crop-688-92-3293-1100.webp" lien=true ratio="718/240" %}</div>
 
 <div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:18px;--x:8.06%;--w:85.61%" markdown="1">
 
@@ -324,7 +324,7 @@ Ainsi, les blocs durs comme les sorties de secours se retrouvent au cœur du bâ
 
 <div class="col etroite" style="--x:6.02%;--w:24.08%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_2257e7f4f1a84a1f984ac34b3ead2e1f-mv2.webp" lien=true ratio="236/302" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_2257e7f4f1a84a1f984ac34b3ead2e1f-mv2-crop-0-0-2997-3801.webp" lien=true ratio="236/302" %}</div>
 
 <div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:36px;--x:8.05%;--w:84.32%;--mt:18px" markdown="1">
 
@@ -336,7 +336,7 @@ Ainsi, les blocs durs comme les sorties de secours se retrouvent au cœur du bâ
 
 <div class="col etroite" style="--x:7.55%;--w:24.69%;--mt:3px" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_906e4eb981b84d2aa609f81e5758f0f0-mv2.webp" lien=true ratio="242/297" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_906e4eb981b84d2aa609f81e5758f0f0-mv2-crop-53-409-2973-3630.webp" lien=true ratio="242/297" %}</div>
 
 <div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:36px;--x:9.50%;--w:74.38%;--mt:20px" markdown="1">
 
@@ -348,7 +348,7 @@ Ainsi, les blocs durs comme les sorties de secours se retrouvent au cœur du bâ
 
 <div class="col etroite" style="--x:7.55%;--w:23.78%;--mt:5px" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_6c75f34758174585ac51507a3488da90-mv2.webp" lien=true ratio="233/293" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_6c75f34758174585ac51507a3488da90-mv2-crop-0-694-2956-3688.webp" lien=true ratio="233/293" %}</div>
 
 <div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:36px;--x:7.30%;--w:85.41%;--mt:22px" markdown="1">
 
@@ -398,7 +398,7 @@ Un système de dalle sur plot modulable s’appuie sur une dalle béton nouvelle
 
 <div class="col" style="--w:44.20%;--mt:26px" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_f061bc4581c445c89e0608840189f502-mv2.webp" lien=true ratio="259/201" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_f061bc4581c445c89e0608840189f502-mv2-crop-146-9-2362-1834.webp" lien=true ratio="259/201" %}</div>
 
 <div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:36px;--x:14.67%;--w:77.99%;--mt:38px" markdown="1">
 
@@ -410,7 +410,7 @@ Un système de dalle sur plot modulable s’appuie sur une dalle béton nouvelle
 
 <div class="col" style="--x:8.87%;--w:39.93%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_50f1df99f75c41da8cf21bbe773b39bc-mv2.webp" lien=true ratio="234/251" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_50f1df99f75c41da8cf21bbe773b39bc-mv2-crop-290-155-2265-2431.webp" lien=true ratio="234/251" %}</div>
 
 <div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:18px;--x:10.68%;--w:86.32%;--mt:14px" markdown="1">
 
@@ -426,7 +426,7 @@ Un système de dalle sur plot modulable s’appuie sur une dalle béton nouvelle
 
 <div class="col etroite" style="--x:0.71%;--w:33.27%" markdown="1">
 
-<div class="bloc" style="--w:95.40%">{% include img.html src="/assets/img/wix/51f7bd_edabfb6d186d464faf23424d706efb01-mv2.webp" lien=true ratio="311/528" %}</div>
+<div class="bloc" style="--w:95.40%">{% include img.html src="/assets/img/wix/51f7bd_edabfb6d186d464faf23424d706efb01-mv2-crop-0-364-4535-7695.webp" lien=true ratio="311/528" %}</div>
 
 <div class="bloc" style="--x:3.99%;--w:96.01%;--mt:81px">{% include img.html src="/assets/img/wix/51f7bd_73e65d6cd61b4b69b1a89c05f681703a-mv2.webp" lien=true ratio="313/473" %}</div>
 

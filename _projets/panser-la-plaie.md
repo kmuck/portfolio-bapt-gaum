@@ -23,27 +23,7 @@ La gare de Metz se place au centre de Metz. Bien que le site soit une interface 
 
 <div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_db5d3fa1605c4b839db20d8cc4cd296c-mv2.webp" lien=true ratio="421/330" %}</div>
 
-</div>
-
-<div class="col" style="--x:3.78%;--w:42.96%" markdown="1">
-
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_5e57df3916a7431a9c495077d6b9d235-mv2.webp" lien=true ratio="421/330" %}</div>
-
-</div>
-
-</div>
-
-<div class="bloc centre" style="--h:6px;--x:36.33%;--w:27.14%" markdown="1">
-
-<p class="legende">Circulation de l'air au R+1</p>
-
-</div>
-
-<div class="rangee" markdown="1">
-
-<div class="col" style="--x:3.57%;--w:42.35%" markdown="1">
-
-<div class="bloc gauche" style="--h:26px" markdown="1">
+<div class="bloc gauche" style="--h:26px;--w:98.57%;--mt:6px" markdown="1">
 
 <p class="legende">Enclavement du quartier</p>
 
@@ -51,9 +31,11 @@ La gare de Metz se place au centre de Metz. Bien que le site soit une interface 
 
 </div>
 
-<div class="col" style="--x:4.59%;--w:42.35%" markdown="1">
+<div class="col" style="--x:3.78%;--w:42.96%" markdown="1">
 
-<div class="bloc gauche" style="--h:26px" markdown="1">
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_5e57df3916a7431a9c495077d6b9d235-mv2.webp" lien=true ratio="421/330" %}</div>
+
+<div class="bloc gauche" style="--h:26px;--x:0.71%;--w:98.57%;--mt:6px" markdown="1">
 
 <p class="legende">Réduction des brèches et des barrières pour un enjeu paysager</p>
 
@@ -141,7 +123,7 @@ La structure en bois est reprise de ce dernier avec une résille amenant une lum
 
 <div class="col" style="--x:4.69%;--w:50.20%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_2a4ac4a43ae5427a9bee44c8050155b6-mv2.webp" lien=true ratio="492/209" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_2a4ac4a43ae5427a9bee44c8050155b6-mv2-crop-396-0-1345-571.webp" lien=true ratio="492/209" %}</div>
 
 <div class="bloc gauche" style="--h:26px;--w:58.13%" markdown="1">
 
@@ -153,7 +135,7 @@ La structure en bois est reprise de ce dernier avec une résille amenant une lum
 
 <div class="col" style="--x:2.96%;--w:36.63%;--mt:16px" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_30f55d48b7c442f8b922e6c9916cefd4-mv2.webp" lien=true ratio="359/187" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_30f55d48b7c442f8b922e6c9916cefd4-mv2-crop-0-78-1578-670.webp" lien=true ratio="359/187" %}</div>
 
 <div class="bloc gauche" style="--h:26px;--w:79.67%;--mt:6px" markdown="1">
 

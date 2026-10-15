@@ -23,7 +23,7 @@ Le site d’intervention se situe au 1 rue Adèle Riton dans le quartier de la g
 
 <div class="col" style="--x:5.92%;--w:39.08%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_c5e57b7f0878462c89e23c85280df2d5-mv2.webp" lien=true ratio="383/425" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_c5e57b7f0878462c89e23c85280df2d5-mv2-crop-1101-214-2830-3157.webp" lien=true ratio="383/425" %}</div>
 
 </div>
 
@@ -50,7 +50,7 @@ Notre opération programmatique reconduit le centre zen actuellement présent, c
 
 </div>
 
-<div class="bloc" style="--x:3.06%;--w:93.78%;--mt:23px">{% include img.html src="/assets/img/wix/51f7bd_d203ba940d4645dfab6d03c915982216-mv2.webp" lien=true ratio="919/246" %}</div>
+<div class="bloc" style="--x:3.06%;--w:93.78%;--mt:23px">{% include img.html src="/assets/img/wix/51f7bd_d203ba940d4645dfab6d03c915982216-mv2-crop-5-1246-5024-1350.webp" lien=true ratio="919/246" %}</div>
 
 <div class="rangee" style="--mt:36px" markdown="1">
 
@@ -58,15 +58,31 @@ Notre opération programmatique reconduit le centre zen actuellement présent, c
 
 <div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_ca7da68e47de4ab1876ec9903c65efa3-mv2.webp" lien=true ratio="198/578" %}</div>
 
-<div class="bloc" style="font:10px/2em var(--raleway);--h:20px;--x:28.28%;--w:62.63%;--mt:55px" markdown="1">
+<div class="rangee" style="--mt:55px" markdown="1">
 
-<p class="legende">Galerie restaurante</p>
+<div class="col etroite" style="--x:9.09%;--w:13.64%" markdown="1">
+
+<div class="bloc forme" style="--h:14px"><span style="background:rgb(212,139,129)"></span></div>
+
+<div class="bloc forme" style="--mt:25px;--h:14px"><span style="background:rgb(191,191,191)"></span></div>
 
 </div>
 
-<div class="bloc" style="font:10px/2em var(--raleway);--h:20px;--x:28.28%;--w:62.63%;--mt:19px" markdown="1">
+<div class="col" style="--x:5.56%;--w:62.63%" markdown="1">
 
-<p class="legende">Maison Zen</p>
+<div class="bloc" style="font:10px/2em var(--raleway);--h:20px" markdown="1">
+
+<em>Galerie restaurante</em>
+
+</div>
+
+<div class="bloc" style="font:10px/2em var(--raleway);--h:20px;--mt:19px" markdown="1">
+
+<em>Maison Zen</em>
+
+</div>
+
+</div>
 
 </div>
 
@@ -84,7 +100,7 @@ Ce sont deux volumes, l’un atteignant 17m de haut, l’autre 21m, séparé par
 
 </div>
 
-<div class="bloc grille" style="--mt:23px"><div class="case" style="--w:42.88%">{% include img.html src="/assets/img/wix/51f7bd_39ff7e3cd8584fb9b2bee48c84188905-mv2.webp" lien=true ratio="235/234" %}</div>
+<div class="bloc grille gris" style="--mt:23px"><div class="case" style="--w:42.88%">{% include img.html src="/assets/img/wix/51f7bd_39ff7e3cd8584fb9b2bee48c84188905-mv2.webp" lien=true ratio="235/234" %}</div>
 <div class="case" style="--x:14.42%;--w:42.70%">{% include img.html src="/assets/img/wix/51f7bd_7026df7a55124980b867a667f6d8ab3e-mv2.webp" lien=true ratio="234/234" %}</div></div>
 
 </div>
@@ -93,11 +109,17 @@ Ce sont deux volumes, l’un atteignant 17m de haut, l’autre 21m, séparé par
 
 <div class="rangee" style="--mt:3px" markdown="1">
 
-<div class="col etroite" style="--x:13.47%;--w:12.65%;--mt:7px" markdown="1">
+<div class="col etroite" style="--x:9.59%;--w:2.76%;--mt:7px" markdown="1">
+
+<div class="bloc forme" style="--h:14px"><span style="background:rgb(219,180,180)"></span></div>
+
+</div>
+
+<div class="col etroite" style="--x:1.12%;--w:12.65%;--mt:7px" markdown="1">
 
 <div class="bloc" style="font:10px/2em var(--raleway);--h:20px" markdown="1">
 
-<p class="legende">Logements</p>
+<em>Logements</em>
 
 </div>
 
@@ -146,13 +168,13 @@ De bas en haut, le mélange des flux entre logements et activités dynamise le l
 
 <div class="col" style="--x:2.04%;--w:39.80%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_a4c9e13287704511a75cdd6f55b982ad-mv2.webp" lien=true ratio="390/326" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_a4c9e13287704511a75cdd6f55b982ad-mv2-crop-0-0-1754-1465.webp" lien=true ratio="390/326" %}</div>
 
 </div>
 
 </div>
 
-<div class="bloc" style="--x:3.47%;--w:93.16%;--mt:33px">{% include img.html src="/assets/img/wix/51f7bd_cdad0ce56b4d4e07a942ec7318909c42-mv2.webp" lien=true ratio="913/506" %}</div>
+<div class="bloc" style="--x:3.47%;--w:93.16%;--mt:33px">{% include img.html src="/assets/img/wix/51f7bd_cdad0ce56b4d4e07a942ec7318909c42-mv2-crop-502-686-4186-2284.webp" lien=true ratio="913/506" %}</div>
 
 <div class="rangee" style="--mt:41px" markdown="1">
 
@@ -166,14 +188,14 @@ Enfin, les logements occupent des positions aux extrémités du bâtiment afin d
 
 </div>
 
-<div class="bloc" style="--x:5.53%;--w:86.38%;--mt:62px">{% include img.html src="/assets/img/wix/51f7bd_6d84f5428b33482da093b0a811e5d84c-mv2.webp" lien=true ratio="406/450" %}</div>
+<div class="bloc" style="--x:5.53%;--w:86.38%;--mt:62px">{% include img.html src="/assets/img/wix/51f7bd_6d84f5428b33482da093b0a811e5d84c-mv2-crop-0-399-3564-3994.webp" lien=true ratio="406/450" %}</div>
 
 </div>
 
 <div class="col" style="--x:0.82%;--w:47.76%" markdown="1">
 
 <div class="bloc superpose" markdown="1">
-<div>{% include img.html src="/assets/img/wix/51f7bd_c9076f25a1d04e80acba37be7578debe-mv2.webp" lien=true ratio="468/242" %}</div>
+<div>{% include img.html src="/assets/img/wix/51f7bd_c9076f25a1d04e80acba37be7578debe-mv2-crop-7-2387-3446-1783.webp" lien=true ratio="468/242" %}</div>
 <div class="etiquette centre" style="--y:10.74%;--h:26px;--x:14.53%;--w:45.73%" markdown="1">
 
 <p class="legende">R+3</p>
@@ -182,7 +204,7 @@ Enfin, les logements occupent des positions aux extrémités du bâtiment afin d
 </div>
 
 <div class="bloc superpose" style="--mt:7px" markdown="1">
-<div>{% include img.html src="/assets/img/wix/51f7bd_cf9d5d9b29f44c899faf9fe2659e090d-mv2.webp" lien=true ratio="467/234" %}</div>
+<div>{% include img.html src="/assets/img/wix/51f7bd_cf9d5d9b29f44c899faf9fe2659e090d-mv2-crop-7-2420-3446-1727.webp" lien=true ratio="467/234" %}</div>
 <div class="etiquette centre" style="--y:14.96%;--h:26px;--x:14.56%;--w:45.82%" markdown="1">
 
 <p class="legende">R+4</p>
@@ -216,7 +238,7 @@ Pour la galerie restaurante, nous l’avons imaginé comme un parcours initiatiq
 
 <div class="col" style="--x:5.71%;--w:41.02%;--mt:19px" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_0e7fb8893da2442c986260b841cb20ed-mv2.webp" lien=true ratio="402/264" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_0e7fb8893da2442c986260b841cb20ed-mv2-crop-6-1269-3558-2390.webp" lien=true ratio="402/264" %}</div>
 
 <div class="bloc centre" style="--h:26px;--x:11.94%;--w:76.62%;--mt:14px" markdown="1">
 
@@ -228,7 +250,7 @@ Pour la galerie restaurante, nous l’avons imaginé comme un parcours initiatiq
 
 <div class="col" style="--x:5.31%;--w:42.24%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_874f1d605d804a5a8ae89134264dce3a-mv2.webp" lien=true ratio="414/290" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_874f1d605d804a5a8ae89134264dce3a-mv2-crop-11-1146-3553-2557.webp" lien=true ratio="414/290" %}</div>
 
 <div class="bloc centre" style="--h:26px;--x:13.04%;--w:74.40%;--mt:7px" markdown="1">
 
@@ -246,7 +268,7 @@ Enfin pour les façades, la surélévation en ossature bois revêtu de bardage b
 
 </div>
 
-<div class="bloc" style="--mt:25px">{% include img.html src="/assets/img/wix/51f7bd_a240d7b9a040437894d9448efb9d2923-mv2.webp" lien=true ratio="980/474" %}</div>
+<div class="bloc" style="--mt:25px">{% include img.html src="/assets/img/wix/51f7bd_a240d7b9a040437894d9448efb9d2923-mv2-crop-410-736-4454-2184.webp" lien=true ratio="980/474" %}</div>
 
 <div class="bloc" style="--h:78px;--x:2.45%;--w:95.10%;--mt:30px" markdown="1">
 
@@ -254,4 +276,4 @@ Ce projet, en créant un lieu dynamique qui vient faire signal au sein de quarti
 
 </div>
 
-<div class="bloc" style="--x:3.47%;--w:93.06%;--mt:17px">{% include img.html src="/assets/img/wix/51f7bd_7dccc400e59b442bbb3ee7bcf5392954-mv2.webp" lien=true ratio="912/538" %}</div>
+<div class="bloc" style="--x:3.47%;--w:93.06%;--mt:17px">{% include img.html src="/assets/img/wix/51f7bd_7dccc400e59b442bbb3ee7bcf5392954-mv2-crop-0-580-5040-2967.webp" lien=true ratio="912/538" %}</div>

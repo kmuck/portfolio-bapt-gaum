@@ -52,7 +52,7 @@ C’est le cas de Roubaix, ancienne capitale française du textile, qui attire d
 
 <div class="col" style="--x:6.63%;--w:39.18%;--mt:5px" markdown="1">
 
-<div class="bloc" style="--x:8.07%;--w:83.85%">{% include img.html src="/assets/img/wix/51f7bd_7c3a0b55e2794e608a13e5bc34a5dca2-mv2.webp" lien=true ratio="322/334" %}</div>
+<div class="bloc" style="--x:8.07%;--w:83.85%">{% include img.html src="/assets/img/wix/51f7bd_7c3a0b55e2794e608a13e5bc34a5dca2-mv2-crop-35-0-3028-2975.webp" lien=true ratio="322/334" %}</div>
 
 <div class="bloc centre" style="--h:26px;--mt:15px" markdown="1">
 
@@ -104,7 +104,7 @@ Les friches, témoins de ces délaissés urbains peuvent devenir selon moi les l
 
 <div class="col etroite" style="--x:8.16%;--w:33.67%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_bff5f1d200fe47b78b059c8500097de6-mv2.webp" lien=true ratio="330/334" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_bff5f1d200fe47b78b059c8500097de6-mv2-crop-35-26-3524-3570.webp" lien=true ratio="330/334" %}</div>
 
 <div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:36px;--x:8.18%;--w:83.64%;--mt:12px" markdown="1">
 
@@ -139,7 +139,7 @@ A l’échelle du quartier, il s’intègrera dans une constellation d'établiss
 
 </div>
 
-<div class="bloc" style="--x:2.28%;--w:95.22%;--mt:38px">{% include img.html src="/assets/img/wix/51f7bd_f93812db0b804e9cb8778b10c97b97cc-mv2.webp" lien=true ratio="418/277" %}</div>
+<div class="bloc" style="--x:2.28%;--w:95.22%;--mt:38px">{% include img.html src="/assets/img/wix/51f7bd_f93812db0b804e9cb8778b10c97b97cc-mv2-crop-5-0-1744-1164.webp" lien=true ratio="418/277" %}</div>
 
 <div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:18px;--x:3.19%;--w:93.85%;--mt:11px" markdown="1">
 
@@ -151,7 +151,7 @@ A l’échelle du quartier, il s’intègrera dans une constellation d'établiss
 
 <div class="col" style="--x:4.59%;--w:43.27%;--mt:10px" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_6eb1681eff6149659759a5e761639911-mv2.webp" lien=true ratio="424/383" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_6eb1681eff6149659759a5e761639911-mv2-crop-708-1134-5778-5214.webp" lien=true ratio="424/383" %}</div>
 
 <div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:18px;--x:1.42%;--w:97.17%;--mt:11px" markdown="1">
 
@@ -177,7 +177,7 @@ Le site se présente par l’Usine Toulemonde, ancienne filature textile consid�
 
 <div class="bloc gauche" style="font:11px/1.4em var(--raleway);--h:15px;--mt:5px" markdown="1">
 
-<p class="legende">Place minérale</p>
+<em>Place minérale</em>
 
 </div>
 
@@ -189,7 +189,7 @@ Le site se présente par l’Usine Toulemonde, ancienne filature textile consid�
 
 <div class="bloc gauche" style="font:11px/1.4em var(--raleway);--h:15px;--x:3.42%;--w:96.58%;--mt:5px" markdown="1">
 
-<p class="legende">Mur d'enceinte, maintenu par renforts</p>
+<em>Mur d'enceinte, maintenu par renforts</em>
 
 </div>
 
@@ -201,7 +201,7 @@ Le site se présente par l’Usine Toulemonde, ancienne filature textile consid�
 
 <div class="bloc gauche" style="font:11px/1.4em var(--raleway);--h:31px;--mt:5px" markdown="1">
 
-<p class="legende">Square de la Tour (vue sur l'usine Toulemonde)</p>
+<em>Square de la Tour (vue sur l'usine Toulemonde)</em>
 
 </div>
 
@@ -213,7 +213,7 @@ Le site se présente par l’Usine Toulemonde, ancienne filature textile consid�
 
 <div class="bloc gauche" style="font:11px/1.4em var(--raleway);--h:15px;--mt:5px" markdown="1">
 
-<p class="legende">Usine Tissel, barrière</p>
+<em>Usine Tissel, barrière</em>
 
 </div>
 
@@ -251,13 +251,7 @@ En 1980, la désindustrialisation impose un renouvellement urbain. La partie bas
 
 <div class="bloc" style="--x:8.42%;--w:85.52%">{% include img.html src="/assets/img/wix/51f7bd_97982ff0834a4db48e78e2f948395b37-mv2.webp" lien=true ratio="254/581" %}</div>
 
-<div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:0px;--mt:14px" markdown="1">
-
-<p class="legende">Axonométrie de l'existant (vert : logements HLM ; gris : friche)</p>
-
-</div>
-
-<div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:36px" markdown="1">
+<div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:36px;--mt:14px" markdown="1">
 
 <p class="legende">Axonométrie de l'existant (vert : logements HLM ; gris : friche)</p>
 
@@ -347,37 +341,37 @@ Pour mieux raconter la complexité programmatique, j’ai défini six grands pro
 
 <div class="col etroite" style="--x:2.76%;--w:15.92%;--mt:32px" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_40c822c7bda84d0ea4e3290c2e30281b-mv2.webp" lien=true ratio="156/168" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_40c822c7bda84d0ea4e3290c2e30281b-mv2-crop-148-0-1684-1776.webp" lien=true ratio="156/168" %}</div>
 
 </div>
 
 <div class="col etroite" style="--w:15.10%;--mt:27px" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_19b5b768c64e4eeab6be1f4ed888e22b-mv2.webp" lien=true ratio="148/168" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_19b5b768c64e4eeab6be1f4ed888e22b-mv2-crop-191-296-1567-1776.webp" lien=true ratio="148/168" %}</div>
 
 </div>
 
 <div class="col etroite" style="--x:-0.51%;--w:16.84%;--mt:5px" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_8582dac24ebe4100acefea6561463e67-mv2.webp" lien=true ratio="165/189" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_8582dac24ebe4100acefea6561463e67-mv2-crop-116-0-1738-1987.webp" lien=true ratio="165/189" %}</div>
 
 </div>
 
 <div class="col etroite" style="--x:-0.31%;--w:16.84%;--mt:26px" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_eb99b93c68c447b98e2ddb73e4bc37ff-mv2.webp" lien=true ratio="165/178" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_eb99b93c68c447b98e2ddb73e4bc37ff-mv2-crop-116-393-1747-1888.webp" lien=true ratio="165/178" %}</div>
 
 </div>
 
 <div class="col etroite" style="--x:-0.92%;--w:14.39%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_507c9cf6b36b41a283f81d3b6b74b95e-mv2.webp" lien=true ratio="141/208" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_507c9cf6b36b41a283f81d3b6b74b95e-mv2-crop-106-0-1493-2206.webp" lien=true ratio="141/208" %}</div>
 
 </div>
 
 <div class="col etroite" style="--x:1.02%;--w:16.84%;--mt:5px" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_7633e5ef67434e10a5bfc1f44e6c2d12-mv2.webp" lien=true ratio="165/208" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_7633e5ef67434e10a5bfc1f44e6c2d12-mv2-crop-95-21-1747-2201.webp" lien=true ratio="165/208" %}</div>
 
 </div>
 
@@ -442,37 +436,55 @@ Pour la ferme urbaine, sur la partie Nord, je conserve les jardins partagés de 
 
 <div class="bloc" style="font:11px/2em var(--raleway);--h:22px" markdown="1">
 
-<p class="legende">Rappel :</p>
+<em>Rappel : </em>
 
 </div>
 
 </div>
 
-<div class="col etroite" style="--x:10.23%;--w:16.63%" markdown="1">
+<div class="col etroite" style="--x:4.69%;--w:3.20%;--mt:5px" markdown="1">
+
+<div class="bloc forme" style="--h:15px"><svg aria-hidden="true" aria-label="" data-bbox="20 20 160 160" data-type="shape" height="100%" preserveaspectratio="none" role="presentation" style="fill:#B3CE99" viewbox="20 20 160 160" width="100%" xmlns="http://www.w3.org/2000/svg"> <g> <path d="M180 20v160H20V20h160z"></path> </g> </svg></div>
+
+</div>
+
+<div class="col etroite" style="--x:2.35%;--w:16.63%" markdown="1">
 
 <div class="bloc" style="font:11px/2em var(--raleway);--h:22px" markdown="1">
 
-<p class="legende">logements</p>
+<em>logements</em>
 
 </div>
 
 </div>
 
-<div class="col etroite" style="--x:12.37%;--w:15.57%" markdown="1">
+<div class="col etroite" style="--x:7.46%;--w:3.20%;--mt:5px" markdown="1">
+
+<div class="bloc forme" style="--h:15px"><svg aria-hidden="true" aria-label="" data-bbox="20 20 160 160" data-type="shape" height="100%" preserveaspectratio="none" role="presentation" style="fill:#608ADA" viewbox="20 20 160 160" width="100%" xmlns="http://www.w3.org/2000/svg"> <g> <path d="M180 20v160H20V20h160z"></path> </g> </svg></div>
+
+</div>
+
+<div class="col etroite" style="--x:1.71%;--w:15.57%" markdown="1">
 
 <div class="bloc" style="font:11px/2em var(--raleway);--h:22px" markdown="1">
 
-<p class="legende">bureaux</p>
+<em>bureaux</em>
 
 </div>
 
 </div>
 
-<div class="col etroite" style="--x:12.37%;--w:15.57%" markdown="1">
+<div class="col etroite" style="--x:7.25%;--w:3.20%;--mt:5px" markdown="1">
+
+<div class="bloc forme" style="--h:15px"><svg aria-hidden="true" aria-label="" data-bbox="20 20 160 160" data-type="shape" height="100%" preserveaspectratio="none" role="presentation" style="fill:#8EBDEB" viewbox="20 20 160 160" width="100%" xmlns="http://www.w3.org/2000/svg"> <g> <path d="M180 20v160H20V20h160z"></path> </g> </svg></div>
+
+</div>
+
+<div class="col etroite" style="--x:1.92%;--w:15.57%" markdown="1">
 
 <div class="bloc" style="font:11px/2em var(--raleway);--h:22px" markdown="1">
 
-<p class="legende">ateliers</p>
+<em>ateliers</em>
 
 </div>
 
@@ -482,31 +494,49 @@ Pour la ferme urbaine, sur la partie Nord, je conserve les jardins partagés de 
 
 <div class="rangee" style="--mt:6px" markdown="1">
 
-<div class="col etroite" style="--x:27.51%;--w:15.57%;--mt:1px" markdown="1">
+<div class="col etroite" style="--x:21.96%;--w:3.20%;--mt:5px" markdown="1">
+
+<div class="bloc forme" style="--h:15px"><svg aria-hidden="true" aria-label="" data-bbox="20 20 160 160" data-type="shape" height="100%" preserveaspectratio="none" role="presentation" style="fill:#9A9898" viewbox="20 20 160 160" width="100%" xmlns="http://www.w3.org/2000/svg"> <g> <path d="M180 20v160H20V20h160z"></path> </g> </svg></div>
+
+</div>
+
+<div class="col etroite" style="--x:2.35%;--w:15.57%;--mt:1px" markdown="1">
 
 <div class="bloc" style="font:11px/2em var(--raleway);--h:22px" markdown="1">
 
-<p class="legende">technique</p>
+<em>technique</em>
 
 </div>
 
 </div>
 
-<div class="col etroite" style="--x:13.43%;--w:15.57%;--mt:1px" markdown="1">
+<div class="col etroite" style="--x:8.53%;--w:3.20%;--mt:5px" markdown="1">
+
+<div class="bloc forme" style="--h:15px"><svg aria-hidden="true" aria-label="" data-bbox="20 20 160 160" data-type="shape" height="100%" preserveaspectratio="none" role="presentation" style="fill:#FEC172" viewbox="20 20 160 160" width="100%" xmlns="http://www.w3.org/2000/svg"> <g> <path d="M180 20v160H20V20h160z"></path> </g> </svg></div>
+
+</div>
+
+<div class="col etroite" style="--x:1.71%;--w:15.57%;--mt:1px" markdown="1">
 
 <div class="bloc" style="font:11px/2em var(--raleway);--h:22px" markdown="1">
 
-<p class="legende">pédagogique</p>
+<em>pédagogique</em>
 
 </div>
 
 </div>
 
-<div class="col etroite" style="--x:12.37%;--w:15.57%" markdown="1">
+<div class="col etroite" style="--x:7.25%;--w:3.20%;--mt:5px" markdown="1">
+
+<div class="bloc forme" style="--h:15px"><svg aria-hidden="true" aria-label="" data-bbox="20 20 160 160" data-type="shape" height="100%" preserveaspectratio="none" role="presentation" style="fill:#DCA8FF" viewbox="20 20 160 160" width="100%" xmlns="http://www.w3.org/2000/svg"> <g> <path d="M180 20v160H20V20h160z"></path> </g> </svg></div>
+
+</div>
+
+<div class="col etroite" style="--x:1.92%;--w:15.57%" markdown="1">
 
 <div class="bloc" style="font:11px/2em var(--raleway);--h:22px" markdown="1">
 
-<p class="legende">commerces</p>
+<em>commerces</em>
 
 </div>
 
@@ -649,7 +679,7 @@ Une passerelle vient surplomber les champs. Elle longe le mur existant. Le tient
 
 <div class="col etroite" style="--x:3.98%;--w:28.06%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_a9a9093ff4304f1eadec57dd4f5e4bc4-mv2.webp" lien=true ratio="275/281" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_a9a9093ff4304f1eadec57dd4f5e4bc4-mv2-crop-0-349-2253-2302.webp" lien=true ratio="275/281" %}</div>
 
 <div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:36px;--mt:18px" markdown="1">
 
@@ -684,7 +714,7 @@ Je retire l’ensemble des cloisonnements existants et me sert des voutains comm
 
 </div>
 
-<div class="bloc" style="--mt:59px">{% include img.html src="/assets/img/wix/51f7bd_aca05160c36b494a94eefa388f6f2a51-mv2.webp" lien=true ratio="387/625" %}</div>
+<div class="bloc" style="--mt:59px">{% include img.html src="/assets/img/wix/51f7bd_aca05160c36b494a94eefa388f6f2a51-mv2-crop-195-1308-3673-5933.webp" lien=true ratio="387/625" %}</div>
 
 <div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:18px;--x:2.58%;--w:94.57%;--mt:7px" markdown="1">
 
@@ -696,7 +726,7 @@ Je retire l’ensemble des cloisonnements existants et me sert des voutains comm
 
 <div class="col" style="--x:4.59%;--w:51.12%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_ef1f94432abe40908d40245526f5a924-mv2.webp" lien=true ratio="501/986" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_ef1f94432abe40908d40245526f5a924-mv2-crop-45-465-6024-11859.webp" lien=true ratio="501/986" %}</div>
 
 <div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:18px;--x:24.55%;--w:50.70%;--mt:7px" markdown="1">
 
@@ -752,7 +782,7 @@ Partant de ces contraintes, j’ai modelé la toiture. Elle réinterprète le sh
 
 <div class="col" style="--x:1.84%;--w:56.94%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_250a3e4262614ca3a95184085bfcbd46-mv2.webp" lien=true ratio="558/278" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_250a3e4262614ca3a95184085bfcbd46-mv2-crop-0-160-1600-809.webp" lien=true ratio="558/278" %}</div>
 
 <div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:18px;--x:27.24%;--w:45.52%;--mt:14px" markdown="1">
 
@@ -780,7 +810,7 @@ Le processus de fabrication est le suivant : les marchandises sont stockées dan
 
 <div class="col etroite" style="--x:14.80%;--w:17.65%;--mt:8px" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_7f6e528521e6440b82bcbfe0fed8392f-mv2.webp" lien=true ratio="173/341" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_7f6e528521e6440b82bcbfe0fed8392f-mv2-crop-0-0-2290-4598.webp" lien=true ratio="173/341" %}</div>
 
 </div>
 
@@ -788,7 +818,7 @@ Le processus de fabrication est le suivant : les marchandises sont stockées dan
 
 <div class="bloc gauche" style="font:13px/1.4em var(--raleway);--h:18px;--x:1.93%;--w:98.07%" markdown="1">
 
-<p class="legende">Plan atelier</p>
+<em>Plan atelier</em>
 
 </div>
 
@@ -800,7 +830,7 @@ Le processus de fabrication est le suivant : les marchandises sont stockées dan
 
 <div class="bloc gauche" style="font:13px/1.4em var(--raleway);--h:18px" markdown="1">
 
-<p class="legende">Plan logement co-living</p>
+<em>Plan logement co-living</em>
 
 </div>
 
@@ -826,7 +856,7 @@ Ce grand théâtre vivant prend place au sein d'un jeu avec la matrice structure
 
 <div class="col" style="--x:7.24%;--w:41.73%;--mt:19px" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_8fb71293b1c34e579b512b40606a3830-mv2.webp" lien=true ratio="409/357" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_8fb71293b1c34e579b512b40606a3830-mv2-crop-0-188-4116-3593.webp" lien=true ratio="409/357" %}</div>
 
 <div class="bloc centre" style="font:13px/1.4em var(--raleway);--h:18px;--w:90.71%;--mt:31px" markdown="1">
 
@@ -878,7 +908,7 @@ Pour la façade extérieure des logements, je souhaitais respecter la trame exis
 
 <div class="col etroite" style="--x:4.80%;--w:23.06%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_19cd456680584712b724b54afc4b0cac-mv2.webp" lien=true ratio="226/521" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_19cd456680584712b724b54afc4b0cac-mv2-crop-27-163-2988-6531.webp" lien=true ratio="226/521" %}</div>
 
 </div>
 

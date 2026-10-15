@@ -118,8 +118,9 @@ def rich_text_items(block):
             st = el.get("style") or ""
             fs, lh = re.search(r"font-size:\s*(\d+)px", st), re.search(r"line-height:\s*([\d.]+em)", st)
             t = (rich_text(el), f"{fs.group(1)}px/{lh.group(1)}" if fs and lh else None)
-        elif covered_by(el, re.compile(r"font-style:\s*italic")) and len(t) < 200:
-            kind = "legende"
+        elif covered_by(el, re.compile(r"font-style:\s*italic")) and len(t) < 200 \
+                and covered_by(el, re.compile(r"text-decoration:\s*underline")):
+            kind = "legende"  # légende d'image : italique souligné
         elif el.name == "li" or el.find_parent("li"):
             kind, t = "liste", rich_text(el)
         else:
@@ -155,10 +156,35 @@ def taille_texte(paras):
     return c.most_common(1)[0][0] if c else None
 
 
+CSS = ""  # HTML de la page en cours, pour le CSS propre à chaque composant
+
+
+def forme(tag):
+    """Forme Wix (carré ou pastille de couleur, forme vectorielle) en HTML sur une ligne, ou None."""
+    cid = tag["id"]
+    regles = " ".join(re.findall(r"#" + re.escape(cid) + r"\{([^}]*)\}", CSS))
+    if "wixui-vector-image" in (tag.get("class") or []) and tag.find("svg"):
+        svg = tag.find("svg")
+        fill = re.search(r"--fill:\s*([^;]+)", regles)
+        svg["style"] = f"fill:{fill.group(1) if fill else '#000'}"
+        svg["width"], svg["height"] = "100%", "100%"
+        return re.sub(r"\s*\n\s*", " ", str(svg))
+    bg = re.search(r"--bg:\s*(\d+),\s*(\d+),\s*(\d+)", regles)
+    if bg and not tag.find(id=re.compile("^comp-")) and not tag.find("img") and not tag.get_text(strip=True):
+        rd = re.search(r"--rd:\s*([^;]+)", regles)
+        return (f'<span style="background:rgb({bg.group(1)},{bg.group(2)},{bg.group(3)})'
+                + (f';border-radius:{rd.group(1)}' if rd else "") + '"></span>')
+    return None
+
+
 def walk(tag, pos, out, comp=None):
     """Ajoute à out les éléments (type, valeur, composant Wix, extra) dans l'ordre de lecture."""
     if tag.get("id", "").startswith("comp-"):
         comp = tag["id"]
+        f = forme(tag)
+        if f:
+            out.append(("forme", f, comp, None))
+            return
     if tag.get("data-testid") == "richTextElement":
         extra = (alignement(tag), taille_texte(tag.find_all("p")))
         out.extend((k, v, comp, extra) for k, v in rich_text_items(tag))
@@ -185,7 +211,9 @@ def walk(tag, pos, out, comp=None):
             m = MEDIA_RE.search(str(it))
             if m:
                 cases.append((m.group(1), *px))
-        out.append(("grille", cases, comp, None))
+        # « color-in-on-hover » : images en noir et blanc, en couleur au survol
+        gris = any("color-in-on-hover" in (it.get("class") or []) for it in grille.select(".gallery-item-container"))
+        out.append(("grille", cases, comp, "gris" if gris else None))
         return
     if tag.get("id", "").startswith("comp-") and tag.select_one(".thumbnailItem"):
         thumbs = [t for t in tag.select(".thumbnailItem")
@@ -219,6 +247,8 @@ def ordre_comps(html):
 
 
 def page_items(html, decor):
+    global CSS
+    CSS = html
     soup = BeautifulSoup(html, "html.parser")
     out = []
     walk(soup.find(id="PAGES_CONTAINER"), mesh_positions(html), out)
@@ -323,6 +353,8 @@ def bloc_md(b, zx, zw, mt, texte_page, hauteur):
             etiquettes.append(md.replace('class="bloc', 'class="etiquette', 1).replace(' style="', f' style="{pos[0]};', 1))
         return (f'<div class="bloc superpose"{st}{debug(b)} markdown="1">\n<div>{imgs}</div>\n'
                 + "".join(etiquettes) + "</div>\n")
+    if items[0][0] == "forme":
+        return f'<div class="bloc forme" style="{st[8:-1] + ";" if st else ""}--h:{h}px"{debug(b)}>{items[0][1]}</div>\n'
     if items[0][0] == "grille":
         cases, droite = sorted(items[0][1], key=lambda c: (c[2], c[1])), 0
         gw = max(c[1] + c[3] for c in cases)
@@ -330,7 +362,8 @@ def bloc_md(b, zx, zw, mt, texte_page, hauteur):
         for media, l, t, cw, ch in cases:
             parts.append(f'<div class="case"{style(l - droite, cw, gw, 0)}>{image_md(media, ("cover", None), round(cw), round(ch))}</div>')
             droite = l + cw
-        return f'<div class="bloc grille"{st}{debug(b)}>' + "\n".join(parts) + "</div>\n"
+        cls = "bloc grille gris" if items[0][2] == "gris" else "bloc grille"
+        return f'<div class="{cls}"{st}{debug(b)}>' + "\n".join(parts) + "</div>\n"
     if items[0][0] == "diaporama":
         imgs = ",".join(f"/assets/img/wix/{webp_name(i)}" for i in items[0][1])
         return f'<div class="bloc"{st}{debug(b)}>\n{{% include diaporama.html images="{imgs}" hauteur={h - 82} %}}\n</div>\n'
@@ -420,12 +453,47 @@ def zone_md(blocs, zx, zw, haut, texte_page):
     return "\n".join(out)
 
 
+def couvrants(html):
+    """Ce que chaque composant Wix montre quand il passe par-dessus un autre : True s'il est opaque
+    (image, forme, bande à fond coloré), le texte s'il s'agit d'un bloc de texte (qui ne cache qu'un
+    doublon de lui-même), False pour une bande ou un conteneur transparent."""
+    soup = BeautifulSoup(html, "html.parser")
+    out = {}
+    for t in soup.find_all(id=re.compile("^comp-")):
+        cid = t["id"]
+        fond = re.findall(r"#" + cid + r"\b[^{]*\{[^}]*--bg-overlay-color:([^;}]+)", html)
+        if fond:
+            out[cid] = any(f.strip() != "transparent" for f in fond)
+        elif t.get("data-testid") == "richTextElement" or "wixui-rich-text" in (t.get("class") or []):
+            out[cid] = t.get_text(" ", strip=True)
+        else:
+            out[cid] = True
+    return out
+
+
+def recouverts(blocs, boxes, ordre, caches, couv):
+    """Retire les textes que la capture a trouvés recouverts, quand ce qui passe par-dessus (plus loin
+    dans l'ordre Wix) les cache vraiment : image, bande à fond blanc ou doublon exact du texte."""
+    for t in blocs:
+        if t["cid"] not in caches or not t["box"]:
+            continue
+        x, y, w, h = boxes[t["cid"]]
+        for cid, (ix, iy, iw, ih) in boxes.items():
+            c = couv.get(cid, False)
+            if (cid != t["cid"] and ordre.get(cid, -1) > ordre.get(t["cid"], -1)
+                    and (c is True or (isinstance(c, str) and c == couv.get(t["cid"])))
+                    and min(x + w, ix + iw) > max(x, ix) and min(y + h, iy + ih) > max(y, iy)):
+                print(f"  texte recouvert sur Wix, retiré : {str(t['items'][0][1])[:50]!r}")
+                t["box"] = None
+                break
+
+
 def superpositions(blocs, ordre):
     """Un texte posé sur une image devient une étiquette de l'image s'il est au-dessus d'elle
     dans l'ordre d'affichage Wix ; s'il est en dessous, il est caché par l'image et retiré."""
     images = [b for b in blocs if b["box"] and [k for k, *_ in b["items"]] == ["image"]]
     for t in blocs:
-        if not t["box"] or t["items"][0][0] in ("image", "diaporama", "grille"):
+        if not t["box"] or t["items"][0][0] in ("image", "diaporama", "grille", "forme"):
             continue
         x, y, w, h = t["box"]
         for i in images:
@@ -441,12 +509,12 @@ def superpositions(blocs, ordre):
                 break
 
 
-def to_markdown(items, boxes, texte_page, ordre):
+def to_markdown(items, boxes, texte_page, ordre, caches=(), couv=None):
     """Corps Markdown de la page. boxes : {composant: (x, y, largeur, hauteur)} ou None ;
     ordre : {composant: rang dans le HTML}, qui est l'ordre d'empilement Wix."""
     blocs = []
     for kind, val, cid, extra in items:
-        seul = ("diaporama", "grille")
+        seul = ("diaporama", "grille", "forme")
         if blocs and blocs[-1]["cid"] == cid and kind not in seul and blocs[-1]["items"][0][0] not in seul:
             blocs[-1]["items"].append((kind, val, extra))
         else:
@@ -466,8 +534,16 @@ def to_markdown(items, boxes, texte_page, ordre):
         bas = max(bas, y + h)
     if boxes and perdus:
         print(f"  sans position : {len(perdus)} blocs")
+    if boxes and caches:
+        recouverts(blocs, boxes, ordre, caches, couv or {})
     superpositions(blocs, ordre)
     return zone_md([b for b in blocs if b["box"]], 0, LARGEUR, BANDEAU, texte_page)
+
+
+def page_caches(slug):
+    """Blocs de texte recouverts par un autre élément sur Wix (voir capture_wix.js)."""
+    f = BOITES / f"{slug}.json"
+    return set(json.loads(f.read_text(encoding="utf-8")).get("caches", [])) if f.exists() else set()
 
 
 def page_boxes(slug):
@@ -486,11 +562,13 @@ def page_boxes(slug):
 
 
 def decor_images():
-    """Images présentes sur au moins trois pages : fonds, icônes."""
+    """Images présentes sur la moitié des pages projet au moins : fonds, icônes."""
     count = collections.Counter()
     for f in RAW.glob("*.html"):
+        if not (PROJETS / f"{f.stem}.md").exists():
+            continue
         count.update(set(MEDIA_RE.findall(f.read_text(encoding="utf-8"))))
-    return {m for m, n in count.items() if n >= 3}
+    return {m for m, n in count.items() if n >= len(list(PROJETS.glob("*.md"))) / 2}
 
 
 def localize_links():
@@ -532,7 +610,7 @@ def main(slugs):
             front += f'texte: "{texte}"\n'
         print(f"{slug}: {sum(k not in ('image', 'diaporama', 'grille') for k, *_ in items)} blocs de texte, {len(ids)} images"
               + (f", {len(missing)} images manquantes" if missing else ""))
-        md.write_text(f"---{front}---\n\n{to_markdown(items, page_boxes(slug), texte, ordre_comps(page))}", encoding="utf-8")
+        md.write_text(f"---{front}---\n\n{to_markdown(items, page_boxes(slug), texte, ordre_comps(page), page_caches(slug), couvrants(page))}", encoding="utf-8")
     localize_links()
 
 

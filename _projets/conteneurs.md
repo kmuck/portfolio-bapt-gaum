@@ -8,7 +8,9 @@ sous_titre: "avec Lucas Straumann"
 texte: "13px/2em"
 ---
 
-<div class="bloc" style="font:14px/1.3em var(--raleway);--h:147px;--x:3.47%;--w:92.86%;--mt:573px" markdown="1">
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_d3ed227f42624c9097a2e81c9071b28f-mv2.webp" lien=true ratio="977/548" %}</div>
+
+<div class="bloc" style="font:14px/1.3em var(--raleway);--h:147px;--x:3.47%;--w:92.86%;--mt:25px" markdown="1">
 
 <strong>Ce projet correspond au projet d’architecture du second semestre de ma quatrième année du cursus architecture ingénierie. Pour ce projet, je me suis associé avec Lucas Straumann, un camarade de classe, j'en profite donc pour le remercier. </strong>
 
@@ -16,7 +18,7 @@ Ce projet est à la suite d’un projet d’urbanisme prenant place au Marché G
 
 </div>
 
-<div class="bloc" style="--x:5.00%;--w:89.69%;--mt:78px">{% include img.html src="/assets/img/wix/51f7bd_eb06fd465a124811a20633d7cb2d706a-mv2.webp" lien=true ratio="879/519" %}</div>
+<div class="bloc" style="--x:5.00%;--w:89.69%;--mt:78px">{% include img.html src="/assets/img/wix/51f7bd_eb06fd465a124811a20633d7cb2d706a-mv2-crop-0-36-1305-770.webp" lien=true ratio="879/519" %}</div>
 
 <div class="bloc droite" style="--h:26px;--x:8.57%;--w:82.45%;--mt:12px" markdown="1">
 
@@ -35,7 +37,7 @@ Ce projet est à la suite d’un projet d’urbanisme prenant place au Marché G
 
 <div class="col" style="--x:4.08%;--w:42.24%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_9757929d62ac420792d4308b25dbdd2a-mv2.webp" lien=true ratio="414/261" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_9757929d62ac420792d4308b25dbdd2a-mv2-crop-44-44-1217-767.webp" lien=true ratio="414/261" %}</div>
 
 </div>
 
@@ -67,7 +69,7 @@ Le projet se situe à l’entrée du projet d’urbanisme. Il se veut donc être
 
 <div class="col" style="--x:5.82%;--w:38.67%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_a1c4f106c9e24a48952c1c789a85898f-mv2.webp" lien=true ratio="379/267" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_a1c4f106c9e24a48952c1c789a85898f-mv2-crop-154-72-1007-709.webp" lien=true ratio="379/267" %}</div>
 
 </div>
 
@@ -104,13 +106,13 @@ L’approche architecturale aborde une nouvelle manière de construire, où l’
 
 <div class="col etroite" style="--x:4.80%;--w:20.00%;--mt:22px" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_f81c42607249409ba09b2c61b9e69cc1-mv2.webp" lien=true ratio="196/334" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_f81c42607249409ba09b2c61b9e69cc1-mv2-crop-46-87-425-725.webp" lien=true ratio="196/334" %}</div>
 
 </div>
 
 <div class="col etroite" style="--x:0.82%;--w:18.88%;--mt:19px" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_99490243e1984fedab2e265a8d3addc4-mv2.webp" lien=true ratio="185/340" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_99490243e1984fedab2e265a8d3addc4-mv2-crop-41-61-401-738.webp" lien=true ratio="185/340" %}</div>
 
 </div>
 
@@ -120,13 +122,13 @@ L’approche architecturale aborde une nouvelle manière de construire, où l’
 
 <div class="col" style="--x:4.49%;--w:37.96%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_2ca785a78c264103bfc988054466ab17-mv2.webp" lien=true ratio="372/238" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_2ca785a78c264103bfc988054466ab17-mv2-crop-150-87-997-637.webp" lien=true ratio="372/238" %}</div>
 
 </div>
 
 <div class="col" style="--x:9.18%;--w:41.63%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_f81c42607249409ba09b2c61b9e69cc1-mv2.webp" lien=true ratio="408/238" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_f81c42607249409ba09b2c61b9e69cc1-mv2-crop-507-187-794-462.webp" lien=true ratio="408/238" %}</div>
 
 </div>
 
@@ -155,13 +157,13 @@ L’espace d’exposition est dédiée à la présentation du projet urbanistiqu
 
 <div class="col" style="--x:3.47%;--w:48.27%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_c225f852ec42450d8a0b0e171ee6324c-mv2.webp" lien=true ratio="473/309" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_c225f852ec42450d8a0b0e171ee6324c-mv2-crop-0-196-675-441.webp" lien=true ratio="473/309" %}</div>
 
 </div>
 
 <div class="col" style="--x:1.22%;--w:41.53%" markdown="1">
 
-<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_c225f852ec42450d8a0b0e171ee6324c-mv2.webp" lien=true ratio="407/309" %}</div>
+<div class="bloc">{% include img.html src="/assets/img/wix/51f7bd_c225f852ec42450d8a0b0e171ee6324c-mv2-crop-702-196-581-441.webp" lien=true ratio="407/309" %}</div>
 
 </div>
 
@@ -192,14 +194,14 @@ Au sud de la halle de bureaux, tel une vitrine, ce seront les artisans et les en
 
 </div>
 
-<div class="bloc" style="--x:15.65%;--w:68.69%;--mt:22px">{% include img.html src="/assets/img/wix/51f7bd_b59cd46ed15349b3ac85e7939c702e4b-mv2.webp" lien=true ratio="294/409" %}</div>
+<div class="bloc" style="--x:15.65%;--w:68.69%;--mt:22px">{% include img.html src="/assets/img/wix/51f7bd_b59cd46ed15349b3ac85e7939c702e4b-mv2-crop-744-61-488-679.webp" lien=true ratio="294/409" %}</div>
 
 </div>
 
 <div class="col" style="--x:0.61%;--w:47.76%;--mt:13px" markdown="1">
 
 <div class="bloc superpose" style="--x:7.48%;--w:92.52%" markdown="1">
-<div>{% include img.html src="/assets/img/wix/51f7bd_b59cd46ed15349b3ac85e7939c702e4b-mv2.webp" lien=true ratio="433/502" %}</div>
+<div>{% include img.html src="/assets/img/wix/51f7bd_b59cd46ed15349b3ac85e7939c702e4b-mv2-crop-0-31-672-779.webp" lien=true ratio="433/502" %}</div>
 <div class="etiquette droite" style="--y:97.61%;--h:26px;--x:-30.95%" markdown="1">
 
 <p class="legende">Plan et coupe des bureaux</p>
@@ -237,7 +239,7 @@ Le foodcourt travaille en dialogue avec le parc, en offrant de très belles vues
 </div>
 
 <div class="bloc superpose" style="--x:4.66%;--w:92.89%;--mt:41px" markdown="1">
-<div>{% include img.html src="/assets/img/wix/51f7bd_50187d14d5414fa78eb010267adfe87e-mv2.webp" lien=true ratio="379/316" %}</div>
+<div>{% include img.html src="/assets/img/wix/51f7bd_50187d14d5414fa78eb010267adfe87e-mv2-crop-51-167-580-484.webp" lien=true ratio="379/316" %}</div>
 <div class="etiquette gauche" style="--y:97.15%;--h:26px;--x:1.85%;--w:96.31%" markdown="1">
 
 <p class="legende">Plan du café</p>
@@ -250,7 +252,7 @@ Le foodcourt travaille en dialogue avec le parc, en offrant de très belles vues
 <div class="col" style="--x:6.02%;--w:43.27%" markdown="1">
 
 <div class="bloc superpose" style="--x:4.25%;--w:95.52%" markdown="1">
-<div>{% include img.html src="/assets/img/wix/51f7bd_9c95ccb709f74443a314d83b530a1842-mv2.webp" lien=true ratio="405/413" %}</div>
+<div>{% include img.html src="/assets/img/wix/51f7bd_9c95ccb709f74443a314d83b530a1842-mv2-crop-376-89-650-663.webp" lien=true ratio="405/413" %}</div>
 <div class="etiquette droite" style="--y:97.34%;--h:26px;--x:2.72%;--w:90.12%" markdown="1">
 
 <p class="legende">Plan foodcourt</p>
@@ -258,7 +260,7 @@ Le foodcourt travaille en dialogue avec le parc, en offrant de très belles vues
 </div>
 </div>
 
-<div class="bloc" style="--mt:31px">{% include img.html src="/assets/img/wix/51f7bd_50187d14d5414fa78eb010267adfe87e-mv2.webp" lien=true ratio="424/286" %}</div>
+<div class="bloc" style="--mt:31px">{% include img.html src="/assets/img/wix/51f7bd_50187d14d5414fa78eb010267adfe87e-mv2-crop-631-190-649-438.webp" lien=true ratio="424/286" %}</div>
 
 </div>
 
@@ -277,7 +279,7 @@ Enfin, le parc est l'élément liant de l'ensemble des halles. En venant se recu
 
 </div>
 
-<div class="bloc" style="--x:3.67%;--w:89.69%;--mt:17px">{% include img.html src="/assets/img/wix/51f7bd_4048d9f59af144cda58f3be37bd1bb1a-mv2.webp" lien=true ratio="879/558" %}</div>
+<div class="bloc" style="--x:3.67%;--w:89.69%;--mt:17px">{% include img.html src="/assets/img/wix/51f7bd_4048d9f59af144cda58f3be37bd1bb1a-mv2-crop-59-63-1168-740.webp" lien=true ratio="879/558" %}</div>
 
 <div class="bloc gauche" style="--h:33px;--x:5.51%;--w:88.98%;--mt:64px" markdown="1">
 

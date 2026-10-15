@@ -8,7 +8,7 @@ texte: "14px/1.5em"
 ---
 
 <div class="bloc" style="--mt:2px">
-{% include diaporama.html images="/assets/img/wix/51f7bd_94de539606844a3ebaa21990ec52182c-mv2.webp,/assets/img/wix/51f7bd_70a2a3e29dec4caa8506e90f5e02702e-mv2.webp,/assets/img/wix/51f7bd_903be254ac144a07a5c22255d8062599-mv2.webp,/assets/img/wix/51f7bd_f6ec7a05624a4b1590a00c1b698125f3-mv2.webp,/assets/img/wix/51f7bd_a6a1b215842e4dcf9a762986f587c60a-mv2.webp,/assets/img/wix/51f7bd_2f9de34c2fe343c9aa2dfaca095e481f-mv2.webp,/assets/img/wix/51f7bd_4ce38fa91235422b92b8186aed1ea866-mv2.webp,/assets/img/wix/51f7bd_c294c714a3334d05804784a14fa0c4d7-mv2.webp" hauteur=486 %}
+{% include diaporama.html images="/assets/img/wix/51f7bd_73b39aa0f7bc4acdafe061dc20887037-mv2.webp,/assets/img/wix/51f7bd_94de539606844a3ebaa21990ec52182c-mv2.webp,/assets/img/wix/51f7bd_70a2a3e29dec4caa8506e90f5e02702e-mv2.webp,/assets/img/wix/51f7bd_903be254ac144a07a5c22255d8062599-mv2.webp,/assets/img/wix/51f7bd_f6ec7a05624a4b1590a00c1b698125f3-mv2.webp,/assets/img/wix/51f7bd_a6a1b215842e4dcf9a762986f587c60a-mv2.webp,/assets/img/wix/51f7bd_2f9de34c2fe343c9aa2dfaca095e481f-mv2.webp,/assets/img/wix/51f7bd_4ce38fa91235422b92b8186aed1ea866-mv2.webp,/assets/img/wix/51f7bd_c294c714a3334d05804784a14fa0c4d7-mv2.webp" hauteur=486 %}
 </div>
 
 <div class="bloc" style="--h:657px;--x:3.47%;--w:92.86%;--mt:40px" markdown="1">

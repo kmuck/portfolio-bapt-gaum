@@ -8,7 +8,7 @@ texte: "14px/1.5em"
 ---
 
 <div class="bloc" style="--mt:2px">
-{% include diaporama.html images="/assets/img/wix/51f7bd_0101325ce2a84a959bc2a91dcf87e7ff-mv2.webp,/assets/img/wix/51f7bd_d161a4961a7c4bbb926c1a379ff24f8e-mv2.webp,/assets/img/wix/51f7bd_c9b32071641e427fbc4c29ad9ebb0477-mv2.webp,/assets/img/wix/51f7bd_4a85d360e5734547b2e75483932e79b5-mv2.webp,/assets/img/wix/51f7bd_4728253ec7a94f28b879571720567f24-mv2.webp,/assets/img/wix/51f7bd_5b9380304c0c47bd806a583ddb42c995-mv2.webp,/assets/img/wix/51f7bd_5cf34f13b06046eea5859ccb4763962a-mv2.webp,/assets/img/wix/51f7bd_7464a344768d464a99a1d94c8f6d66db-mv2.webp,/assets/img/wix/51f7bd_59ba66946cd14043b5dd37fcb810e236-mv2.webp,/assets/img/wix/51f7bd_3e92823534c34963b9128f89eb124978-mv2.webp" hauteur=484 %}
+{% include diaporama.html images="/assets/img/wix/51f7bd_bc6c7db40b0e41e98c41603069603c37-mv2.webp,/assets/img/wix/51f7bd_0101325ce2a84a959bc2a91dcf87e7ff-mv2.webp,/assets/img/wix/51f7bd_d161a4961a7c4bbb926c1a379ff24f8e-mv2.webp,/assets/img/wix/51f7bd_c9b32071641e427fbc4c29ad9ebb0477-mv2.webp,/assets/img/wix/51f7bd_4a85d360e5734547b2e75483932e79b5-mv2.webp,/assets/img/wix/51f7bd_4728253ec7a94f28b879571720567f24-mv2.webp,/assets/img/wix/51f7bd_5b9380304c0c47bd806a583ddb42c995-mv2.webp,/assets/img/wix/51f7bd_5cf34f13b06046eea5859ccb4763962a-mv2.webp,/assets/img/wix/51f7bd_7464a344768d464a99a1d94c8f6d66db-mv2.webp,/assets/img/wix/51f7bd_59ba66946cd14043b5dd37fcb810e236-mv2.webp,/assets/img/wix/51f7bd_3e92823534c34963b9128f89eb124978-mv2.webp" hauteur=484 %}
 </div>
 
 <div class="bloc" style="--h:285px;--x:3.47%;--w:92.86%;--mt:35px" markdown="1">
@@ -22,7 +22,7 @@ L'objectif de ce projet est de pouvoir proposer une maison arborant un design un
 
 </div>
 
-<div class="bloc" style="--x:11.43%;--w:81.12%;--mt:13px">{% include img.html src="/assets/img/wix/51f7bd_3c5a397b6d354593a0e754240dc7c761-mv2.webp" lien=true ratio="795/380" %}</div>
+<div class="bloc" style="--x:11.43%;--w:81.12%;--mt:13px">{% include img.html src="/assets/img/wix/51f7bd_3c5a397b6d354593a0e754240dc7c761-mv2-crop-6-73-1208-578.webp" lien=true ratio="795/380" %}</div>
 
 <div class="bloc" style="--h:315px;--x:3.27%;--w:92.86%;--mt:16px" markdown="1">
 

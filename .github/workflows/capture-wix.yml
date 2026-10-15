@@ -43,8 +43,8 @@ jobs:
           for i in ids:
               import_wix.download(i)
           PY
-      - name: Photos à redresser (rotation EXIF) et recadrages Wix
-        run: python scripts/import_wix.py orientation recadrages
+      - name: Images manquantes, photos à redresser (rotation EXIF) et recadrages Wix
+        run: python scripts/import_wix.py manquantes orientation recadrages
       - name: Commit des captures
         run: |
           git config user.name "github-actions[bot]"
