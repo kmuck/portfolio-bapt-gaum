@@ -68,5 +68,31 @@ const OUT = 'import/captures';
     }
   }
   fs.writeFileSync(`${OUT}/styles.json`, JSON.stringify(styles, null, 1));
+
+  // Diaporama de l'accueil : seules 3 diapos sont dans le HTML, on les fait défiler une à une
+  const page = await browser.newPage({ viewport: { width: 1280, height: 800 } });
+  await page.goto(`${BASE}/`, { waitUntil: 'load', timeout: 90000 });
+  await page.waitForTimeout(4000);
+  const current = () => page.evaluate(() => {
+    const it = document.querySelector('[data-testid="slide-show-gallery-items"] [data-testid="gallery-item-item"]');
+    const info = it && it.querySelector('wow-image') && JSON.parse(it.querySelector('wow-image').dataset.imageInfo);
+    const a = it && it.querySelector('a');
+    const counter = document.querySelector('[data-testid="gallery-counter"]');
+    return { titre: it ? it.innerText.trim() : '', lien: a ? a.href : '', uri: info ? info.imageData.uri : '',
+             w: info ? info.imageData.width : 0, h: info ? info.imageData.height : 0, compteur: counter ? counter.innerText : '' };
+  });
+  const first = await current();
+  await page.waitForTimeout(7000);
+  const auto = (await current()).compteur !== first.compteur;
+  const slides = [];
+  for (let i = 0; i < 20; i++) {
+    const c = await current();
+    if (slides.some(s => s.compteur === c.compteur)) break;
+    slides.push(c);
+    await page.click('[data-testid="gallery-nextButton"]');
+    await page.waitForTimeout(1500);
+  }
+  fs.writeFileSync(`${OUT}/diaporama.json`, JSON.stringify({ defilement_auto: auto, slides }, null, 1));
+  console.log('diaporama', slides.length, 'auto', auto);
   await browser.close();
 })();

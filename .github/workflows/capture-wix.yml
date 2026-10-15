@@ -21,10 +21,26 @@ jobs:
           node-version: "22"
       - run: npm install --no-save playwright@1.48.2 && npx playwright install --with-deps chromium
       - run: node scripts/capture_wix.js
+      - name: Images du diaporama et des cartes de l'accueil
+        run: |
+          pip install requests pillow
+          python - <<'PY'
+          import json, sys
+          sys.path.insert(0, "scripts")
+          import import_wix
+          d = json.load(open("import/captures/diaporama.json"))
+          ids = [s["uri"] for s in d["slides"] if s["uri"]]
+          ids += ["51f7bd_5052c9db550b4a0297ba2439bf9ddac7~mv2.png", "51f7bd_22010bb170274682986fc98a2c25a7a6~mv2.jpg",
+                  "ec3d4bcc20929babb63857380b708cd4.jpg", "51f7bd_67d1e2a5d59c4fdb9d1e553d1fbaf9df~mv2.jpg",
+                  "11062b_7cf73902d06c4f3685c379a21c6c8285~mv2.png"]
+          import_wix.IMG.mkdir(parents=True, exist_ok=True)
+          for i in ids:
+              import_wix.download(i)
+          PY
       - name: Commit des captures
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
-          git add import/captures
+          git add import/captures assets/img/wix
           git diff --cached --quiet || git commit -m "Captures du site Wix"
           git push
