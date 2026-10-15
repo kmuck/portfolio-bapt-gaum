@@ -22,12 +22,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install requests beautifulsoup4
+      - run: pip install requests pillow
       - run: python scripts/import_wix.py
       - name: Commit du contenu importé
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
-          git add import assets/img/wix
+          git add -A import assets/img/wix
           git diff --cached --quiet || git commit -m "Import du contenu Wix"
           git push
