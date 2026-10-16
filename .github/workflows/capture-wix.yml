@@ -1,0 +1,60 @@
+name: Captures du site Wix
+
+on:
+  workflow_dispatch:
+    inputs:
+      captures:
+        description: "tout, ou boites (positions des éléments des pages projet seulement)"
+        default: tout
+  push:
+    branches: ['claude/**']
+    paths:
+      - scripts/capture_wix.js
+      - scripts/import_wix.py
+      - .github/workflows/capture-wix.yml
+
+permissions:
+  contents: write
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm install --no-save playwright@1.48.2 && npx playwright install --with-deps chromium
+      - run: node scripts/capture_wix.js
+        env:
+          CAPTURES: ${{ inputs.captures || 'boites' }}
+      - name: Captures d'écran du site Wix (pour comparer, gardées 30 jours)
+        uses: actions/upload-artifact@v4
+        with:
+          name: captures-wix
+          path: import/captures/**/*.jpg
+          retention-days: 30
+      - name: Images du diaporama et des cartes de l'accueil
+        run: |
+          pip install requests pillow
+          python - <<'PY'
+          import json, sys
+          sys.path.insert(0, "scripts")
+          import import_wix
+          d = json.load(open("import/captures/diaporama.json"))
+          ids = [s["uri"] for s in d["slides"] if s["uri"]]
+          ids += ["51f7bd_5052c9db550b4a0297ba2439bf9ddac7~mv2.png", "51f7bd_22010bb170274682986fc98a2c25a7a6~mv2.jpg",
+                  "ec3d4bcc20929babb63857380b708cd4.jpg"]
+          import_wix.IMG.mkdir(parents=True, exist_ok=True)
+          for i in ids:
+              import_wix.download(i)
+          PY
+      - name: Images manquantes, photos à redresser (rotation EXIF), recadrages, vidéos et documents Wix
+        run: python scripts/import_wix.py manquantes orientation recadrages videos documents
+      - name: Commit des captures
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add import/captures assets/img/wix $(ls -d assets/video/wix assets/docs 2>/dev/null)
+          git diff --cached --quiet || git commit -m "Captures du site Wix"
+          git push

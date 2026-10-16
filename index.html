@@ -1,23 +1,28 @@
 ---
 layout: default
 ---
-<section class="intro">
-  <h1>Bienvenue sur mon site personnel,</h1>
-  <p>ici je partage mes projets et réalisations en architecture que ce soit scolaire ou par loisir.</p>
-</section>
-<section>
-  <h2>Projets</h2>
-  <div class="grille">
-    {% assign en_avant = site.projets | where: "en_avant", true | sort: "ordre" %}
-    {% for projet in en_avant %}{% include carte-projet.html projet=projet %}{% endfor %}
-  </div>
-  <p><a href="{{ '/projets/' | relative_url }}">Voir tous les projets →</a></p>
-</section>
-<section class="apropos-court">
-  {% include img.html src="/assets/img/wix/51f7bd_22010bb170274682986fc98a2c25a7a6-mv2.webp" alt="Baptiste Gaumont" %}
-  <div>
-    <h2>À propos de moi</h2>
-    <p>Diplômé du double master architecture et ingénierie de l’INSA Strasbourg.</p>
-    <p><a href="{{ '/a-propos/' | relative_url }}">En savoir plus →</a></p>
-  </div>
-</section>
+<div class="carrousel" data-carrousel>
+  {%- for diapo in site.data.diaporama %}
+  {%- assign projet = site.projets | where_exp: "p", "p.url contains diapo.projet" | first %}
+  <a class="diapo{% if forloop.first %} active{% endif %}" href="{{ projet.url | relative_url }}">
+    <img src="{{ diapo.image | relative_url }}" alt="{{ diapo.titre }}" {% unless forloop.first %}loading="lazy"{% endunless %}>
+    <span class="legende-diapo">{{ diapo.titre }}</span>
+  </a>
+  {%- endfor %}
+  <button class="fleche precedent" type="button" aria-label="Précédent"></button>
+  <button class="fleche suivant" type="button" aria-label="Suivant"></button>
+  <span class="compteur"></span>
+</div>
+
+<p class="bienvenue">Bienvenue sur mon site personnel,<br>ici je partage mes projets et réalisations en architecture que ce soit scolaire ou par loisir.</p>
+
+<div class="cartes-accueil">
+  <a class="carte-accueil" href="{{ '/projets/' | relative_url }}">
+    <img src="{{ '/assets/img/wix/51f7bd_5052c9db550b4a0297ba2439bf9ddac7-mv2.webp' | relative_url }}" alt="">
+    <span>Projets</span>
+  </a>
+  <a class="carte-accueil" href="{{ '/a-propos/' | relative_url }}">
+    <img src="{{ '/assets/img/wix/51f7bd_22010bb170274682986fc98a2c25a7a6-mv2.webp' | relative_url }}" alt="">
+    <span>A propos de moi</span>
+  </a>
+</div>

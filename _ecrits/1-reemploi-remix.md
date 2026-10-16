@@ -1,5 +1,5 @@
 ---
-title: "Réemploi, développement d'un outil d'analyse multicritère comme une aide à la décision dans les projets, chez REMIX"
+title: "Réemploi, développement d'un outil d’analyse multicritère comme une aide à la décision dans les projets, chez REMIX"
 type: "Mémoire d'ingénierie"
 annee: 2025
 image: "/assets/img/wix/51f7bd_5a067baebc0046879d877dd361a23731-mv2.webp"

@@ -1,35 +1,225 @@
-:root { --fond: #0d0d0d; --texte: #ececec; --doux: #9a9a9a; --trait: #2a2a2a; }
+/* Reprend le design du site Wix d'origine : fond blanc, colonne de 980 px,
+   Playfair Display (nom), Cormorant Garamond (titres), Raleway (texte), Inter (légendes). */
+:root {
+  --largeur: 980px;
+  --texte: #000;
+  --gris: #404040;
+  --gris-clair: #cfcfcf;
+  --fond-chapeau: #e6e6e6;
+  --bleu: rgb(55, 153, 182);
+  --cormorant: "Cormorant Garamond", serif;
+  --raleway: "Raleway", sans-serif;
+  --inter: "Inter", sans-serif;
+}
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--fond); color: var(--texte); font: 17px/1.6 "Helvetica Neue", Arial, sans-serif; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: #fff; color: var(--texte); font: 14px/1.5 var(--raleway); }
 a { color: inherit; }
-img { max-width: 100%; display: block; }
-main { max-width: 1200px; margin: 0 auto; padding: 0 16px 64px; }
-.site-header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; max-width: 1200px; margin: 0 auto; padding: 24px 16px; }
-.logo { font-size: 1.3rem; letter-spacing: .08em; text-transform: uppercase; text-decoration: none; }
-nav { display: flex; gap: 24px; }
-nav a { text-decoration: none; color: var(--doux); }
-nav a:hover { color: var(--texte); }
-h1 { font-weight: 300; font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1.2; }
-h2 { font-weight: 400; margin-top: 2.5em; border-bottom: 1px solid var(--trait); padding-bottom: .3em; }
-.intro { padding: 8vh 0 4vh; max-width: 760px; }
-.grille { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
-.carte { text-decoration: none; }
-.carte img { aspect-ratio: 4 / 3; object-fit: cover; width: 100%; transition: opacity .2s; }
-.carte:hover img { opacity: .75; }
-.carte span { display: block; margin-top: 8px; }
-.apropos-court, .ecrit { display: grid; grid-template-columns: minmax(0, 220px) 1fr; gap: 32px; align-items: start; margin-top: 48px; }
-.ecrit h2 { margin-top: 0; border: 0; }
-.surtitre, .mots-cles { color: var(--doux); font-size: .9rem; margin: 0; }
-.page { max-width: 760px; }
-.portrait { max-width: 280px; margin-top: 32px; }
-.sous-titre { color: var(--doux); font-size: 1.1rem; margin-top: -.5em; }
-.contenu > p, .contenu > ul, .contenu > h2 { max-width: 760px; }
-.contenu > h2 { font-family: Georgia, serif; }
-.contenu p { text-align: justify; }
-.contenu p.legende { color: var(--doux); font-size: .9rem; font-style: italic; text-align: left; margin-top: -.4em; }
-.planche, .galerie { margin: 32px 0 16px; }
+img { display: block; max-width: 100%; }
+main { width: 100%; max-width: var(--largeur); margin: 0 auto; }
+
+/* En-tête */
+.site-header {
+  position: relative; max-width: var(--largeur); height: 103px; margin: 0 auto;
+}
+.logo {
+  position: absolute; left: 121px; top: 30px;
+  font: 22px/1.2 "Playfair Display", serif; color: #000; text-decoration: underline;
+}
+.site-header nav { position: absolute; right: 0; top: 60px; display: flex; }
+.site-header nav a {
+  width: 110px; text-align: center; font: 14px/25px var(--raleway); color: #000; text-decoration: none;
+}
+.site-header nav a:hover, .site-header nav a.actif { color: var(--bleu); }
+
+/* Bandeau de titre (texture tableau noir, sur toute la largeur) */
+.bandeau {
+  height: 38px; display: flex; align-items: center; justify-content: center;
+  background: #1c1c1c center / cover no-repeat; color: #fff; text-align: center;
+}
+.bandeau h1 { margin: 0; font: 600 20px/1 var(--cormorant); }
+.bandeau-projet h1 { font: 200 19px/1 var(--inter); }
+
+/* Pied de page */
+.site-footer {
+  display: flex; max-width: var(--largeur); margin: 0 auto; padding: 140px 0 48px;
+}
+.site-footer .contact { display: flex; align-items: center; gap: 20px; font-size: 14px; color: #000; }
+.site-footer .contact img { width: 25px; height: 25px; object-fit: cover; }
+.site-footer .contact span { text-decoration: underline; }
+.site-footer .contact:first-child { margin-left: 84px; }
+.site-footer .contact:last-child { margin-left: auto; margin-right: 101px; }
+
+/* Accueil */
+.carrousel { position: relative; height: 488px; margin-top: 5px; overflow: hidden; background: #eee; }
+.carrousel .diapo { position: absolute; inset: 0; opacity: 0; transition: opacity .8s; }
+.carrousel .diapo.active { opacity: 1; z-index: 1; }
+.carrousel .diapo img { width: 100%; height: 100%; object-fit: cover; }
+.legende-diapo, .compteur {
+  position: absolute; z-index: 2; bottom: 14px; color: #fff; font: 16px var(--cormorant);
+  text-shadow: 0 0 6px rgba(0, 0, 0, .6); opacity: 0; transition: opacity .3s;
+}
+.legende-diapo { left: 20px; }
+.compteur { right: 20px; }
+.carrousel:hover .legende-diapo, .carrousel:hover .compteur { opacity: 1; }
+.bienvenue { margin: 43px 0 0; text-align: center; font: 300 20px/25px var(--cormorant); }
+.cartes-accueil { display: flex; justify-content: space-between; padding: 0 98px 0 95px; margin-top: 55px; }
+.carte-accueil { position: relative; width: 302px; height: 259px; text-decoration: none; }
+.carte-accueil img { width: 100%; height: 100%; object-fit: cover; }
+.carte-accueil span {
+  position: absolute; top: 0; left: 0; right: 0; height: 54px; display: flex; align-items: center; justify-content: center;
+  background: rgba(20, 20, 20, .85); color: #fff; font: 22px var(--cormorant);
+}
+.carte-accueil:hover img { opacity: .85; }
+
+/* Flèches des diaporamas */
+.fleche {
+  position: absolute; z-index: 3; top: 50%; width: 44px; height: 44px; margin-top: -22px;
+  border: 0; background: none; cursor: pointer; opacity: .85;
+}
+.fleche::before {
+  content: ""; position: absolute; top: 12px; width: 18px; height: 18px;
+  border: solid #fff; border-width: 0 1px 1px 0; filter: drop-shadow(0 0 2px rgba(0, 0, 0, .5));
+}
+.fleche.precedent { left: 16px; }
+.fleche.precedent::before { left: 16px; transform: rotate(135deg); }
+.fleche.suivant { right: 16px; }
+.fleche.suivant::before { right: 16px; transform: rotate(-45deg); }
+.fleche:hover { opacity: 1; }
+
+/* Projets */
+.annee { padding: 0 0 30px; }
+.annee-titre {
+  display: flex; justify-content: space-between; align-items: baseline;
+  padding: 17px 9px 24px 19px; border-bottom: 1px solid var(--gris);
+}
+.annee-titre h2 { margin: 0; font: 900 12px var(--inter); letter-spacing: .2em; }
+.annee-titre p { margin: 0; font: italic 400 14px var(--cormorant); color: #666; }
+.vignettes-projets {
+  display: grid; grid-template-columns: repeat(3, 245px); column-gap: 68px; row-gap: 26px;
+  justify-content: center; padding-top: 16px;
+}
+.carte { text-decoration: none; color: #000; }
+.carte img { width: 245px; height: 245px; object-fit: cover; }
+.carte:hover img { opacity: .8; }
+.carte span { display: block; margin-top: 12px; text-align: center; font: 300 15px/1.25 var(--inter); }
+
+/* Écrits */
+.chapeau {
+  position: relative; margin: 0; padding: 9px 10px; font: 12px/18px var(--raleway);
+  background: var(--fond-chapeau); box-shadow: 0 0 0 100vmax var(--fond-chapeau); clip-path: inset(0 -100vmax);
+}
+.ecrit {
+  display: grid; grid-template-columns: 233px 1fr; gap: 23px; align-items: start;
+  padding: 38px 21px 50px 18px; border-bottom: 1px solid var(--gris-clair);
+}
+.ecrit:first-of-type { padding-top: 28px; padding-bottom: 33px; }
+.ecrit img { width: 233px; height: 230px; object-fit: cover; border: 1px solid var(--gris); }
+.ecrit .type { margin: 0 0 6px; font-size: 14px; line-height: 23px; }
+.ecrit h2 { margin: 0 0 14px; font: 700 14px/24px var(--raleway); }
+.ecrit .resume { font-size: 12px; line-height: 18px; text-align: justify; margin-bottom: 21px; }
+.ecrit .meta { margin: 0 0 4px; font-size: 12px; line-height: 20px; }
+
+/* À propos */
+.apropos { display: grid; grid-template-columns: 284px 1fr; gap: 34px; padding: 44px 25px 0 1px; }
+.apropos img { width: 284px; height: 351px; object-fit: cover; }
+.apropos p { margin: 0 0 21px; font-size: 14px; line-height: 21px; text-align: justify; }
+.apropos p:first-child { margin-top: 27px; }
+.apropos p:nth-child(-n+2) { text-align: left; }
+.contact-apropos { margin: 240px 0 -75px; text-align: center; font: 700 15px/1.4 var(--raleway); }
+.contact-apropos a { text-decoration: none; }
+
+/* Pages projet : build_from_wix.py reproduit la mise en page Wix. Chaque bloc porte son décalage (--x)
+   et sa largeur (--w) en % de sa zone, et son écart avec l'élément du dessus (--mt). */
+.projet { padding-bottom: 10px; font: 13px/2em var(--raleway); }
+/* Les variables ne doivent pas passer d'une colonne aux blocs qu'elle contient */
+.projet .bloc, .projet .col, .projet .rangee, .projet .case, .projet .etiquette { --x: 0px; --w: auto; --mt: 0px; --h: auto; }
+.projet .bloc, .projet .col { margin-left: var(--x); width: var(--w); margin-top: var(--mt); text-align: justify; }
+.projet .bloc { min-height: var(--h); }
+.projet .rangee { display: flex; align-items: flex-start; margin-top: var(--mt); }
+.projet .col { flex: none; }
+.bloc.centre { text-align: center; }
+.bloc.droite { text-align: right; }
+.bloc.gauche { text-align: left; }
+.bloc img { width: 100%; object-fit: cover; }
+.superpose { position: relative; }
+.etiquette { position: absolute; top: var(--y); left: var(--x); width: var(--w); text-align: justify; }
+.etiquette > :last-child { margin-bottom: 0; }
+.etiquette.centre { text-align: center; }
+.etiquette.droite { text-align: right; }
+.etiquette.gauche { text-align: left; }
+.forme > * { display: block; height: var(--h); }
+.grille { display: flex; align-items: flex-start; }
+.grille .case { flex: none; margin-left: var(--x); width: var(--w); }
+.grille video { display: block; width: 100%; height: auto; object-fit: cover; background: #000; }
+.grille.gris img { filter: grayscale(1); transition: filter .4s; }
+.grille.gris img:hover { filter: none; }
+/* Sur Wix les paragraphes n'ont pas de marge : un paragraphe vide fait une ligne d'espace */
+.projet p, .projet ul { margin: 0 0 1.5em; margin: 0 0 1lh; }
+.projet ul { padding-left: 1.3em; text-align: left; }
+.projet h2 { margin: 0; font: 400 22px/1.3em var(--raleway); text-align: left; }
+.projet h2.caslon { font: 600 20px/1.3em "Crimson Text", serif; } /* proche de l'Adobe Caslon du site Wix */
+.projet p.espace { margin: 0; height: 1lh; }
+.projet p.legende { font-style: italic; text-decoration: underline; }
+.bloc > :last-child { margin-bottom: 0; }
+/* Ancienne mise en page linéaire (pages sans positions Wix) */
+.projet > p, .projet > ul, .projet > h2 { margin-left: 35px; margin-right: 35px; }
+.planche, .galerie { margin: 0 0 20px; }
 .planche img { width: 100%; }
-.galerie { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; align-items: start; }
+.galerie { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; align-items: center; }
 .galerie img { width: 100%; }
-.site-footer { display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; padding: 32px 16px; border-top: 1px solid var(--trait); color: var(--doux); }
-@media (max-width: 640px) { .apropos-court, .ecrit { grid-template-columns: 1fr; } }
+
+/* Diaporama avec vignettes (galeries des projets) */
+.diaporama { margin: 0; }
+.diaporama-scene { position: relative; height: var(--h, 486px); background: #fff; }
+.diaporama-scene .diapo { position: absolute; inset: 0; display: none; }
+.diaporama-scene .diapo.active { display: block; }
+.diaporama-scene img { width: 100%; height: 100%; object-fit: contain; }
+.diaporama .fleche::before { border-color: #9a9a9a; filter: none; width: 26px; height: 26px; top: 8px; }
+.vignettes { display: flex; overflow-x: auto; scrollbar-width: none; }
+.vignettes::-webkit-scrollbar { display: none; }
+.vignette { flex: 0 0 auto; width: 80px; height: 80px; margin: 5px 0 0 5px; padding: 0; border: 0; background: none; cursor: pointer; }
+.vignette:first-child { margin-left: 0; }
+.vignette:hover { opacity: .8; }
+.vignette img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Mobile : le site Wix n'était pas adapté, celui-ci l'est */
+@media (max-width: 1010px) {
+  main { padding: 0 16px; }
+  .site-header { height: auto; padding: 24px 16px 18px; display: flex; flex-direction: column; gap: 10px; }
+  .logo, .site-header nav { position: static; }
+  .site-header nav { gap: 24px; }
+  .site-header nav a { width: auto; }
+  .bandeau { padding: 0 16px; }
+  .bandeau h1 { font-size: 18px; }
+  .carrousel { height: 56vw; margin: 0 -16px; }
+  .cartes-accueil { padding: 0; gap: 16px; }
+  .carte-accueil { width: auto; flex: 1; height: auto; aspect-ratio: 302 / 259; }
+  .vignettes-projets { grid-template-columns: repeat(2, 1fr); column-gap: 16px; }
+  .carte img { width: 100%; height: auto; aspect-ratio: 1; }
+  .ecrit { grid-template-columns: 1fr; padding: 28px 0; }
+  .ecrit img { width: 100%; max-width: 320px; height: auto; aspect-ratio: 233 / 230; }
+  .apropos { grid-template-columns: 1fr; padding: 24px 0 0; }
+  .apropos img { width: 100%; max-width: 320px; height: auto; }
+  .contact-apropos { margin: 60px 0 0; }
+  .projet > p, .projet > ul, .projet > h2 { margin-left: 0; margin-right: 0; }
+  .projet > .planche, .projet > .galerie { margin-left: -16px; margin-right: -16px; }
+  /* Les blocs côte à côte passent l'un sous l'autre */
+  .projet .rangee { flex-wrap: wrap; column-gap: 12px; }
+  .projet .bloc, .projet .col { margin-left: 0; width: auto; margin-top: min(var(--mt), 28px); }
+  .projet .rangee { margin-top: min(var(--mt), 16px); }
+  .projet .col, .projet .col + .col { width: 100%; margin-top: 12px; }
+  .projet .col.etroite { width: calc(50% - 6px); }
+  .projet .bloc { min-height: 0; }
+  .grille { flex-wrap: wrap; gap: 8px; }
+  .grille .case { margin-left: 0; width: calc(50% - 4px); }
+  .projet .bloc + .bloc, .projet .col + .col { margin-top: max(min(var(--mt), 28px), 12px); }
+  .diaporama-scene { height: 62vw; }
+  .vignette { width: 56px; height: 56px; }
+  .site-footer { flex-direction: column; gap: 14px; padding: 70px 16px 40px; }
+  .site-footer .contact:first-child, .site-footer .contact:last-child { margin: 0; }
+}
+@media (max-width: 560px) {
+  .cartes-accueil { flex-direction: column; }
+  .bienvenue { font-size: 18px; }
+}
