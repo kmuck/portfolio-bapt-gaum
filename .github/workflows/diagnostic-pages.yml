@@ -1,0 +1,30 @@
+name: Diagnostic Pages
+on:
+  push:
+    branches: ['claude/**']
+    paths: ['.github/workflows/diagnostic-pages.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: read
+  deployments: read
+  actions: read
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configuration Pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+          R: ${{ github.repository }}
+        run: |
+          echo '=== pages'; gh api repos/$R/pages || true
+          echo '=== builds'; gh api "repos/$R/pages/builds?per_page=5" || true
+          echo '=== environments'; gh api repos/$R/environments || true
+          echo '=== branches'; gh api repos/$R/branches --jq '.[].name' || true
+      - name: Site en ligne
+        run: |
+          for u in https://kmuck.github.io/portfolio-bapt-gaum/ https://kmuck.github.io/portfolio-bapt-gaum/assets/css/style.css https://kmuck.github.io/; do
+            echo "=== $u"; curl -sSI "$u" | head -15 || true
+          done
+          echo '=== body'; curl -sSL https://kmuck.github.io/portfolio-bapt-gaum/ | head -c 2500 || true
